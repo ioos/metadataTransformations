@@ -1,0 +1,31 @@
+Revision: 46124
+Author: fozzard
+Date: Friday, June 13, 2014 12:58:02 PM
+Message:
+dateStamp fix (amilan)
+
+----
+Modified : /nmmr/metadata1/xml/views/wms1.3_to_isoSV.xsl
+
+Revision: 45895
+Author: fozzard
+Date: Friday, May 16, 2014 11:31:34 AM
+Message:
+re-added geographic Bounding Box,fixed POC contact info, added spatial reference ids.(amilan)
+
+----
+Modified : /nmmr/metadata1/xml/views/wms1.3_to_isoSV.xsl
+
+Revision: 42588
+Author: jkozimor
+Date: Tuesday, July 16, 2013 10:59:30 AM
+Message:
+Updated xsl to support wms version 1.1.1
+----
+Modified : /nmmr/metadata1/xml/views/wms1.3_to_isoSV.xsl
+
+Revision: 41871
+Author: amilan
+Date: Friday, May 17, 2013 12:51:29 PM
+Message:
+first commit of wms1.3_to_isoSV.xsl.
