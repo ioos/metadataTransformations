@@ -1,0 +1,139 @@
+Revision: 46722
+Author: amilan
+Date: Thursday, July 24, 2014 2:54:55 PM
+Message:
+fixed type in URLs.
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 46692
+Author: amilan
+Date: Monday, July 21, 2014 4:18:41 PM
+Message:
+appending URLs at //srv:connectPoint xpath with getCapabilities to form a full URL.
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 46667
+Author: amilan
+Date: Thursday, July 17, 2014 5:25:53 PM
+Message:
+updated getCapabilities URL output.
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 45973
+Author: amilan
+Date: Monday, June 02, 2014 3:30:56 PM
+Message:
+fixed bug that returned more than one creation date in a single field.
+
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 45645
+Author: amilan
+Date: Wednesday, April 23, 2014 4:04:51 PM
+Message:
+fixed errors with URLs. 
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 41900
+Author: amilan
+Date: Thursday, May 23, 2013 1:32:35 PM
+Message:
+updated SOS2ISO_MI.xsl to translate source metadata with gml or gml/3.2.
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 41875
+Author: amilan
+Date: Friday, May 17, 2013 3:48:16 PM
+Message:
+added xsl: otherwise statements - for when beginPosition and endPosition are missing.
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 40106
+Author: haber
+Date: Wednesday, September 05, 2012 3:28:22 PM
+Message:
+replaced ncml with SOS Capabilities in the metadata note
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 40105
+Author: haber
+Date: Wednesday, September 05, 2012 2:05:37 PM
+Message:
+Added a stylesheet version and metadataMaintenanceNote with that version included
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 40079
+Author: haber
+Date: Tuesday, September 04, 2012 4:08:19 PM
+Message:
+moved keywords from srv: to gmd: namespace
+allowed multiple service versions
+
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 39775
+Author: haber
+Date: Tuesday, July 31, 2012 4:21:21 PM
+Message:
+Added extent ids
+Took care of multiple serviceTypeVersions
+Added types (theme) to keywords
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 39761
+Author: haber
+Date: Friday, July 27, 2012 4:03:16 PM
+Message:
+added function to a couple of onlineResources
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 27778
+Author: haber
+Date: Tuesday, March 13, 2012 4:30:05 PM
+Message:
+Improved the dateTime regular expression to include decimal seconds
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 27667
+Author: haber
+Date: Monday, March 05, 2012 8:55:11 AM
+Message:
+generalized the extent generation (all extents now translated)
+fixed dates without seconds in the transform
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 25749
+Author: haber
+Date: Tuesday, January 31, 2012 1:29:47 PM
+Message:
+Changed treatment of extents to add bounding ids and get all extents from the capabilities document
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 14920
+Author: haber
+Date: Thursday, October 20, 2011 10:13:36 AM
+Message:
+Many improvements suggested by Emillio and others
+----
+Modified : /nmmr/metadata1/xml/views/SensorObservationService/SOS2ISO_MI.xsl
+
+Revision: 11967
+Author: haber
+Date: Wednesday, September 14, 2011 3:42:17 PM
+Message:
+Initial handwritten SOS2ISO
