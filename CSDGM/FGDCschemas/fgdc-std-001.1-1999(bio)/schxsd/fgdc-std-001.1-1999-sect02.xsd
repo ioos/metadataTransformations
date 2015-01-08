@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" blockDefault="#all">
+	<xs:element name="dataqual" type="dataqualType">
+		
+	</xs:element>
+	<xs:complexType name="dataqualType">
+		<xs:sequence>
+			<xs:element ref="attracc" minOccurs="0"/>
+			<xs:element ref="logic"/>
+			<xs:element ref="complete"/>
+			<xs:element ref="posacc" minOccurs="0"/>
+			<xs:element ref="lineage"/>
+			<xs:element ref="cloud" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="attracc" type="attraccType">
+		
+	</xs:element>
+	<xs:complexType name="attraccType">
+		<xs:sequence>
+			<xs:element ref="attraccr"/>
+			<xs:element ref="qattracc" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="attraccr" type="attraccrType">
+		
+	</xs:element>
+	<xs:simpleType name="attraccrType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="qattracc" type="qattraccType">
+		
+	</xs:element>
+	<xs:complexType name="qattraccType">
+		<xs:sequence>
+			<xs:element ref="attraccv"/>
+			<xs:element ref="attracce"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="attraccv" type="attraccvType">
+		
+	</xs:element>
+	<xs:simpleType name="attraccvType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="attracce" type="attracceType">
+		
+	</xs:element>
+	<xs:simpleType name="attracceType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="logic" type="logicType">
+
+	</xs:element>
+	<xs:simpleType name="logicType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="not applicable"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="complete" type="completeType">
+		
+	</xs:element>
+	<xs:simpleType name="completeType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="posacc" type="posaccType">
+		
+	</xs:element>
+	<xs:complexType name="posaccType">
+		<xs:sequence>
+			<xs:element ref="horizpa" minOccurs="0"/>
+			<xs:element ref="vertacc" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="horizpa" type="horizpaType">
+		
+	</xs:element>
+	<xs:complexType name="horizpaType">
+		<xs:sequence>
+			<xs:element ref="horizpar"/>
+			<xs:element ref="qhorizpa" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="horizpar" type="horizparType">
+		
+	</xs:element>
+	<xs:simpleType name="horizparType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="qhorizpa" type="qhorizpaType">
+		
+	</xs:element>
+	<xs:complexType name="qhorizpaType">
+		<xs:sequence>
+			<xs:element ref="horizpav"/>
+			<xs:element ref="horizpae"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="horizpav" type="horizpavType">
+		
+	</xs:element>
+	<xs:simpleType name="horizpavType">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
+	<xs:element name="horizpae" type="horizpaeType">
+		
+	</xs:element>
+	<xs:simpleType name="horizpaeType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="vertacc" type="vertaccType">
+		
+	</xs:element>
+	<xs:complexType name="vertaccType">
+		<xs:sequence>
+			<xs:element ref="vertaccr"/>
+			<xs:element ref="qvertpa" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="vertaccr" type="vertaccrType">
+		
+	</xs:element>
+	<xs:simpleType name="vertaccrType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="qvertpa" type="qvertpaType">
+		
+	</xs:element>
+	<xs:complexType name="qvertpaType">
+		<xs:sequence>
+			<xs:element ref="vertaccv"/>
+			<xs:element ref="vertacce"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="vertaccv" type="vertaccvType">
+		
+	</xs:element>
+	<xs:simpleType name="vertaccvType">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
+	<xs:element name="vertacce" type="vertacceType">
+		
+	</xs:element>
+	<xs:simpleType name="vertacceType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="lineage" type="lineageType">
+		
+		<xs:key name="srcciteaKey">
+			<xs:selector xpath="srcinfo"/>
+			<xs:field xpath="srccitea"/>
+		</xs:key>
+		<xs:keyref name="srcusedKeyRef" refer="srcciteaKey">
+			<xs:selector xpath="procstep/srcused"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+		<xs:keyref name="srcprodKeyRef" refer="srcciteaKey">
+			<xs:selector xpath="procstep/srcprod"/>
+			<xs:field xpath="."/>
+		</xs:keyref>
+	</xs:element>
+	<xs:complexType name="lineageType">
+		<xs:sequence>
+			<xs:element ref="method" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="srcinfo" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="procstep" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="method" type="T_method">
+		
+	</xs:element>
+	<xs:complexType name="T_method">
+		<xs:sequence>
+			<xs:element ref="methtype"/>
+			<xs:element ref="methodid" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="methdesc"/>
+			<xs:element ref="methcite" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="methtype" type="methType">
+		
+	</xs:element>
+	<xs:simpleType name="methType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Field"/>
+					<xs:enumeration value="Lab"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="methodid" type="T_methodid">
+		
+	</xs:element>
+	<xs:complexType name="T_methodid">
+		<xs:sequence>
+			<xs:element ref="methkt"/>
+			<xs:element ref="methkey" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="methkt" type="methktType">
+		
+	</xs:element>
+	<xs:simpleType name="methktType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="None"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="methkey" type="methkeyType">
+		
+	</xs:element>
+	<xs:simpleType name="methkeyType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="methdesc" type="methdescType">
+		
+	</xs:element>
+	<xs:simpleType name="methdescType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="methcite" type="T_methcite">
+		
+	</xs:element>
+	<xs:complexType name="T_methcite">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="srcinfo" type="srcinfoType">
+		
+	</xs:element>
+	<xs:complexType name="srcinfoType">
+		<xs:sequence>
+			<xs:element ref="srccite"/>
+			<xs:element ref="srcscale" minOccurs="0"/>
+			<xs:element ref="typesrc"/>
+			<xs:element ref="srctime"/>
+			<xs:element ref="srccitea"/>
+			<xs:element ref="srccontr"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="srccite" type="srcciteType">
+		
+	</xs:element>
+	<xs:complexType name="srcciteType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="srcscale" type="srcscaleType">
+		
+	</xs:element>
+	<xs:simpleType name="srcscaleType">
+		<xs:restriction base="xs:integer">
+			<xs:minExclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="typesrc" type="typesrcType">
+		
+	</xs:element>
+	<xs:simpleType name="typesrcType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="audiocassette"/>
+					<xs:enumeration value="cartridge tape"/>
+					<xs:enumeration value="CD-ROM"/>
+					<xs:enumeration value="chart"/>
+					<xs:enumeration value="computer program"/>
+					<xs:enumeration value="disc"/>
+					<xs:enumeration value="electronic bulletin board"/>
+					<xs:enumeration value="electronic mail system"/>
+					<xs:enumeration value="filmstrip"/>
+					<xs:enumeration value="magnetic tape"/>
+					<xs:enumeration value="microfiche"/>
+					<xs:enumeration value="microfilm"/>
+					<xs:enumeration value="online"/>
+					<xs:enumeration value="paper"/>
+					<xs:enumeration value="physical model"/>
+					<xs:enumeration value="stable-base material"/>
+					<xs:enumeration value="transparency"/>
+					<xs:enumeration value="videocassette"/>
+					<xs:enumeration value="videodisc"/>
+					<xs:enumeration value="videotape"/>
+					<xs:enumeration value="digital database file"/>
+					<xs:enumeration value="field notes"/>
+					<xs:enumeration value="photographic print"/>
+					<xs:enumeration value="printed table"/>
+					<xs:enumeration value="visually observed or measured"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="srctime" type="srctimeType">
+		
+	</xs:element>
+	<xs:complexType name="srctimeType">
+		<xs:sequence>
+			<xs:element ref="timeinfo"/>
+			<xs:element ref="srccurr"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="srccurr" type="srccurrType">
+		
+	</xs:element>
+	<xs:simpleType name="srccurrType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ground condition"/>
+					<xs:enumeration value="publication date"/>
+					<xs:enumeration value="observed"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="srccitea" type="srcciteaType">
+		
+	</xs:element>
+	<xs:simpleType name="srcciteaType">
+		<xs:restriction base="xs:token"/>
+	</xs:simpleType>
+	<xs:element name="srccontr" type="srccontrType">
+		
+	</xs:element>
+	<xs:simpleType name="srccontrType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="procstep" type="procstepType">
+		
+	</xs:element>
+	<xs:complexType name="procstepType">
+		<xs:sequence>
+			<xs:element ref="procdesc"/>
+			<xs:element ref="srcused" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="procdate"/>
+			<xs:element ref="proctime" minOccurs="0"/>
+			<xs:element ref="srcprod" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="proccont" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="procdesc" type="procdescType">
+		
+	</xs:element>
+	<xs:simpleType name="procdescType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="srcused" type="srcciteaType">
+		
+	</xs:element>
+	<!--
+<xs:simpleType name="srcusedType">
+	<xs:restriction base="xs:token"/>
+</xs:simpleType>
+-->
+	<xs:element name="procdate" type="procdateType">
+		
+	</xs:element>
+	<xs:simpleType name="procdateType">
+		<xs:union memberTypes="FGDCdate">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+					<xs:enumeration value="Not complete"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="proctime" type="proctimeType">
+		
+	</xs:element>
+	<xs:simpleType name="proctimeType">
+		<xs:restriction base="FGDCtime"/>
+	</xs:simpleType>
+	<xs:element name="srcprod" type="srcciteaType">
+		
+	</xs:element>
+	<!--
+<xs:simpleType name="srcprodType">
+	<xs:restriction base="xs:token"/>
+</xs:simpleType>
+-->
+	<xs:element name="proccont" type="proccontType">
+		
+	</xs:element>
+	<xs:complexType name="proccontType">
+		<xs:sequence>
+			<xs:element ref="cntinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="cloud" type="cloudType">
+		
+	</xs:element>
+	<xs:simpleType name="cloudType">
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="100"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+</xs:schema>

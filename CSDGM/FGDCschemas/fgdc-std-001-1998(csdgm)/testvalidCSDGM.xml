@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Q:\users\mize.jacqueline\fgdc-std-001-1998(csdgm)\fgdc-std-001-1998.xsd">
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Name</origin>
+				<pubdate>20090101</pubdate>
+				<title>This is a test record to test the validation of the MERMAid FGDC-STD-001-1998 schema.</title>
+				<onlink>https://www.checklink.com</onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>lots of text here</abstract>
+			<purpose>text</purpose>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>2012</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>As needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-180.0</westbc>
+				<eastbc>180.0</eastbc>
+				<northbc>90.0</northbc>
+				<southbc>-90.0</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>free text</themekey>
+				<themekey>this element is repeatable</themekey>
+				<themekey>anthrax</themekey>
+				<themekey>Cholera</themekey>
+				<themekey>Ohara's fever</themekey>
+			</theme>
+			<stratum>
+				<stratkt>None</stratkt>
+				<stratkey>Do I have a thesauri name?</stratkey>
+			</stratum>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>yes.....lots of text</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>ncddc</cntorg>
+					<cntper>pick org or person</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailbox</addrtype>
+					<address>checking default values</address>
+					<city>city</city>
+					<state>state</state>
+					<postal>39529</postal>
+				</cntaddr>
+				<cntvoice>222-222-2222</cntvoice>
+			</cntinfo>
+		</ptcontac>
+	</idinfo>
+	<dataqual>
+		<logic>text</logic>
+		<complete>text</complete>
+		<lineage>
+			<procstep>
+				<procdesc>text</procdesc>
+				<procdate>Unknown</procdate>
+			</procstep>
+		</lineage>
+		<cloud>90</cloud>
+	</dataqual>
+	<spdoinfo>
+		<direct>Point</direct>
+		<ptvctinf>
+			<sdtsterm>
+				<sdtstype>Area chain</sdtstype>
+			</sdtsterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<mapproj>
+					<mapprojn>Albers Conical Equal Area</mapprojn>
+					<albers>
+						<stdparll>-90.0</stdparll>
+						<longcm>-180.0</longcm>
+						<latprjo>-89.0</latprjo>
+						<feast>3.14</feast>
+						<fnorth>0.001</fnorth>
+					</albers>
+				</mapproj>
+				<planci>
+					<plance>coordinate pair</plance>
+					<coordrep>
+						<absres>1</absres>
+						<ordres>1</ordres>
+					</coordrep>
+					<plandu>meters</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn>North American Datum of 1927</horizdn>
+				<ellips>Clarke 1866</ellips>
+				<semiaxis>999</semiaxis>
+				<denflat>9999</denflat>
+			</geodetic>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>label</enttypl>
+				<enttypd>def</enttypd>
+				<enttypds>me</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>label</attrlabl>
+				<attrdef>def</attrdef>
+				<attrdefs>me</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>9999</edomv>
+						<edomvd>void</edomvd>
+						<edomvds>me</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+		</detailed>
+		<overview>
+			<eaover>text</eaover>
+			<eadetcit>citation1</eadetcit>
+			<eadetcit>citation2</eadetcit>
+			<eadetcit>citation3</eadetcit>
+		</overview>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>person</cntper>
+				</cntperp>
+				<cntaddr>
+					<addrtype>mailing</addrtype>
+					<city>city</city>
+					<state>state</state>
+					<postal>234234</postal>
+				</cntaddr>
+				<cntvoice>222-222-2222</cntvoice>
+			</cntinfo>
+		</distrib>
+		<distliab>text</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>jpg</formname>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>text</networkr>
+							</networka>
+						</computer>
+					</onlinopt>
+					<offoptn>
+						<offmedia>CD-ROM</offmedia>
+						<recfmt>cpio</recfmt>
+						<recfmt>ISO 9960</recfmt>
+						<recfmt>ISO 9660 with Apple HFS extensions</recfmt>
+					</offoptn>
+				</digtopt>
+			</digform>
+			<fees>none</fees>
+		</stdorder>
+	</distinfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>asdfasdf</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing</addrtype>
+					<city>city</city>
+					<state>state</state>
+					<postal>asdfasdf</postal>
+				</cntaddr>
+				<cntvoice>222-222-2222</cntvoice>
+			</cntinfo>
+		</distrib>
+		<distliab>none</distliab>
+	</distinfo>
+	<metainfo>
+		<metd>200903</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>contact org</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>e911</addrtype>
+					<city>city</city>
+					<state>state</state>
+					<postal>adfasdf</postal>
+				</cntaddr>
+				<cntvoice>222-222-2222</cntvoice>
+			</cntinfo>
+		</metc>
+		<metstdn>afasdfadfasdf</metstdn>
+		<metstdv>iso 19115</metstdv>
+	</metainfo>
+</metadata>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="fgdc-std-012-2002.xsd"/>
+	<xs:element name="algoinfo" type="algoinfoType"/>
+	<xs:complexType name="algoinfoType">
+		<xs:sequence>
+			<xs:element ref="algoid"/>
+			<xs:element ref="algodesc"/>
+			<xs:element ref="algochhi" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="algprevi" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="algoid" type="algoidType"/>
+	<xs:complexType name="algoidType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="algodesc" type="algodescType"/>
+	<xs:complexType name="algodescType">
+		<xs:choice>
+			<xs:element ref="algotexd"/>
+			<xs:element ref="algoref"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="algotexd" type="algotexdType"/>
+	<xs:simpleType name="algotexdType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="algoref" type="algorefType"/>
+	<xs:complexType name="algorefType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="algochhi" type="algochhiType"/>
+	<xs:complexType name="algochhiType">
+		<xs:choice>
+			<xs:element ref="algochde"/>
+			<xs:element ref="algochrf"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="algochde" type="algochdeType"/>
+	<xs:complexType name="algochdeType">
+		<xs:sequence>
+			<xs:element ref="procstep" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="algochrf" type="algochrfType"/>
+	<xs:complexType name="algochrfType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="algprevi" type="algpreviType"/>
+	<xs:complexType name="algpreviType">
+		<xs:choice>
+			<xs:element name="algprevd" type="FGDCstring"/>
+			<xs:element ref="algprevr"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="algpred" type="algprevdType"/>
+	<xs:complexType name="algprevdType">
+		<xs:sequence>
+			<xs:element ref="procstep"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="algprevr" type="algprevrType"/>
+	<xs:complexType name="algprevrType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

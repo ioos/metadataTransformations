@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" blockDefault="#all">
+	<xs:element name="metainfo" type="metainfoType">
+		
+	</xs:element>
+	<xs:complexType name="metainfoType">
+		<xs:sequence>
+			<xs:element ref="metd"/>
+			<xs:element ref="metrd" minOccurs="0"/>
+			<xs:element ref="metfrd" minOccurs="0"/>
+			<xs:element ref="metc"/>
+			<xs:element ref="metstdn"/>
+			<xs:element ref="metstdv"/>
+			<xs:element ref="mettc" minOccurs="0"/>
+			<xs:element ref="metac" minOccurs="0"/>
+			<xs:element ref="metuc" minOccurs="0"/>
+			<xs:element ref="metsi" minOccurs="0"/>
+			<xs:element ref="metextns" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="metd" type="metdType">
+		
+	</xs:element>
+	<xs:simpleType name="metdType">
+		<xs:restriction base="FGDCdate"/>
+	</xs:simpleType>
+	<xs:element name="metrd" type="metrdType">
+		
+	</xs:element>
+	<xs:simpleType name="metrdType">
+		<xs:restriction base="FGDCdate"/>
+	</xs:simpleType>
+	<xs:element name="metfrd" type="metfrdType">
+		
+	</xs:element>
+	<xs:simpleType name="metfrdType">
+		<xs:restriction base="FGDCdate"/>
+	</xs:simpleType>
+	<xs:element name="metc" type="metcType">
+		
+	</xs:element>
+	<xs:complexType name="metcType">
+		<xs:sequence>
+			<xs:element ref="cntinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="metstdn" type="metstdnType">
+		
+	</xs:element>
+	<xs:simpleType name="metstdnType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="FGDC Content Standard for Digital Geospatial Metadata"/>
+					<xs:enumeration value="Content Standard for National Biological Information Infrastructure Metadata"/>
+					<xs:enumeration value="FGDC Biological Data Profile of the Content Standard for Digital Geospatial Metadata"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="metstdv" type="metstdvType">
+		
+	</xs:element>
+	<xs:simpleType name="metstdvType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="mettc" type="mettcType">
+		
+	</xs:element>
+	<xs:simpleType name="mettcType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="local time"/>
+			<xs:enumeration value="local time with time differential factor"/>
+			<xs:enumeration value="universal time"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="metac" type="metacType">
+		
+	</xs:element>
+	<xs:simpleType name="metacType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="metuc" type="metucType">
+		
+	</xs:element>
+	<xs:simpleType name="metucType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="metsi" type="metsiType">
+		
+	</xs:element>
+	<xs:complexType name="metsiType">
+		<xs:sequence>
+			<xs:element ref="metscs"/>
+			<xs:element ref="metsc"/>
+			<xs:element ref="metshd"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="metscs" type="FGDCstring">
+		
+	</xs:element>
+	<xs:element name="metsc" type="metscType">
+		
+	</xs:element>
+	<xs:simpleType name="metscType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Confidential"/>
+					<xs:enumeration value="Restricted"/>
+					<xs:enumeration value="Secret"/>
+					<xs:enumeration value="Sensitive"/>
+					<xs:enumeration value="Top Secret"/>
+					<xs:enumeration value="Unclassified"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="metshd" type="metshdType">
+		
+	</xs:element>
+	<xs:simpleType name="metshdType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="metextns" type="metextnsType">
+		
+	</xs:element>
+	<xs:complexType name="metextnsType">
+		<xs:sequence>
+			<xs:element name="onlink" minOccurs="0" maxOccurs="unbounded">
+				<xs:simpleType>
+					<xs:restriction base="FGDCstring"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element ref="metprof" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="metprof" type="metprofType">
+		
+	</xs:element>
+	<xs:simpleType name="metprofType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+</xs:schema>

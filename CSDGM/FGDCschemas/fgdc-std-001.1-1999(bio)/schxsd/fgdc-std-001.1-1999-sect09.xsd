@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" blockDefault="#all">
+	<xs:element name="timeinfo" type="timeinfoType">
+	</xs:element>
+	<xs:complexType name="timeinfoType">
+		<xs:choice>
+			<xs:element ref="sngdate"/>
+			<xs:element ref="mdattim"/>
+			<xs:element ref="rngdates"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="sngdate" type="sngdateType">
+	</xs:element>
+	<xs:complexType name="sngdateType">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="caldate"/>
+				<xs:element ref="time" minOccurs="0"/>
+			</xs:sequence>
+			<xs:element ref="geolage"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="caldate" type="caldateType">
+		
+	</xs:element>
+	<xs:simpleType name="caldateType">
+		<xs:union memberTypes="FGDCdate">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="time" type="timeType">
+		
+	</xs:element>
+	<xs:simpleType name="timeType">
+		<xs:union memberTypes="FGDCtime">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="mdattim" type="mdattimType">
+		
+	</xs:element>
+	<xs:complexType name="mdattimType">
+		<xs:sequence>
+			<xs:element ref="sngdate" minOccurs="2" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="rngdates" type="rngdatesType">
+		
+	</xs:element>
+	<xs:complexType name="rngdatesType">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="begdate"/>
+				<xs:element ref="begtime" minOccurs="0"/>
+				<xs:element ref="enddate"/>
+				<xs:element ref="endtime" minOccurs="0"/>
+			</xs:sequence>
+			<xs:sequence>
+				<xs:element ref="beggeol"/>
+				<xs:element ref="endgeol"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="begdate" type="begdateType">
+		
+	</xs:element>
+	<xs:simpleType name="begdateType">
+		<xs:union memberTypes="FGDCdate">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="begtime" type="begtimeType">
+		
+	</xs:element>
+	<xs:simpleType name="begtimeType">
+		<xs:union memberTypes="FGDCtime">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="enddate" type="enddateType">
+		
+	</xs:element>
+	<xs:simpleType name="enddateType">
+		<xs:union memberTypes="FGDCdate">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+					<xs:enumeration value="Present"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="endtime" type="endtimeType">
+		
+	</xs:element>
+	<xs:simpleType name="endtimeType">
+		<xs:union memberTypes="FGDCtime">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="geolage" type="T_geolage">
+		
+	</xs:element>
+	<xs:complexType name="T_geolage">
+		<xs:sequence>
+			<xs:element ref="geolscal"/>
+			<xs:element ref="geolest"/>
+			<xs:element ref="geolun" minOccurs="0"/>
+			<xs:element ref="geolexpl" minOccurs="0"/>
+			<xs:element ref="geolcit" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="geolscal" type="geolscalType">
+		
+	</xs:element>
+	<xs:simpleType name="geolscalType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Absolute"/>
+					<xs:enumeration value="Geomagnetic Polarity Time Scale"/>
+					<xs:enumeration value="International Geological Time Scale"/>
+					<xs:enumeration value="Oxygen-Isotope"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="geolest" type="geolestType">
+		
+	</xs:element>
+	<xs:simpleType name="geolestType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="geolun" type="geolunType">
+		
+	</xs:element>
+	<xs:simpleType name="geolunType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="geolexpl" type="geolexplType">
+		
+	</xs:element>
+	<xs:simpleType name="geolexplType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="geolcit" type="T_geolcit">
+		
+	</xs:element>
+	<xs:complexType name="T_geolcit">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="beggeol" type="T_beggeol">
+		
+	</xs:element>
+	<xs:complexType name="T_beggeol">
+		<xs:sequence>
+			<xs:element ref="geolage"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="endgeol" type="T_endgeol">
+		
+	</xs:element>
+	<xs:complexType name="T_endgeol">
+		<xs:sequence>
+			<xs:element ref="geolage"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

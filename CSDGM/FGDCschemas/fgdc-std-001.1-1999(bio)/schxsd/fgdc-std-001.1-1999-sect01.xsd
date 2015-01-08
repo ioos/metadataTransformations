@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" blockDefault="#all">
+	<xs:element name="idinfo" type="idinfoType">
+		
+	</xs:element>
+	<xs:complexType name="idinfoType">
+		<xs:sequence>
+			<xs:element ref="citation"/>
+			<xs:element ref="descript"/>
+			<xs:element ref="timeperd"/>
+			<xs:element ref="status"/>
+			<xs:element ref="spdom" minOccurs="0"/>
+			<xs:element ref="keywords"/>
+			<xs:element ref="taxonomy" minOccurs="0"/>
+			<xs:element ref="accconst"/>
+			<xs:element ref="useconst"/>
+			<xs:element ref="ptcontac" minOccurs="0"/>
+			<xs:element ref="browse" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="datacred" minOccurs="0"/>
+			<xs:element ref="secinfo" minOccurs="0"/>
+			<xs:element ref="native" minOccurs="0"/>
+			<xs:element ref="crossref" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="tool" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="citation" type="citationType">
+		
+	</xs:element>
+	<xs:complexType name="citationType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="descript" type="descriptType">
+
+	</xs:element>
+	<xs:complexType name="descriptType">
+		<xs:sequence>
+			<xs:element ref="abstract"/>
+			<xs:element ref="purpose"/>
+			<xs:element ref="supplinf" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="abstract" type="abstractType">
+		
+	</xs:element>
+	<xs:simpleType name="abstractType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="purpose" type="purposeType">
+		
+	</xs:element>
+	<xs:simpleType name="purposeType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="supplinf" type="supplinfType">
+		
+	</xs:element>
+	<xs:simpleType name="supplinfType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="timeperd" type="timeperdType">
+		
+	</xs:element>
+	<xs:complexType name="timeperdType">
+		<xs:sequence>
+			<xs:element ref="timeinfo"/>
+			<xs:element ref="current"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="current" type="currentType">
+		
+	</xs:element>
+	<xs:simpleType name="currentType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ground condition"/>
+					<xs:enumeration value="publication date"/>
+					<xs:enumeration value="observed"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="status" type="statusType">
+		
+	</xs:element>
+	<xs:complexType name="statusType">
+		<xs:sequence>
+			<xs:element ref="progress"/>
+			<xs:element ref="update"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="progress" type="progressType">
+		
+	</xs:element>
+	<xs:simpleType name="progressType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Complete"/>
+			<xs:enumeration value="In work"/>
+			<xs:enumeration value="Planned"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="update" type="updateType">
+		
+	</xs:element>
+	<xs:simpleType name="updateType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="spdom" type="spdomType">
+		
+	</xs:element>
+	<xs:complexType name="spdomType">
+		<xs:sequence>
+			<xs:element ref="descgeog"/>
+			<xs:element ref="bounding"/>
+			<xs:element ref="dsgpoly" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="descgeog" type="descgeogType">
+		
+	</xs:element>
+	<xs:simpleType name="descgeogType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="boundalt" type="boundaltType">
+		
+	</xs:element>
+	<xs:complexType name="boundaltType">
+		<xs:sequence>
+			<xs:element ref="altmin"/>
+			<xs:element ref="altmax"/>
+			<xs:element ref="altunits"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="altmin" type="altminType">
+		
+	</xs:element>
+	<xs:simpleType name="altminType">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
+	<xs:element name="altmax" type="altmaxType">
+		
+	</xs:element>
+	<xs:simpleType name="altmaxType">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
+	<xs:element name="bounding" type="boundingType">
+		
+	</xs:element>
+	<xs:complexType name="boundingType">
+		<xs:sequence>
+			<xs:element ref="westbc"/>
+			<xs:element ref="eastbc"/>
+			<xs:element ref="northbc"/>
+			<xs:element ref="southbc"/>
+			<xs:element name="boundalt" type="boundaltType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="westbc" type="westbcType">
+		
+	</xs:element>
+	<xs:simpleType name="westbcType">
+		<xs:restriction base="FGDClongitude">
+			<xs:maxExclusive value="180.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="eastbc" type="eastbcType">
+		
+	</xs:element>
+	<xs:simpleType name="eastbcType">
+		<xs:restriction base="FGDClongitude"/>
+	</xs:simpleType>
+	<xs:element name="northbc" type="northbcType">
+		
+	</xs:element>
+	<xs:simpleType name="northbcType">
+		<xs:restriction base="FGDClatitude"/>
+	</xs:simpleType>
+	<xs:element name="southbc" type="southbcType">
+		
+	</xs:element>
+	<xs:simpleType name="southbcType">
+		<xs:restriction base="FGDClatitude"/>
+	</xs:simpleType>
+	<xs:element name="dsgpoly" type="dsgpolyType">
+		
+	</xs:element>
+	<xs:complexType name="dsgpolyType">
+		<xs:sequence>
+			<xs:element ref="dsgpolyo"/>
+			<xs:element ref="dsgpolyx" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="dsgpolyo" type="dsgpolyoType">
+		
+	</xs:element>
+	<xs:complexType name="dsgpolyoType">
+		<xs:choice>
+			<xs:element ref="grngpoin" minOccurs="4" maxOccurs="unbounded"/>
+			<xs:element ref="gring"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="grngpoin" type="grngpoinType">
+		
+	</xs:element>
+	<xs:complexType name="grngpoinType">
+		<xs:sequence>
+			<xs:element ref="gringlat"/>
+			<xs:element ref="gringlon"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="gringlat" type="gringlatType">
+		
+	</xs:element>
+	<xs:simpleType name="gringlatType">
+		<xs:restriction base="FGDClatitude"/>
+	</xs:simpleType>
+	<xs:element name="gringlon" type="gringlonType">
+		
+	</xs:element>
+	<xs:simpleType name="gringlonType">
+		<xs:restriction base="FGDClongitude">
+			<xs:maxExclusive value="180.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="gring" type="gringType">
+		
+	</xs:element>
+	<xs:simpleType name="gringType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="dsgpolyx" type="dsgpolyxType">
+		
+	</xs:element>
+	<xs:complexType name="dsgpolyxType">
+		<xs:choice>
+			<xs:element ref="grngpoin" minOccurs="4" maxOccurs="unbounded"/>
+			<xs:element ref="gring"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="keywords" type="keywordsType">
+		
+	</xs:element>
+	<xs:complexType name="keywordsType">
+		<xs:sequence>
+			<xs:element ref="theme" maxOccurs="unbounded"/>
+			<xs:element ref="place" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="stratum" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="temporal" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="theme" type="themeType">
+		
+	</xs:element>
+	<xs:complexType name="themeType">
+		<xs:sequence>
+			<xs:element ref="themekt"/>
+			<xs:element ref="themekey" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="themekt" type="themektType">
+		
+	</xs:element>
+	<xs:simpleType name="themektType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="None"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="themekey" type="themekeyType">
+		
+	</xs:element>
+	<xs:simpleType name="themekeyType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="place" type="placeType">
+		
+	</xs:element>
+	<xs:complexType name="placeType">
+		<xs:sequence>
+			<xs:element ref="placekt"/>
+			<xs:element ref="placekey" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="placekt" type="placektType">
+		
+	</xs:element>
+	<xs:simpleType name="placektType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="None"/>
+					<xs:enumeration value="Geographic Names Information System"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="placekey" type="placekeyType">
+		
+	</xs:element>
+	<xs:simpleType name="placekeyType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="stratum" type="stratumType">
+		
+	</xs:element>
+	<xs:complexType name="stratumType">
+		<xs:sequence>
+			<xs:element ref="stratkt"/>
+			<xs:element ref="stratkey" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="stratkt" type="stratktType">
+		
+	</xs:element>
+	<xs:simpleType name="stratktType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="None"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="stratkey" type="stratkeyType">
+	
+	</xs:element>
+	<xs:simpleType name="stratkeyType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="temporal" type="temporalType">
+		
+	</xs:element>
+	<xs:complexType name="temporalType">
+		<xs:sequence>
+			<xs:element ref="tempkt"/>
+			<xs:element ref="tempkey" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="tempkt" type="tempktType">
+		
+	</xs:element>
+	<xs:simpleType name="tempktType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="None"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="tempkey" type="tempkeyType">
+	
+	</xs:element>
+	<xs:simpleType name="tempkeyType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="taxonomy" type="T_taxonomy">
+		
+	</xs:element>
+	<xs:complexType name="T_taxonomy">
+		<xs:sequence>
+			<xs:element ref="keywtax" maxOccurs="unbounded"/>
+			<xs:element ref="taxonsys" minOccurs="0"/>
+			<xs:element ref="taxongen" minOccurs="0"/>
+			<xs:element ref="taxoncl"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="keywtax" type="T_keywtax">
+		
+	</xs:element>
+	<xs:complexType name="T_keywtax">
+		<xs:sequence>
+			<xs:element ref="taxonkt"/>
+			<xs:element ref="taxonkey" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="taxonsys" type="T_taxonsys">
+		
+	</xs:element>
+	<xs:complexType name="T_taxonsys">
+		<xs:sequence>
+			<xs:element ref="classsys" maxOccurs="unbounded"/>
+			<xs:element ref="idref" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="ider" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="taxonpro"/>
+			<xs:element ref="taxoncom" minOccurs="0"/>
+			<xs:element ref="vouchers" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="classsys" type="T_classsys">
+		
+	</xs:element>
+	<xs:complexType name="T_classsys">
+		<xs:sequence>
+			<xs:element ref="classcit"/>
+			<xs:element ref="classmod" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="classcit" type="T_classcit">
+		
+	</xs:element>
+	<xs:complexType name="T_classcit">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="classmod" type="classmodType">
+		
+	</xs:element>
+	<xs:simpleType name="classmodType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="taxonkt" type="taxonktType">
+		
+	</xs:element>
+	<xs:simpleType name="taxonktType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="None"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="taxonkey" type="taxonkeyType">
+		
+	</xs:element>
+	<xs:simpleType name="taxonkeyType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="amphibians"/>
+					<xs:enumeration value="animals"/>
+					<xs:enumeration value="bacteria"/>
+					<xs:enumeration value="collection"/>
+					<xs:enumeration value="fungi"/>
+					<xs:enumeration value="invertebrates"/>
+					<xs:enumeration value="lichens"/>
+					<xs:enumeration value="mammals"/>
+					<xs:enumeration value="mosses"/>
+					<xs:enumeration value="multiple species"/>
+					<xs:enumeration value="plants"/>
+					<xs:enumeration value="protists"/>
+					<xs:enumeration value="reptiles"/>
+					<xs:enumeration value="single species"/>
+					<xs:enumeration value="vegetation"/>
+					<xs:enumeration value="vertebrates"/>
+					<xs:enumeration value="viruses"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="idref" type="T_idref">
+		
+	</xs:element>
+	<xs:complexType name="T_idref">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ider" type="T_ider">
+		
+	</xs:element>
+	<xs:complexType name="T_ider">
+		<xs:sequence>
+			<xs:element ref="cntinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="taxonpro" type="taxonproType">
+		
+	</xs:element>
+	<xs:simpleType name="taxonproType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="taxoncom" type="taxoncomType">
+		
+	</xs:element>
+	<xs:simpleType name="taxoncomType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="vouchers" type="T_vouchers">
+		
+	</xs:element>
+	<xs:complexType name="T_vouchers">
+		<xs:sequence>
+			<xs:element ref="specimen"/>
+			<xs:element ref="reposit"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="specimen" type="specimenType">
+		
+	</xs:element>
+	<xs:simpleType name="specimenType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="herbarium specimens"/>
+					<xs:enumeration value="blood samples"/>
+					<xs:enumeration value="photographs"/>
+					<xs:enumeration value="individuals"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="reposit" type="T_reposit">
+		
+	</xs:element>
+	<xs:complexType name="T_reposit">
+		<xs:sequence>
+			<xs:element ref="cntinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="taxongen" type="taxongenType">
+		
+	</xs:element>
+	<xs:simpleType name="taxongenType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="taxoncl" type="T_taxoncl">
+		
+	</xs:element>
+	<xs:complexType name="T_taxoncl">
+		<xs:sequence>
+			<xs:element ref="taxonrn"/>
+			<xs:element ref="taxonrv"/>
+			<xs:element ref="common" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="taxoncl" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="taxonrn" type="taxonrnType">
+		
+	</xs:element>
+	<xs:simpleType name="taxonrnType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Kingdom"/>
+					<xs:enumeration value="Division"/>
+					<xs:enumeration value="Phylum"/>
+					<xs:enumeration value="Subphylum"/>
+					<xs:enumeration value="Superclass"/>
+					<xs:enumeration value="Class"/>
+					<xs:enumeration value="Subclass"/>
+					<xs:enumeration value="Infraclass"/>
+					<xs:enumeration value="Superorder"/>
+					<xs:enumeration value="Order"/>
+					<xs:enumeration value="Suborder"/>
+					<xs:enumeration value="Infraorder"/>
+					<xs:enumeration value="Superfamily"/>
+					<xs:enumeration value="Family"/>
+					<xs:enumeration value="Subfamily"/>
+					<xs:enumeration value="Tribe"/>
+					<xs:enumeration value="Subtribe"/>
+					<xs:enumeration value="Genus"/>
+					<xs:enumeration value="Species"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="taxonrv" type="taxonrvType">
+		
+	</xs:element>
+	<xs:simpleType name="taxonrvType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="common" type="commonType">
+		
+	</xs:element>
+	<xs:simpleType name="commonType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="accconst" type="accconstType">
+		
+	</xs:element>
+	<xs:simpleType name="accconstType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="None"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="useconst" type="useconstType">
+		
+	</xs:element>
+	<xs:simpleType name="useconstType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="None"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="ptcontac" type="ptcontacType">
+		
+	</xs:element>
+	<xs:complexType name="ptcontacType">
+		<xs:sequence>
+			<xs:element ref="cntinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="browse" type="browseType">
+		
+	</xs:element>
+	<xs:complexType name="browseType">
+		<xs:sequence>
+			<xs:element ref="browsen"/>
+			<xs:element ref="browsed"/>
+			<xs:element ref="browset"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="browsen" type="browsenType">
+		
+	</xs:element>
+	<xs:simpleType name="browsenType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="browsed" type="browsedType">
+		
+	</xs:element>
+	<xs:simpleType name="browsedType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="browset" type="browsetType">
+		
+	</xs:element>
+	<xs:simpleType name="browsetType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="FGDCstring">
+					<xs:enumeration value="CGM"/>
+					<xs:enumeration value="EPS"/>
+					<xs:enumeration value="GIF"/>
+					<xs:enumeration value="JPEG"/>
+					<xs:enumeration value="PBM"/>
+					<xs:enumeration value="PS"/>
+					<xs:enumeration value="TIFF"/>
+					<xs:enumeration value="XWD"/>
+					<xs:enumeration value="AIF"/>
+					<xs:enumeration value="ASF"/>
+					<xs:enumeration value="AU"/>
+					<xs:enumeration value="AVI"/>
+					<xs:enumeration value="MID"/>
+					<xs:enumeration value="MOVIE"/>
+					<xs:enumeration value="MP3"/>
+					<xs:enumeration value="MPEG"/>
+					<xs:enumeration value="MPGA"/>
+					<xs:enumeration value="PNG"/>
+					<xs:enumeration value="PPT"/>
+					<xs:enumeration value="QT"/>
+					<xs:enumeration value="RA"/>
+					<xs:enumeration value="WRL"/>
+					<xs:enumeration value="WAV"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="datacred" type="datacredType">
+		
+	</xs:element>
+	<xs:simpleType name="datacredType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="secinfo" type="secinfoType">
+		
+	</xs:element>
+	<xs:complexType name="secinfoType">
+		<xs:sequence>
+			<xs:element ref="secsys"/>
+			<xs:element ref="secclass"/>
+			<xs:element ref="sechandl"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="secsys" type="secsysType">
+		
+	</xs:element>
+	<xs:simpleType name="secsysType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="secclass" type="secclassType">
+		
+	</xs:element>
+	<xs:simpleType name="secclassType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="FGDCstring">
+					<xs:enumeration value="Confidential"/>
+					<xs:enumeration value="Restricted"/>
+					<xs:enumeration value="Secret"/>
+					<xs:enumeration value="Sensitive"/>
+					<xs:enumeration value="Top Secret"/>
+					<xs:enumeration value="Unclassified"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="sechandl" type="sechandlType">
+		
+	</xs:element>
+	<xs:simpleType name="sechandlType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="native" type="nativeType">
+		
+	</xs:element>
+	<xs:simpleType name="nativeType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="crossref" type="crossrefType">
+		
+	</xs:element>
+	<xs:complexType name="crossrefType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="tool" type="T_tool">
+		
+	</xs:element>
+	<xs:complexType name="T_tool">
+		<xs:sequence>
+			<xs:element ref="tooldesc"/>
+			<xs:element ref="toolacc"/>
+			<xs:element ref="toolcont" minOccurs="0"/>
+			<xs:element ref="toolcite" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="tooldesc" type="tooldescType">
+		
+	</xs:element>
+	<xs:simpleType name="tooldescType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="toolacc" type="T_toolacc">
+		
+	</xs:element>
+	<xs:complexType name="T_toolacc">
+		<xs:sequence>
+			<xs:element ref="onlink" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="toolinst"/>
+			<xs:element ref="toolcomp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="toolinst" type="toolinstType">
+		
+	</xs:element>
+	<xs:simpleType name="toolinstType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="toolcomp" type="toolcompType">
+		
+	</xs:element>
+	<xs:simpleType name="toolcompType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="toolcont" type="T_toolcont">
+	
+	</xs:element>
+	<xs:complexType name="T_toolcont">
+		<xs:sequence>
+			<xs:element ref="cntinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="toolcite" type="T_toolcite">
+		
+	</xs:element>
+	<xs:complexType name="T_toolcite">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

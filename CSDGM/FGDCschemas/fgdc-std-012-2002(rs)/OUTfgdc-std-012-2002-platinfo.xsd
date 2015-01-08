@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="platinfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="platflnm" type="FGDCstring" minOccurs="0"/>
+				<xs:element name="platstdt" type="platstdtType"/>
+				<xs:element name="platspon" type="FGDCstring" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="platdesc" type="FGDCstring" minOccurs="0"/>
+				<xs:element name="platforb" type="platforbType"/>
+				<xs:element name="fltprot" type="fltprotType" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="platstdtType">
+		<xs:sequence>
+			<xs:element ref="sngdate"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="platforbType">
+		<xs:sequence>
+			<xs:element name="ephemeris" type="ephemerisType"/>
+			<xs:choice>
+				<xs:element name="kepleror" type="keplerorType"/>
+				<xs:element name="ngeopos" type="ngeoposType"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ephemerisType">
+		<xs:sequence>
+			<xs:element ref="sngdate"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- kepleror -->
+	<xs:complexType name="keplerorType">
+		<xs:sequence>
+			<xs:choice maxOccurs="2">
+				<xs:element ref="semimaax"/>
+				<xs:element name="orbitpd" type="orbitpdType"/>
+			</xs:choice>
+			<xs:element ref="eccentry"/>
+			<xs:element name="orbangun" type="FGDCstring"/>
+			<xs:element name="inclinat" type="inclinatType"/>
+			<xs:element name="raascnod" type="raascnodType"/>
+			<xs:element ref="argupgee"/>
+			<xs:element name="peripass" type="peripassType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="semimaax" type="semimaaxType"/>
+	<xs:simpleType name="semimaaxType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="6378.2"/>
+			<xs:maxExclusive value="261000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="orbitpdType">
+		<xs:sequence>
+			<xs:element name="orpdunit" type="FGDCstring"/>
+			<xs:element ref="orpdval"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="orpdval" type="orpdvalType"/>
+	<xs:simpleType name="orpdvalType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="eccentry" type="eccentryType"/>
+	<xs:simpleType name="eccentryType">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="0"/>
+			<xs:maxExclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="inclinatType">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="180"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="raascnodType">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="0"/>
+			<xs:maxExclusive value="360"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="argupgee" type="argupgeeType"/>
+	<xs:simpleType name="argupgeeType">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="0"/>
+			<xs:maxExclusive value="360"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="peripassType">
+		<xs:sequence>
+			<xs:element ref="sngdate"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ngeopos -->
+	<xs:complexType name="ngeoposType">
+		<xs:sequence>
+			<xs:element name="pnomlong" type="FGDClongitude"/>
+			<xs:element name="gpnalti" type="gpnaltiType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="gpnaltiType">
+		<xs:sequence>
+			<xs:element name="gpnaltun" type="FGDCstring"/>
+			<xs:element name="gpnaltva" type="xs:double"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="fltprotType">
+		<xs:sequence>
+			<xs:element ref="flyhite"/>
+			<xs:element ref="gspavail" minOccurs="0"/>
+			<xs:element ref="insavail" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="flyhite" type="flyhiteType"/>
+	<xs:simpleType name="flyhiteType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="gspavail" type="gspavailType"/>
+	<xs:simpleType name="gspavailType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="available"/>
+			<xs:enumeration value="not available"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="insavail" type="insavailType"/>
+	<xs:simpleType name="insavailType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="available"/>
+			<xs:enumeration value="not available"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

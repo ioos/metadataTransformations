@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE metadata [
+	<!ENTITY schematron4 "Q:\users\mize.jacqueline\mapping\schemas\MERMAid 2.0\iso_svrl_for_xslt2.xsl">
+	<!ENTITY schematron3 "Q:\users\mize.jacqueline\mapping\schemas\MERMAid 2.0\iso_schematron_message_xslt2.xsl">
+	<!ENTITY schematron2 "Q:\users\mize.jacqueline\mapping\schemas\MERMAid 2.0\iso_abstract_expand.xsl">
+	<!ENTITY schematron "Q:\users\mize.jacqueline\mapping\schemas\MERMAid 2.0\iso_dsdl_include.xsl">
+]>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Q:\users\mize.jacqueline\mapping\schemas\MERMAid-fgdc-std-001-1998\csdgm\MERMAidfgdc-std-001-1998.xsd">
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Name</origin>
+				<pubdate>January 1, 2009</pubdate>
+				<title>This is a test record to test the validation of the MERMAid FGDC-STD-001-1998 schema.</title>
+				<onlink>www.checklink.com</onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>lots of text here</abstract>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>200903</caldate>
+					<time>Unknown</time>
+				</sngdate>
+			</timeinfo>
+			<current>ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-180.0</westbc>
+				<eastbc>180.0</eastbc>
+				<northbc>90.0</northbc>
+				<southbc>-90.0</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>free text</themekey>
+				<themekey>this element is repeatable</themekey>
+			</theme>
+			<stratum>
+				<stratkey>Do I have a thesauri name?</stratkey>
+			</stratum>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>yes.....lots of text</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>pick person or org</cntper>
+					<cntorg>ncddc</cntorg>
+				</cntperp>
+				<cntorgp>
+					<cntorg>ncddc</cntorg>
+					<cntper>pick org or person</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailbox</addrtype>
+					<address>checking default values</address>
+					<city>city</city>
+					<state>state</state>
+					<postal>39529</postal>
+				</cntaddr>
+				<cntvoice>222-222-2222</cntvoice>
+			</cntinfo>
+		</ptcontac>
+	</idinfo>
+	<dataqual>
+		<logic>text</logic>
+		<complete>text</complete>
+		<lineage>
+			<procstep>
+				<procdesc>text</procdesc>
+				<procdate>Unknown</procdate>
+			</procstep>
+		</lineage>
+		<cloud>101</cloud>
+	</dataqual>
+	<spdoinfo>
+		<direct>Raster</direct>
+		<ptvctinf>
+			<sdtsterm>
+				<sdtstype>text text text</sdtstype>
+			</sdtsterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<mapproj>
+					<equicon>
+						<stdparll>50</stdparll>
+						<stdparll>-50</stdparll>
+					</equicon>
+				</mapproj>
+				<gridsys>
+					<spcs>
+						<transmer>
+							<sfctrmer>0.0</sfctrmer>
+						</transmer>
+					</spcs>
+				</gridsys>
+				<planci></planci>
+			</planar>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>label</enttypl>
+				<enttypd>def</enttypd>
+				<enttypds>me</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>label</attrlabl>
+				<attrdef>def</attrdef>
+				<attrdomv>
+					<edom>
+						<edomv>9999</edomv>
+						<edomvd>void</edomvd>
+						<edomvds>me</edomvds>
+					</edom>
+					<udom>not sure</udom>
+				</attrdomv>
+				<attrvai></attrvai>
+			</attr>
+		</detailed>
+		<overview>
+			<eaover>text</eaover>
+			<eadetcit>citation1</eadetcit>
+			<eadetcit>citation2</eadetcit>
+			<eadetcit>citation3</eadetcit>
+		</overview>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntaddr>
+					<addrtype>mailing</addrtype>
+					<city>city</city>
+					<state>state</state>
+					<postal>234234</postal>
+				</cntaddr>
+				<cntvoice>222-222-2222</cntvoice>
+			</cntinfo>
+		</distrib>
+		<distliab>text</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>jpg</formname>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>text</networkr>
+							</networka>
+						</computer>
+					</onlinopt>
+					<offoptn>
+						<offmedia>CD-ROM</offmedia>
+						<recfmt>cpio</recfmt>
+						<recfmt>ISO 9960</recfmt>
+						<recfmt>ISO 9660 with Apple HFS extensions</recfmt>
+					</offoptn>
+				</digtopt>
+			</digform>
+			<fees>none</fees>
+		</stdorder>
+	</distinfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>asdfasdf</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing</addrtype>
+					<city>city</city>
+					<state>state</state>
+					<postal>asdfasdf</postal>
+				</cntaddr>
+				<cntvoice>222-222-2222</cntvoice>
+			</cntinfo>
+		</distrib>
+		<distliab>none</distliab>
+	</distinfo>
+	<metainfo>
+		<metd>200903</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>contact org</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>e911</addrtype>
+					<city>city</city>
+					<state>state</state>
+					<postal>adfasdf</postal>
+				</cntaddr>
+				<cntvoice>222-222-2222</cntvoice>
+			</cntinfo>
+		</metc>
+		<metstdn>afasdfadfasdf</metstdn>
+		<metstdv>iso 19115</metstdv>
+	</metainfo>
+</metadata>

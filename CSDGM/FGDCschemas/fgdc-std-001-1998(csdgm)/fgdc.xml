@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Q:/users/mize.jacqueline/fgdc-std-001-1998(csdgm)/fgdc-std-001-1998.xsd">
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>NODC NCDDC</origin>
+				<pubdate>2011-12-13-06:00</pubdate>
+				<pubtime>11:37:48-06:00</pubtime>
+				<title>Project/System Name*</title>
+				<onlink>http://www.ncddc.noaa.gov</onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>Project/System Narrative*</abstract>
+			<purpose>The Interagency Cross-Cutting Group on Climate Change and Human Health (CCHHG) is charged by the USGCRP with planning, coordinating, implementing, evaluating, and reporting on Federal research and related activities that expand the scientific and technical knowledge base on the human health impacts of global environmental change, focusing specifically on climate variability and change. The CCHHG seeks to integrate relevant science and technology programs and capabilities through interagency, interdisciplinary, and intergovernmental collaborations that span a continuum from basic research to decision making to application, with the ultimate goal of building more resilient communities.</purpose>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<rngdates>
+					<begdate>08/03/2011</begdate>
+					<enddate>Ongoing</enddate>
+				</rngdates>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>In work</progress>
+			<update>Other: as needed</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-180</westbc>
+				<eastbc>-180</eastbc>
+				<northbc>-90</northbc>
+				<southbc>-90</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>farming</themekt>
+				<themekey>keyword</themekey>
+			</theme>
+			<theme>
+				<themekt>Health_Impact</themekt>
+				<themekt>Health_Impact</themekt>
+				<themekey>Human Developmental Effects</themekey>
+				<themekey>Cancer</themekey>
+			</theme>
+			<theme>
+				<themekt>Infectious_Disease_Focus</themekt>
+				<themekey>Bacterial</themekey>
+				<themekey>Fungal</themekey>
+				<themekey>Parasitic</themekey>
+				<themekey>Viral</themekey>
+				<themekey>Not Applicable</themekey>
+				<themekey>Other</themekey>
+			</theme>
+		</keywords>
+		<accconst>Public</accconst>
+		<useconst>The user is responsible for the results of any application of this data for other than its intended purpose.</useconst>
+	</idinfo>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>Health_Realated_Focus</enttypl>
+				<enttypd>Definition</enttypd>
+				<enttypds>cchg_meds</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>Health_Impact</attrlabl>
+				<attrdef>Definition</attrdef>
+				<attrdefs>cchg_meds</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>Human Developmental Effects</edomv>
+						<edomv>Cancer</edomv>
+						<edomvd>Definition</edomvd>
+						<edomvds>cchg_meds</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Infectious_Disease_Focus</attrlabl>
+				<attrdef>Definition</attrdef>
+				<attrdefs>cchg_meds</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>Bacterial</edomv>
+						<edomv>Parasitic</edomv>
+						<edomvd>Definition</edomvd>
+						<edomvds>cchg_meds</edomvds>
+						<attr>
+							<attrlabl>Bacterial Anthrax</attrlabl>
+							<attrlabl>Bacterial Botulism (foodborne)</attrlabl>
+							<attrlabl>Parasitic Giardiasis</attrlabl>
+							<attrdef>Definition</attrdef>
+							<attrdefs>cchg_meds</attrdefs>
+							<attrdomv>
+								<udom>These are the names of the diseases and vary according to input information.</udom>
+							</attrdomv>
+						</attr>
+					</edom>
+				</attrdomv>
+			</attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>Jacqueline Mize</cntper>
+				</cntperp>
+			</cntinfo>
+		</distrib>
+	</distinfo>
+	<metainfo>
+		<metd>2011-12-13-06:00</metd>
+		<metrd>2011-12-13-06:00</metrd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>Jacqueline Mize</cntper>
+					<cntorg/>
+				</cntperp>
+				<cntaddr>
+					<addrtype>Address Type</addrtype>
+					<city>City</city>
+					<state>State or Province</state>
+					<postal>Zip Code</postal>
+				</cntaddr>
+				<cntvoice>228-688-2174</cntvoice>
+				<cntemail>Jacqueline.Mize@noaa.gov</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+		<metuc>The user is responsible for the results of any application of this data for other than its intended purpose</metuc>
+	</metainfo>
+</metadata>

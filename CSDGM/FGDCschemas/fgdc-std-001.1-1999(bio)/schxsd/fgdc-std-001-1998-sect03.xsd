@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" blockDefault="#all">
+	<xs:element name="spdoinfo" type="spdoinfoType">
+		
+	</xs:element>
+	<xs:complexType name="spdoinfoType">
+		<xs:sequence>
+			<xs:element ref="indspref" minOccurs="0"/>
+			<xs:sequence minOccurs="0">
+				<xs:element ref="direct"/>
+				<xs:choice minOccurs="0">
+					<xs:element ref="ptvctinf"/>
+					<xs:element ref="rastinfo"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="indspref" type="indsprefType">
+		
+	</xs:element>
+	<xs:simpleType name="indsprefType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="direct" type="directType">
+		
+
+	</xs:element>
+	<xs:simpleType name="directType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Point"/>
+			<xs:enumeration value="Vector"/>
+			<xs:enumeration value="Raster"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="ptvctinf" type="ptvctinfType">
+		
+	</xs:element>
+	<xs:complexType name="ptvctinfType">
+		<xs:choice>
+			<xs:element ref="sdtsterm" maxOccurs="unbounded"/>
+			<xs:element ref="vpfterm"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="sdtsterm" type="sdtstermType">
+		
+	</xs:element>
+	<xs:complexType name="sdtstermType">
+		<xs:sequence>
+			<xs:element ref="sdtstype"/>
+			<xs:element ref="ptvctcnt" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="sdtstype" type="sdtstypeType">
+		
+	</xs:element>
+	<xs:simpleType name="sdtstypeType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Point"/>
+			<xs:enumeration value="Entity point"/>
+			<xs:enumeration value="Label point"/>
+			<xs:enumeration value="Area point"/>
+			<xs:enumeration value="Node, planar graph"/>
+			<xs:enumeration value="Node, network"/>
+			<xs:enumeration value="String"/>
+			<xs:enumeration value="Link"/>
+			<xs:enumeration value="Complete chain"/>
+			<xs:enumeration value="Area chain"/>
+			<xs:enumeration value="Network chain, planar graph"/>
+			<xs:enumeration value="Network chain, nonplanar graph"/>
+			<xs:enumeration value="Circular arc, three point center"/>
+			<xs:enumeration value="Elliptical arc"/>
+			<xs:enumeration value="Uniform B-spline"/>
+			<xs:enumeration value="Piecewise Bezier"/>
+			<xs:enumeration value="Ring with mixed composition"/>
+			<xs:enumeration value="Ring composed of strings"/>
+			<xs:enumeration value="Ring composed of chains"/>
+			<xs:enumeration value="Ring composed of arcs"/>
+			<xs:enumeration value="G-polygon"/>
+			<xs:enumeration value="GT-polygon composed of rings"/>
+			<xs:enumeration value="GT-polygon composed of chains"/>
+			<xs:enumeration value="Universe polygon composed of rings"/>
+			<xs:enumeration value="Universe polygon composed of chains"/>
+			<xs:enumeration value="Void polygon composed of rings"/>
+			<xs:enumeration value="Void polygon composed of chains"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="ptvctcnt" type="ptvctcntType">
+		
+	</xs:element>
+	<xs:simpleType name="ptvctcntType">
+		<xs:restriction base="xs:integer">
+			<xs:minExclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="vpfterm" type="vpftermType">
+		
+	</xs:element>
+	<xs:complexType name="vpftermType">
+		<xs:sequence>
+			<xs:element ref="vpflevel"/>
+			<xs:element ref="vpfinfo" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="vpflevel" type="vpflevelType">
+		
+	</xs:element>
+	<xs:simpleType name="vpflevelType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="vpfinfo" type="vpfinfoType">
+		
+	</xs:element>
+	<xs:complexType name="vpfinfoType">
+		<xs:sequence>
+			<xs:element ref="vpftype"/>
+			<xs:element ref="ptvctcnt" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="vpftype" type="vpftypeType">
+		
+	</xs:element>
+	<xs:simpleType name="vpftypeType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Node"/>
+			<xs:enumeration value="Edge"/>
+			<xs:enumeration value="Face"/>
+			<xs:enumeration value="Text"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="rastinfo" type="rastinfoType">
+		
+	</xs:element>
+	<xs:complexType name="rastinfoType">
+		<xs:sequence>
+			<xs:element ref="rasttype"/>
+			<xs:sequence minOccurs="0">
+				<xs:element ref="rowcount"/>
+				<xs:element ref="colcount"/>
+				<xs:element ref="vrtcount" minOccurs="0"/>
+			</xs:sequence>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="rasttype" type="rasttypeType">
+		
+	</xs:element>
+	<xs:simpleType name="rasttypeType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Point"/>
+			<xs:enumeration value="Pixel"/>
+			<xs:enumeration value="Grid Cell"/>
+			<xs:enumeration value="Voxel"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="rowcount" type="rowcountType">
+		
+	</xs:element>
+	<xs:simpleType name="rowcountType">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+	<xs:element name="colcount" type="colcountType">
+		
+	</xs:element>
+	<xs:simpleType name="colcountType">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+	<xs:element name="vrtcount" type="vrtcountType">
+		
+	</xs:element>
+	<xs:simpleType name="vrtcountType">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+</xs:schema>

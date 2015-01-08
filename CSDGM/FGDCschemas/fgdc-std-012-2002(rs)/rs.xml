@@ -1,0 +1,7541 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="q:\users\mize.jacqueline\mapping\schemas\rs.xsd">
+	<idinfo>
+		<datsetid>
+</datsetid>
+		<citation>
+			<citeinfo>
+				<origin>
+</origin>
+				<pubdate>
+</pubdate>
+				<pubtime>
+</pubtime>
+				<title>
+</title>
+				<edition>
+</edition>
+				<geoform>
+</geoform>
+				<serinfo>
+					<sername>
+</sername>
+					<issue>
+</issue>
+				</serinfo>
+				<pubinfo>
+					<pubplace>
+</pubplace>
+					<publish>
+</publish>
+				</pubinfo>
+				<othercit>
+</othercit>
+				<onlink>
+</onlink>
+				<lworkcit>
+</lworkcit>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>
+</abstract>
+			<purpose>
+</purpose>
+			<documnts>
+				<datdicrf>
+					<citeinfo>
+						<origin>
+</origin>
+						<pubdate>
+</pubdate>
+						<pubtime>
+</pubtime>
+						<title>
+</title>
+						<edition>
+</edition>
+						<geoform>
+</geoform>
+						<serinfo>
+							<sername>
+</sername>
+							<issue>
+</issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>
+</pubplace>
+							<publish>
+</publish>
+						</pubinfo>
+						<othercit>
+</othercit>
+						<onlink>
+</onlink>
+						<lworkcit>
+</lworkcit>
+					</citeinfo>
+				</datdicrf>
+				<userguid>
+					<citeinfo>
+						<origin>
+</origin>
+						<pubdate>
+</pubdate>
+						<pubtime>
+</pubtime>
+						<title>
+</title>
+						<edition>
+</edition>
+						<geoform>
+</geoform>
+						<serinfo>
+							<sername>
+</sername>
+							<issue>
+</issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>
+</pubplace>
+							<publish>
+</publish>
+						</pubinfo>
+						<othercit>
+</othercit>
+						<onlink>
+</onlink>
+						<lworkcit>
+</lworkcit>
+					</citeinfo>
+				</userguid>
+				<scipap>
+					<citeinfo>
+						<origin>
+</origin>
+						<pubdate>
+</pubdate>
+						<pubtime>
+</pubtime>
+						<title>
+</title>
+						<edition>
+</edition>
+						<geoform>
+</geoform>
+						<serinfo>
+							<sername>
+</sername>
+							<issue>
+</issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>
+</pubplace>
+							<publish>
+</publish>
+						</pubinfo>
+						<othercit>
+</othercit>
+						<onlink>
+</onlink>
+						<lworkcit>
+</lworkcit>
+					</citeinfo>
+				</scipap>
+			</documnts>
+			<supplinf>
+</supplinf>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>
+</caldate>
+					<time>
+</time>
+				</sngdate>
+				<mdattim>
+					<sngdate>
+						<caldate>
+</caldate>
+						<time>
+</time>
+					</sngdate>
+					<sngdate>
+						<caldate>
+</caldate>
+						<time>
+</time>
+					</sngdate>
+				</mdattim>
+				<rngdates>
+					<begdate>
+</begdate>
+					<begtime>
+</begtime>
+					<enddate>
+</enddate>
+					<endtime>
+</endtime>
+				</rngdates>
+			</timeinfo>
+			<current>
+</current>
+		</timeperd>
+		<status>
+			<progress>
+</progress>
+			<update>
+</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>
+</westbc>
+				<eastbc>
+</eastbc>
+				<northbc>
+</northbc>
+				<southbc>
+</southbc>
+			</bounding>
+			<dsgpoly>
+				<dsgpolyo>
+					<grngpoin>
+						<gringlat>
+</gringlat>
+						<gringlon>
+</gringlon>
+					</grngpoin>
+					<grngpoin>
+						<gringlat>
+</gringlat>
+						<gringlon>
+</gringlon>
+					</grngpoin>
+					<grngpoin>
+						<gringlat>
+</gringlat>
+						<gringlon>
+</gringlon>
+					</grngpoin>
+					<grngpoin>
+						<gringlat>
+</gringlat>
+						<gringlon>
+</gringlon>
+					</grngpoin>
+					<gring>
+</gring>
+				</dsgpolyo>
+				<dsgpolyx>
+					<grngpoin>
+						<gringlat>
+</gringlat>
+						<gringlon>
+</gringlon>
+					</grngpoin>
+					<grngpoin>
+						<gringlat>
+</gringlat>
+						<gringlon>
+</gringlon>
+					</grngpoin>
+					<grngpoin>
+						<gringlat>
+</gringlat>
+						<gringlon>
+</gringlon>
+					</grngpoin>
+					<grngpoin>
+						<gringlat>
+</gringlat>
+						<gringlon>
+</gringlon>
+					</grngpoin>
+					<gring>
+</gring>
+				</dsgpolyx>
+			</dsgpoly>
+			<frarea>
+				<frareavl>
+</frareavl>
+				<frareaun>
+</frareaun>
+			</frarea>
+			<multimal>
+				<ovlpdtid>
+					<datsetid>
+</datsetid>
+				</ovlpdtid>
+				<ovlptype>
+</ovlptype>
+				<ovlppct>
+</ovlppct>
+			</multimal>
+			<wwrefsys>
+				<wwrefpat>
+</wwrefpat>
+				<wwrefrow>
+</wwrefrow>
+			</wwrefsys>
+		</spdom>
+		<proclevl>
+			<prolevid>
+</prolevid>
+			<prolevau>
+				<citeinfo>
+					<origin>
+</origin>
+					<pubdate>
+</pubdate>
+					<pubtime>
+</pubtime>
+					<title>
+</title>
+					<edition>
+</edition>
+					<geoform>
+</geoform>
+					<serinfo>
+						<sername>
+</sername>
+						<issue>
+</issue>
+					</serinfo>
+					<pubinfo>
+						<pubplace>
+</pubplace>
+						<publish>
+</publish>
+					</pubinfo>
+					<othercit>
+</othercit>
+					<onlink>
+</onlink>
+					<lworkcit>
+</lworkcit>
+				</citeinfo>
+			</prolevau>
+		</proclevl>
+		<keywords>
+			<theme>
+				<themekt>
+</themekt>
+				<themekey>
+</themekey>
+			</theme>
+			<place>
+				<placekt>
+</placekt>
+				<placekey>
+</placekey>
+			</place>
+			<stratum>
+				<stratkt>
+</stratkt>
+				<stratkey>
+</stratkey>
+			</stratum>
+			<temporal>
+				<tempkt>
+</tempkt>
+				<tempkey>
+</tempkey>
+			</temporal>
+		</keywords>
+		<plainsid>
+			<missname>
+</missname>
+			<platflnm>
+</platflnm>
+			<platfsnm>
+</platfsnm>
+			<platfser>
+</platfser>
+			<instflnm>
+</instflnm>
+			<instshnm>
+</instshnm>
+		</plainsid>
+		<bandidnt>
+			<numbands>
+</numbands>
+			<inbident>
+				<bandid>
+</bandid>
+				<bmmodid>
+</bmmodid>
+			</inbident>
+		</bandidnt>
+		<thelayid>
+			<numthlay>
+</numthlay>
+			<layrname>
+				<theme>
+					<themekt>
+</themekt>
+					<themekey>
+</themekey>
+				</theme>
+			</layrname>
+		</thelayid>
+		<accconst>
+</accconst>
+		<useconst>
+</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>
+</cntper>
+					<cntorg>
+</cntorg>
+				</cntperp>
+				<cntorgp>
+					<cntorg>
+</cntorg>
+					<cntper>
+</cntper>
+				</cntorgp>
+				<cntpos>
+</cntpos>
+				<cntaddr>
+					<addrtype>
+</addrtype>
+					<address>
+</address>
+					<city>
+</city>
+					<state>
+</state>
+					<postal>
+</postal>
+					<country>
+</country>
+				</cntaddr>
+				<cntvoice>
+</cntvoice>
+				<cnttdd>
+</cnttdd>
+				<cntfax>
+</cntfax>
+				<cntemail>
+</cntemail>
+				<hours>
+</hours>
+				<cntinst>
+</cntinst>
+			</cntinfo>
+		</ptcontac>
+		<browse>
+			<browsen>
+</browsen>
+			<browsed>
+</browsed>
+			<browset>
+</browset>
+		</browse>
+		<datacred>
+</datacred>
+		<secinfo>
+			<secsys>
+</secsys>
+			<secclass>
+</secclass>
+			<sechandl>
+</sechandl>
+		</secinfo>
+		<native>
+</native>
+		<crossref>
+			<citeinfo>
+				<origin>
+</origin>
+				<pubdate>
+</pubdate>
+				<pubtime>
+</pubtime>
+				<title>
+</title>
+				<edition>
+</edition>
+				<geoform>
+</geoform>
+				<serinfo>
+					<sername>
+</sername>
+					<issue>
+</issue>
+				</serinfo>
+				<pubinfo>
+					<pubplace>
+</pubplace>
+					<publish>
+</publish>
+				</pubinfo>
+				<othercit>
+</othercit>
+				<onlink>
+</onlink>
+				<lworkcit>
+</lworkcit>
+			</citeinfo>
+		</crossref>
+		<agginfo>
+			<conpckid>
+				<datsetid>
+</datsetid>
+			</conpckid>
+			<compinfo>
+				<aggmemid>
+					<datsetid>
+</datsetid>
+				</aggmemid>
+				<aggcrit>
+</aggcrit>
+			</compinfo>
+		</agginfo>
+	</idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>
+</attraccr>
+			<qattracc>
+				<attraccv>
+</attraccv>
+				<attracce>
+</attracce>
+			</qattracc>
+		</attracc>
+		<logic>
+</logic>
+		<complete>
+</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>
+</horizpar>
+				<qhorizpa>
+					<horizpav>
+</horizpav>
+					<horizpae>
+</horizpae>
+				</qhorizpa>
+			</horizpa>
+			<vertacc>
+				<vertaccr>
+</vertaccr>
+				<qvertpa>
+					<vertaccv>
+</vertaccv>
+					<vertacce>
+</vertacce>
+				</qvertpa>
+			</vertacc>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>
+</origin>
+						<pubdate>
+</pubdate>
+						<pubtime>
+</pubtime>
+						<title>
+</title>
+						<edition>
+</edition>
+						<geoform>
+</geoform>
+						<serinfo>
+							<sername>
+</sername>
+							<issue>
+</issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>
+</pubplace>
+							<publish>
+</publish>
+						</pubinfo>
+						<othercit>
+</othercit>
+						<onlink>
+</onlink>
+						<lworkcit>
+</lworkcit>
+					</citeinfo>
+				</srccite>
+				<srcscale>
+</srcscale>
+				<typesrc>
+</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>
+</caldate>
+							<time>
+</time>
+						</sngdate>
+						<mdattim>
+							<sngdate>
+								<caldate>
+</caldate>
+								<time>
+</time>
+							</sngdate>
+							<sngdate>
+								<caldate>
+</caldate>
+								<time>
+</time>
+							</sngdate>
+						</mdattim>
+						<rngdates>
+							<begdate>
+</begdate>
+							<begtime>
+</begtime>
+							<enddate>
+</enddate>
+							<endtime>
+</endtime>
+						</rngdates>
+					</timeinfo>
+					<srccurr>
+</srccurr>
+				</srctime>
+				<srccitea>
+</srccitea>
+				<srccontr>
+</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>
+</procdesc>
+				<srcused>
+</srcused>
+				<procdate>
+</procdate>
+				<proctime>
+</proctime>
+				<srcprod>
+</srcprod>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>
+</cntper>
+							<cntorg>
+</cntorg>
+						</cntperp>
+						<cntorgp>
+							<cntorg>
+</cntorg>
+							<cntper>
+</cntper>
+						</cntorgp>
+						<cntpos>
+</cntpos>
+						<cntaddr>
+							<addrtype>
+</addrtype>
+							<address>
+</address>
+							<city>
+</city>
+							<state>
+</state>
+							<postal>
+</postal>
+							<country>
+</country>
+						</cntaddr>
+						<cntvoice>
+</cntvoice>
+						<cnttdd>
+</cnttdd>
+						<cntfax>
+</cntfax>
+						<cntemail>
+</cntemail>
+						<hours>
+</hours>
+						<cntinst>
+</cntinst>
+					</cntinfo>
+				</proccont>
+				<algoinfo>
+					<algoid>
+						<citeinfo>
+							<origin>
+</origin>
+							<pubdate>
+</pubdate>
+							<pubtime>
+</pubtime>
+							<title>
+</title>
+							<edition>
+</edition>
+							<geoform>
+</geoform>
+							<serinfo>
+								<sername>
+</sername>
+								<issue>
+</issue>
+							</serinfo>
+							<pubinfo>
+								<pubplace>
+</pubplace>
+								<publish>
+</publish>
+							</pubinfo>
+							<othercit>
+</othercit>
+							<onlink>
+</onlink>
+							<lworkcit>
+</lworkcit>
+						</citeinfo>
+					</algoid>
+					<algodesc>
+						<algotexd>
+</algotexd>
+						<algoref>
+							<citeinfo>
+								<origin>
+</origin>
+								<pubdate>
+</pubdate>
+								<pubtime>
+</pubtime>
+								<title>
+</title>
+								<edition>
+</edition>
+								<geoform>
+</geoform>
+								<serinfo>
+									<sername>
+</sername>
+									<issue>
+</issue>
+								</serinfo>
+								<pubinfo>
+									<pubplace>
+</pubplace>
+									<publish>
+</publish>
+								</pubinfo>
+								<othercit>
+</othercit>
+								<onlink>
+</onlink>
+								<lworkcit>
+</lworkcit>
+							</citeinfo>
+						</algoref>
+					</algodesc>
+					<algochhi>
+						<algochde>
+</algochde>
+						<algochrf>
+							<citeinfo>
+								<origin>
+</origin>
+								<pubdate>
+</pubdate>
+								<pubtime>
+</pubtime>
+								<title>
+</title>
+								<edition>
+</edition>
+								<geoform>
+</geoform>
+								<serinfo>
+									<sername>
+</sername>
+									<issue>
+</issue>
+								</serinfo>
+								<pubinfo>
+									<pubplace>
+</pubplace>
+									<publish>
+</publish>
+								</pubinfo>
+								<othercit>
+</othercit>
+								<onlink>
+</onlink>
+								<lworkcit>
+</lworkcit>
+							</citeinfo>
+						</algochrf>
+					</algochhi>
+					<algprevi>
+						<algprevd>
+</algprevd>
+						<algprevr>
+							<citeinfo>
+								<origin>
+</origin>
+								<pubdate>
+</pubdate>
+								<pubtime>
+</pubtime>
+								<title>
+</title>
+								<edition>
+</edition>
+								<geoform>
+</geoform>
+								<serinfo>
+									<sername>
+</sername>
+									<issue>
+</issue>
+								</serinfo>
+								<pubinfo>
+									<pubplace>
+</pubplace>
+									<publish>
+</publish>
+								</pubinfo>
+								<othercit>
+</othercit>
+								<onlink>
+</onlink>
+								<lworkcit>
+</lworkcit>
+							</citeinfo>
+						</algprevr>
+					</algprevi>
+				</algoinfo>
+				<procinfo>
+					<procidfs>
+						<citeinfo>
+							<origin>
+</origin>
+							<pubdate>
+</pubdate>
+							<pubtime>
+</pubtime>
+							<title>
+</title>
+							<edition>
+</edition>
+							<geoform>
+</geoform>
+							<serinfo>
+								<sername>
+</sername>
+								<issue>
+</issue>
+							</serinfo>
+							<pubinfo>
+								<pubplace>
+</pubplace>
+								<publish>
+</publish>
+							</pubinfo>
+							<othercit>
+</othercit>
+							<onlink>
+</onlink>
+							<lworkcit>
+</lworkcit>
+						</citeinfo>
+					</procidfs>
+					<procinp>
+						<inpdatid>
+							<datsetid>
+</datsetid>
+						</inpdatid>
+						<prindesc>
+</prindesc>
+						<prinref>
+							<citeinfo>
+								<origin>
+</origin>
+								<pubdate>
+</pubdate>
+								<pubtime>
+</pubtime>
+								<title>
+</title>
+								<edition>
+</edition>
+								<geoform>
+</geoform>
+								<serinfo>
+									<sername>
+</sername>
+									<issue>
+</issue>
+								</serinfo>
+								<pubinfo>
+									<pubplace>
+</pubplace>
+									<publish>
+</publish>
+								</pubinfo>
+								<othercit>
+</othercit>
+								<onlink>
+</onlink>
+								<lworkcit>
+</lworkcit>
+							</citeinfo>
+						</prinref>
+						<prinlevl>
+							<proclevl>
+								<prolevid>
+</prolevid>
+								<prolevau>
+									<citeinfo>
+										<origin>
+</origin>
+										<pubdate>
+</pubdate>
+										<pubtime>
+</pubtime>
+										<title>
+</title>
+										<edition>
+</edition>
+										<geoform>
+</geoform>
+										<serinfo>
+											<sername>
+</sername>
+											<issue>
+</issue>
+										</serinfo>
+										<pubinfo>
+											<pubplace>
+</pubplace>
+											<publish>
+</publish>
+										</pubinfo>
+										<othercit>
+</othercit>
+										<onlink>
+</onlink>
+										<lworkcit>
+</lworkcit>
+									</citeinfo>
+								</prolevau>
+							</proclevl>
+						</prinlevl>
+					</procinp>
+					<ancdata>
+						<ancdatid>
+							<datsetid>
+</datsetid>
+						</ancdatid>
+						<ancdesc>
+							<ancdsdes>
+</ancdsdes>
+							<procpmcl>
+</procpmcl>
+						</ancdesc>
+						<ancref>
+							<citeinfo>
+								<origin>
+</origin>
+								<pubdate>
+</pubdate>
+								<pubtime>
+</pubtime>
+								<title>
+</title>
+								<edition>
+</edition>
+								<geoform>
+</geoform>
+								<serinfo>
+									<sername>
+</sername>
+									<issue>
+</issue>
+								</serinfo>
+								<pubinfo>
+									<pubplace>
+</pubplace>
+									<publish>
+</publish>
+								</pubinfo>
+								<othercit>
+</othercit>
+								<onlink>
+</onlink>
+								<lworkcit>
+</lworkcit>
+							</citeinfo>
+						</ancref>
+					</ancdata>
+					<procsoft>
+						<prsodesc>
+</prsodesc>
+						<prsoref>
+							<citeinfo>
+								<origin>
+</origin>
+								<pubdate>
+</pubdate>
+								<pubtime>
+</pubtime>
+								<title>
+</title>
+								<edition>
+</edition>
+								<geoform>
+</geoform>
+								<serinfo>
+									<sername>
+</sername>
+									<issue>
+</issue>
+								</serinfo>
+								<pubinfo>
+									<pubplace>
+</pubplace>
+									<publish>
+</publish>
+								</pubinfo>
+								<othercit>
+</othercit>
+								<onlink>
+</onlink>
+								<lworkcit>
+</lworkcit>
+							</citeinfo>
+						</prsoref>
+					</procsoft>
+					<procprcd>
+						<prunhist>
+</prunhist>
+						<procenv>
+							<native>
+</native>
+						</procenv>
+						<procpdes>
+</procpdes>
+					</procprcd>
+					<procchhi>
+</procchhi>
+					<procdoc>
+						<citeinfo>
+							<origin>
+</origin>
+							<pubdate>
+</pubdate>
+							<pubtime>
+</pubtime>
+							<title>
+</title>
+							<edition>
+</edition>
+							<geoform>
+</geoform>
+							<serinfo>
+								<sername>
+</sername>
+								<issue>
+</issue>
+							</serinfo>
+							<pubinfo>
+								<pubplace>
+</pubplace>
+								<publish>
+</publish>
+							</pubinfo>
+							<othercit>
+</othercit>
+							<onlink>
+</onlink>
+							<lworkcit>
+</lworkcit>
+						</citeinfo>
+					</procdoc>
+				</procinfo>
+			</procstep>
+		</lineage>
+		<imagqual>
+</imagqual>
+		<acqinfo>
+			<satlocza>
+</satlocza>
+			<satlocaa>
+</satlocaa>
+			<solarzea>
+</solarzea>
+			<solaraza>
+</solaraza>
+			<relazi>
+</relazi>
+			<clocdrft>
+</clocdrft>
+			<ascdscin>
+</ascdscin>
+			<nadir>
+				<nadirlat>
+</nadirlat>
+				<nadirlon>
+</nadirlon>
+			</nadir>
+		</acqinfo>
+		<cloud>
+</cloud>
+	</dataqual>
+	<spdoinfo>
+		<indspref>
+</indspref>
+		<direct>
+</direct>
+		<ptvctinf>
+			<sdtsterm>
+				<sdtstype>
+</sdtstype>
+				<ptvctcnt>
+</ptvctcnt>
+			</sdtsterm>
+			<vpfterm>
+				<vpflevel>
+</vpflevel>
+				<vpfinfo>
+					<vpftype>
+</vpftype>
+					<ptvctcnt>
+</ptvctcnt>
+				</vpfinfo>
+			</vpfterm>
+		</ptvctinf>
+		<rastinfo>
+			<cvaltype>
+</cvaltype>
+			<rasttype>
+</rasttype>
+			<rowcount>
+</rowcount>
+			<colcount>
+</colcount>
+			<vrtcount>
+</vrtcount>
+			<dimdesc>
+				<nodatdim>
+</nodatdim>
+				<dimprops>
+					<namedim>
+</namedim>
+					<dimcount>
+</dimcount>
+				</dimprops>
+			</dimdesc>
+		</rastinfo>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<geograph>
+				<latres>
+</latres>
+				<longres>
+</longres>
+				<geogunit>
+</geogunit>
+			</geograph>
+			<planar>
+				<mapproj>
+					<mapprojn>
+</mapprojn>
+					<albers>
+						<stdparll>
+</stdparll>
+						<longcm>
+</longcm>
+						<latprjo>
+</latprjo>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</albers>
+					<azimequi>
+						<longcm>
+</longcm>
+						<latprjo>
+</latprjo>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</azimequi>
+					<equicon>
+						<stdparll>
+</stdparll>
+						<longcm>
+</longcm>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</equicon>
+					<equirect>
+						<stdparll>
+</stdparll>
+						<longcm>
+</longcm>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</equirect>
+					<gvnsp>
+						<heightpt>
+</heightpt>
+						<longpc>
+</longpc>
+						<latprjc>
+</latprjc>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</gvnsp>
+					<gnomonic>
+						<longpc>
+</longpc>
+						<latprjc>
+</latprjc>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</gnomonic>
+					<lamberta>
+						<longpc>
+</longpc>
+						<latprjc>
+</latprjc>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</lamberta>
+					<lambertc>
+						<stdparll>
+</stdparll>
+						<longcm>
+</longcm>
+						<latprjo>
+</latprjo>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</lambertc>
+					<mercator>
+						<stdparll>
+</stdparll>
+						<sfequat>
+</sfequat>
+						<longcm>
+</longcm>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</mercator>
+					<modsak>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</modsak>
+					<miller>
+						<longcm>
+</longcm>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</miller>
+					<obqmerc>
+						<sfctrlin>
+</sfctrlin>
+						<obqlazim>
+							<azimangl>
+</azimangl>
+							<azimptl>
+</azimptl>
+						</obqlazim>
+						<obqlpt>
+							<obqllat>
+</obqllat>
+							<obqllong>
+</obqllong>
+						</obqlpt>
+						<latprjo>
+</latprjo>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</obqmerc>
+					<orthogr>
+						<longpc>
+</longpc>
+						<latprjc>
+</latprjc>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</orthogr>
+					<polarst>
+						<svlong>
+</svlong>
+						<stdparll>
+</stdparll>
+						<sfprjorg>
+</sfprjorg>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</polarst>
+					<polycon>
+						<longcm>
+</longcm>
+						<latprjo>
+</latprjo>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</polycon>
+					<robinson>
+						<longcm>
+</longcm>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</robinson>
+					<sinusoid>
+						<longcm>
+</longcm>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</sinusoid>
+					<spaceobq>
+						<landsat>
+</landsat>
+						<pathnum>
+</pathnum>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</spaceobq>
+					<stereo>
+						<longpc>
+</longpc>
+						<latprjo>
+</latprjo>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</stereo>
+					<transmer>
+						<sfctrmer>
+</sfctrmer>
+						<longcm>
+</longcm>
+						<latprjo>
+</latprjo>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</transmer>
+					<vdgrin>
+						<longcm>
+</longcm>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+					</vdgrin>
+					<mapprojp>
+						<stdparll>
+</stdparll>
+						<longcm>
+</longcm>
+						<latprjo>
+</latprjo>
+						<feast>
+</feast>
+						<fnorth>
+</fnorth>
+						<sfequat>
+</sfequat>
+						<heightpt>
+</heightpt>
+						<longpc>
+</longpc>
+						<latprjc>
+</latprjc>
+						<sfctrlin>
+</sfctrlin>
+						<obqlazim>
+							<azimangl>
+</azimangl>
+							<azimptl>
+</azimptl>
+						</obqlazim>
+						<obqlpt>
+							<obqllat>
+</obqllat>
+							<obqllong>
+</obqllong>
+						</obqlpt>
+						<svlong>
+</svlong>
+						<sfprjorg>
+</sfprjorg>
+						<landsat>
+</landsat>
+						<pathnum>
+</pathnum>
+						<sfctrmer>
+</sfctrmer>
+						<otherprj>
+</otherprj>
+					</mapprojp>
+				</mapproj>
+				<gridsys>
+					<gridsysn>
+</gridsysn>
+					<utm>
+						<utmzone>
+</utmzone>
+						<transmer>
+							<sfctrmer>
+</sfctrmer>
+							<longcm>
+</longcm>
+							<latprjo>
+</latprjo>
+							<feast>
+</feast>
+							<fnorth>
+</fnorth>
+						</transmer>
+					</utm>
+					<ups>
+						<upszone>
+</upszone>
+						<polarst>
+							<svlong>
+</svlong>
+							<stdparll>
+</stdparll>
+							<sfprjorg>
+</sfprjorg>
+							<feast>
+</feast>
+							<fnorth>
+</fnorth>
+						</polarst>
+					</ups>
+					<spcs>
+						<spcszone>
+</spcszone>
+						<lambertc>
+							<stdparll>
+</stdparll>
+							<longcm>
+</longcm>
+							<latprjo>
+</latprjo>
+							<feast>
+</feast>
+							<fnorth>
+</fnorth>
+						</lambertc>
+						<transmer>
+							<sfctrmer>
+</sfctrmer>
+							<longcm>
+</longcm>
+							<latprjo>
+</latprjo>
+							<feast>
+</feast>
+							<fnorth>
+</fnorth>
+						</transmer>
+						<obqmerc>
+							<sfctrlin>
+</sfctrlin>
+							<obqlazim>
+								<azimangl>
+</azimangl>
+								<azimptl>
+</azimptl>
+							</obqlazim>
+							<obqlpt>
+								<obqllat>
+</obqllat>
+								<obqllong>
+</obqllong>
+							</obqlpt>
+							<latprjo>
+</latprjo>
+							<feast>
+</feast>
+							<fnorth>
+</fnorth>
+						</obqmerc>
+						<polycon>
+							<longcm>
+</longcm>
+							<latprjo>
+</latprjo>
+							<feast>
+</feast>
+							<fnorth>
+</fnorth>
+						</polycon>
+					</spcs>
+					<arcsys>
+						<arczone>
+</arczone>
+						<equirect>
+							<stdparll>
+</stdparll>
+							<longcm>
+</longcm>
+							<feast>
+</feast>
+							<fnorth>
+</fnorth>
+						</equirect>
+						<azimequi>
+							<longcm>
+</longcm>
+							<latprjo>
+</latprjo>
+							<feast>
+</feast>
+							<fnorth>
+</fnorth>
+						</azimequi>
+					</arcsys>
+					<othergrd>
+</othergrd>
+				</gridsys>
+				<localp>
+					<localpd>
+</localpd>
+					<localpgi>
+</localpgi>
+				</localp>
+				<planci>
+					<plance>
+</plance>
+					<coordrep>
+						<absres>
+</absres>
+						<ordres>
+</ordres>
+					</coordrep>
+					<distbrep>
+						<distres>
+</distres>
+						<bearres>
+</bearres>
+						<bearunit>
+</bearunit>
+						<bearrefd>
+</bearrefd>
+						<bearrefm>
+</bearrefm>
+					</distbrep>
+					<plandu>
+</plandu>
+				</planci>
+			</planar>
+			<local>
+				<localdes>
+</localdes>
+				<localgeo>
+</localgeo>
+			</local>
+			<geodetic>
+				<horizdn>
+</horizdn>
+				<ellips>
+</ellips>
+				<semiaxis>
+</semiaxis>
+				<denflat>
+</denflat>
+			</geodetic>
+		</horizsys>
+		<vertdef>
+			<altsys>
+				<altdatum>
+</altdatum>
+				<altres>
+</altres>
+				<altunits>
+</altunits>
+				<altlayer>
+</altlayer>
+				<altenc>
+</altenc>
+			</altsys>
+			<depthsys>
+				<depthdn>
+</depthdn>
+				<depthres>
+</depthres>
+				<depthdu>
+</depthdu>
+				<depthem>
+</depthem>
+			</depthsys>
+		</vertdef>
+		<georefin>
+			<georecra>
+				<pixlreso>
+					<coordrep>
+						<absres>
+</absres>
+						<ordres>
+</ordres>
+					</coordrep>
+					<plandu>
+</plandu>
+				</pixlreso>
+				<gridinit>
+					<grinitx>
+</grinitx>
+					<grinity>
+</grinity>
+				</gridinit>
+				<gridori>
+					<rowdeltx>
+</rowdeltx>
+					<rowdelty>
+</rowdelty>
+					<coldeltx>
+</coldeltx>
+					<coldelty>
+</coldelty>
+				</gridori>
+				<ptpos>
+</ptpos>
+				<storord>
+</storord>
+			</georecra>
+			<georbler>
+				<georefde>
+					<gcptinfo>
+						<gcporg>
+</gcporg>
+						<gcptdesc>
+							<gcptype>
+</gcptype>
+							<gcpori>
+</gcpori>
+							<gcpusefl>
+</gcpusefl>
+							<gcpxaccu>
+</gcpxaccu>
+							<gcpyaccu>
+</gcpyaccu>
+							<gcpzaccu>
+</gcpzaccu>
+						</gcptdesc>
+						<gcptpos>
+							<conptrpo>
+								<gcprow>
+</gcprow>
+								<gcpcolum>
+</gcpcolum>
+							</conptrpo>
+							<gcpearlc>
+								<gcpxval>
+</gcpxval>
+								<gcpyval>
+</gcpyval>
+								<gcpzval>
+</gcpzval>
+							</gcpearlc>
+							<gcpidnt>
+								<gcpid>
+</gcpid>
+								<gcpauth>
+									<cntinfo>
+										<cntperp>
+											<cntper>
+</cntper>
+											<cntorg>
+</cntorg>
+										</cntperp>
+										<cntorgp>
+											<cntorg>
+</cntorg>
+											<cntper>
+</cntper>
+										</cntorgp>
+										<cntpos>
+</cntpos>
+										<cntaddr>
+											<addrtype>
+</addrtype>
+											<address>
+</address>
+											<city>
+</city>
+											<state>
+</state>
+											<postal>
+</postal>
+											<country>
+</country>
+										</cntaddr>
+										<cntvoice>
+</cntvoice>
+										<cnttdd>
+</cnttdd>
+										<cntfax>
+</cntfax>
+										<cntemail>
+</cntemail>
+										<hours>
+</hours>
+										<cntinst>
+</cntinst>
+									</cntinfo>
+								</gcpauth>
+							</gcpidnt>
+						</gcptpos>
+					</gcptinfo>
+					<insspgeo>
+						<posiinfo>
+							<prjcxpos>
+</prjcxpos>
+							<prjcypos>
+</prjcypos>
+							<prjczpos>
+</prjczpos>
+							<omegarll>
+</omegarll>
+							<phipitch>
+</phipitch>
+							<kappayaw>
+</kappayaw>
+							<attanglu>
+</attanglu>
+						</posiinfo>
+						<accexori>
+							<accxpos>
+</accxpos>
+							<accypos>
+</accypos>
+							<acczpos>
+</acczpos>
+							<accomega>
+</accomega>
+							<accphi>
+</accphi>
+							<acckappa>
+</acckappa>
+						</accexori>
+						<pcrotseq>
+</pcrotseq>
+						<axrotcon>
+</axrotcon>
+					</insspgeo>
+					<refrpoly>
+						<polyfunc>
+							<polynume>
+								<nnumterm>
+</nnumterm>
+								<polycoef>
+</polycoef>
+							</polynume>
+							<polydeno>
+								<ndenterm>
+</ndenterm>
+								<polycoef>
+</polycoef>
+							</polydeno>
+						</polyfunc>
+					</refrpoly>
+					<othrefde>
+</othrefde>
+				</georefde>
+				<aerotref>
+					<citeinfo>
+						<origin>
+</origin>
+						<pubdate>
+</pubdate>
+						<pubtime>
+</pubtime>
+						<title>
+</title>
+						<edition>
+</edition>
+						<geoform>
+</geoform>
+						<serinfo>
+							<sername>
+</sername>
+							<issue>
+</issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>
+</pubplace>
+							<publish>
+</publish>
+						</pubinfo>
+						<othercit>
+</othercit>
+						<onlink>
+</onlink>
+						<lworkcit>
+</lworkcit>
+					</citeinfo>
+				</aerotref>
+				<swtrkinf>
+					<grndshpe>
+</grndshpe>
+					<xtrckmot>
+</xtrckmot>
+				</swtrkinf>
+			</georbler>
+		</georefin>
+	</spref>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>
+</enttypl>
+				<enttypd>
+</enttypd>
+				<enttypds>
+</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>
+</attrlabl>
+				<attrdef>
+</attrdef>
+				<attrdefs>
+</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>
+</edomv>
+						<edomvd>
+</edomvd>
+						<edomvds>
+</edomvds>
+					</edom>
+					<rdom>
+						<rdommin>
+</rdommin>
+						<rdommax>
+</rdommax>
+						<attrunit>
+</attrunit>
+						<attrmres>
+</attrmres>
+					</rdom>
+					<codesetd>
+						<codesetn>
+</codesetn>
+						<codesets>
+</codesets>
+					</codesetd>
+					<udom>
+</udom>
+					<datascal>
+						<polyfunc>
+							<polynume>
+								<nnumterm>
+</nnumterm>
+								<polycoef>
+</polycoef>
+							</polynume>
+							<polydeno>
+								<ndenterm>
+</ndenterm>
+								<polycoef>
+</polycoef>
+							</polydeno>
+						</polyfunc>
+						<npolscal>
+</npolscal>
+					</datascal>
+				</attrdomv>
+				<begdatea>
+</begdatea>
+				<enddatea>
+</enddatea>
+				<attrvai>
+					<attrva>
+</attrva>
+					<attrvae>
+</attrvae>
+				</attrvai>
+				<attrmfrq>
+</attrmfrq>
+			</attr>
+		</detailed>
+		<overview>
+			<eaover>
+</eaover>
+			<eadetcit>
+</eadetcit>
+		</overview>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>
+</cntper>
+					<cntorg>
+</cntorg>
+				</cntperp>
+				<cntorgp>
+					<cntorg>
+</cntorg>
+					<cntper>
+</cntper>
+				</cntorgp>
+				<cntpos>
+</cntpos>
+				<cntaddr>
+					<addrtype>
+</addrtype>
+					<address>
+</address>
+					<city>
+</city>
+					<state>
+</state>
+					<postal>
+</postal>
+					<country>
+</country>
+				</cntaddr>
+				<cntvoice>
+</cntvoice>
+				<cnttdd>
+</cnttdd>
+				<cntfax>
+</cntfax>
+				<cntemail>
+</cntemail>
+				<hours>
+</hours>
+				<cntinst>
+</cntinst>
+			</cntinfo>
+		</distrib>
+		<resdesc>
+</resdesc>
+		<distliab>
+</distliab>
+		<stdorder>
+			<nondig>
+</nondig>
+			<digform>
+				<digtinfo>
+					<formname>
+</formname>
+					<formvern>
+</formvern>
+					<formverd>
+</formverd>
+					<formspec>
+</formspec>
+					<formcont>
+</formcont>
+					<filedec>
+</filedec>
+					<transize>
+</transize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>
+</networkr>
+							</networka>
+							<dialinst>
+								<lowbps>
+</lowbps>
+								<highbps>
+</highbps>
+								<numdata>
+</numdata>
+								<numstop>
+</numstop>
+								<parity>
+</parity>
+								<compress>
+</compress>
+								<dialtel>
+</dialtel>
+								<dialfile>
+</dialfile>
+							</dialinst>
+						</computer>
+						<accinstr>
+</accinstr>
+						<oncomp>
+</oncomp>
+					</onlinopt>
+					<offoptn>
+						<offmedia>
+</offmedia>
+						<reccap>
+							<recden>
+</recden>
+							<recdenu>
+</recdenu>
+						</reccap>
+						<recfmt>
+</recfmt>
+						<compat>
+</compat>
+					</offoptn>
+				</digtopt>
+			</digform>
+			<fees>
+</fees>
+			<ordering>
+</ordering>
+			<turnarnd>
+</turnarnd>
+		</stdorder>
+		<custom>
+</custom>
+		<techpreq>
+</techpreq>
+		<availabl>
+			<timeinfo>
+				<sngdate>
+					<caldate>
+</caldate>
+					<time>
+</time>
+				</sngdate>
+				<mdattim>
+					<sngdate>
+						<caldate>
+</caldate>
+						<time>
+</time>
+					</sngdate>
+					<sngdate>
+						<caldate>
+</caldate>
+						<time>
+</time>
+					</sngdate>
+				</mdattim>
+				<rngdates>
+					<begdate>
+</begdate>
+					<begtime>
+</begtime>
+					<enddate>
+</enddate>
+					<endtime>
+</endtime>
+				</rngdates>
+			</timeinfo>
+		</availabl>
+	</distinfo>
+	<metainfo>
+		<metd>
+</metd>
+		<metrd>
+</metrd>
+		<metfrd>
+</metfrd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>
+</cntper>
+					<cntorg>
+</cntorg>
+				</cntperp>
+				<cntorgp>
+					<cntorg>
+</cntorg>
+					<cntper>
+</cntper>
+				</cntorgp>
+				<cntpos>
+</cntpos>
+				<cntaddr>
+					<addrtype>
+</addrtype>
+					<address>
+</address>
+					<city>
+</city>
+					<state>
+</state>
+					<postal>
+</postal>
+					<country>
+</country>
+				</cntaddr>
+				<cntvoice>
+</cntvoice>
+				<cnttdd>
+</cnttdd>
+				<cntfax>
+</cntfax>
+				<cntemail>
+</cntemail>
+				<hours>
+</hours>
+				<cntinst>
+</cntinst>
+			</cntinfo>
+		</metc>
+		<metstdn>
+</metstdn>
+		<metstdv>
+</metstdv>
+		<mettc>
+</mettc>
+		<metac>
+</metac>
+		<metuc>
+</metuc>
+		<metsi>
+			<metscs>
+</metscs>
+			<metsc>
+</metsc>
+			<metshd>
+</metshd>
+		</metsi>
+		<metextns>
+			<onlink>
+</onlink>
+			<metprof>
+</metprof>
+		</metextns>
+	</metainfo>
+	<plmiinfo>
+		<missinfo>
+			<missdesc>
+</missdesc>
+			<misshist>
+				<missstdt>
+					<sngdate>
+						<caldate>
+</caldate>
+						<time>
+</time>
+					</sngdate>
+				</missstdt>
+				<misssige>
+					<procstep>
+						<procdesc>
+</procdesc>
+						<srcused>
+</srcused>
+						<procdate>
+</procdate>
+						<proctime>
+</proctime>
+						<srcprod>
+</srcprod>
+						<proccont>
+							<cntinfo>
+								<cntperp>
+									<cntper>
+</cntper>
+									<cntorg>
+</cntorg>
+								</cntperp>
+								<cntorgp>
+									<cntorg>
+</cntorg>
+									<cntper>
+</cntper>
+								</cntorgp>
+								<cntpos>
+</cntpos>
+								<cntaddr>
+									<addrtype>
+</addrtype>
+									<address>
+</address>
+									<city>
+</city>
+									<state>
+</state>
+									<postal>
+</postal>
+									<country>
+</country>
+								</cntaddr>
+								<cntvoice>
+</cntvoice>
+								<cnttdd>
+</cnttdd>
+								<cntfax>
+</cntfax>
+								<cntemail>
+</cntemail>
+								<hours>
+</hours>
+								<cntinst>
+</cntinst>
+							</cntinfo>
+						</proccont>
+						<algoinfo>
+							<algoid>
+								<citeinfo>
+									<origin>
+</origin>
+									<pubdate>
+</pubdate>
+									<pubtime>
+</pubtime>
+									<title>
+</title>
+									<edition>
+</edition>
+									<geoform>
+</geoform>
+									<serinfo>
+										<sername>
+</sername>
+										<issue>
+</issue>
+									</serinfo>
+									<pubinfo>
+										<pubplace>
+</pubplace>
+										<publish>
+</publish>
+									</pubinfo>
+									<othercit>
+</othercit>
+									<onlink>
+</onlink>
+									<lworkcit>
+</lworkcit>
+								</citeinfo>
+							</algoid>
+							<algodesc>
+								<algotexd>
+</algotexd>
+								<algoref>
+									<citeinfo>
+										<origin>
+</origin>
+										<pubdate>
+</pubdate>
+										<pubtime>
+</pubtime>
+										<title>
+</title>
+										<edition>
+</edition>
+										<geoform>
+</geoform>
+										<serinfo>
+											<sername>
+</sername>
+											<issue>
+</issue>
+										</serinfo>
+										<pubinfo>
+											<pubplace>
+</pubplace>
+											<publish>
+</publish>
+										</pubinfo>
+										<othercit>
+</othercit>
+										<onlink>
+</onlink>
+										<lworkcit>
+</lworkcit>
+									</citeinfo>
+								</algoref>
+							</algodesc>
+							<algochhi>
+								<algochde>
+</algochde>
+								<algochrf>
+									<citeinfo>
+										<origin>
+</origin>
+										<pubdate>
+</pubdate>
+										<pubtime>
+</pubtime>
+										<title>
+</title>
+										<edition>
+</edition>
+										<geoform>
+</geoform>
+										<serinfo>
+											<sername>
+</sername>
+											<issue>
+</issue>
+										</serinfo>
+										<pubinfo>
+											<pubplace>
+</pubplace>
+											<publish>
+</publish>
+										</pubinfo>
+										<othercit>
+</othercit>
+										<onlink>
+</onlink>
+										<lworkcit>
+</lworkcit>
+									</citeinfo>
+								</algochrf>
+							</algochhi>
+							<algprevi>
+								<algprevd>
+</algprevd>
+								<algprevr>
+									<citeinfo>
+										<origin>
+</origin>
+										<pubdate>
+</pubdate>
+										<pubtime>
+</pubtime>
+										<title>
+</title>
+										<edition>
+</edition>
+										<geoform>
+</geoform>
+										<serinfo>
+											<sername>
+</sername>
+											<issue>
+</issue>
+										</serinfo>
+										<pubinfo>
+											<pubplace>
+</pubplace>
+											<publish>
+</publish>
+										</pubinfo>
+										<othercit>
+</othercit>
+										<onlink>
+</onlink>
+										<lworkcit>
+</lworkcit>
+									</citeinfo>
+								</algprevr>
+							</algprevi>
+						</algoinfo>
+						<procinfo>
+							<procidfs>
+								<citeinfo>
+									<origin>
+</origin>
+									<pubdate>
+</pubdate>
+									<pubtime>
+</pubtime>
+									<title>
+</title>
+									<edition>
+</edition>
+									<geoform>
+</geoform>
+									<serinfo>
+										<sername>
+</sername>
+										<issue>
+</issue>
+									</serinfo>
+									<pubinfo>
+										<pubplace>
+</pubplace>
+										<publish>
+</publish>
+									</pubinfo>
+									<othercit>
+</othercit>
+									<onlink>
+</onlink>
+									<lworkcit>
+</lworkcit>
+								</citeinfo>
+							</procidfs>
+							<procinp>
+								<inpdatid>
+									<datsetid>
+</datsetid>
+								</inpdatid>
+								<prindesc>
+</prindesc>
+								<prinref>
+									<citeinfo>
+										<origin>
+</origin>
+										<pubdate>
+</pubdate>
+										<pubtime>
+</pubtime>
+										<title>
+</title>
+										<edition>
+</edition>
+										<geoform>
+</geoform>
+										<serinfo>
+											<sername>
+</sername>
+											<issue>
+</issue>
+										</serinfo>
+										<pubinfo>
+											<pubplace>
+</pubplace>
+											<publish>
+</publish>
+										</pubinfo>
+										<othercit>
+</othercit>
+										<onlink>
+</onlink>
+										<lworkcit>
+</lworkcit>
+									</citeinfo>
+								</prinref>
+								<prinlevl>
+									<proclevl>
+										<prolevid>
+</prolevid>
+										<prolevau>
+											<citeinfo>
+												<origin>
+</origin>
+												<pubdate>
+</pubdate>
+												<pubtime>
+</pubtime>
+												<title>
+</title>
+												<edition>
+</edition>
+												<geoform>
+</geoform>
+												<serinfo>
+													<sername>
+</sername>
+													<issue>
+</issue>
+												</serinfo>
+												<pubinfo>
+													<pubplace>
+</pubplace>
+													<publish>
+</publish>
+												</pubinfo>
+												<othercit>
+</othercit>
+												<onlink>
+</onlink>
+												<lworkcit>
+</lworkcit>
+											</citeinfo>
+										</prolevau>
+									</proclevl>
+								</prinlevl>
+							</procinp>
+							<ancdata>
+								<ancdatid>
+									<datsetid>
+</datsetid>
+								</ancdatid>
+								<ancdesc>
+									<ancdsdes>
+</ancdsdes>
+									<procpmcl>
+</procpmcl>
+								</ancdesc>
+								<ancref>
+									<citeinfo>
+										<origin>
+</origin>
+										<pubdate>
+</pubdate>
+										<pubtime>
+</pubtime>
+										<title>
+</title>
+										<edition>
+</edition>
+										<geoform>
+</geoform>
+										<serinfo>
+											<sername>
+</sername>
+											<issue>
+</issue>
+										</serinfo>
+										<pubinfo>
+											<pubplace>
+</pubplace>
+											<publish>
+</publish>
+										</pubinfo>
+										<othercit>
+</othercit>
+										<onlink>
+</onlink>
+										<lworkcit>
+</lworkcit>
+									</citeinfo>
+								</ancref>
+							</ancdata>
+							<procsoft>
+								<prsodesc>
+</prsodesc>
+								<prsoref>
+									<citeinfo>
+										<origin>
+</origin>
+										<pubdate>
+</pubdate>
+										<pubtime>
+</pubtime>
+										<title>
+</title>
+										<edition>
+</edition>
+										<geoform>
+</geoform>
+										<serinfo>
+											<sername>
+</sername>
+											<issue>
+</issue>
+										</serinfo>
+										<pubinfo>
+											<pubplace>
+</pubplace>
+											<publish>
+</publish>
+										</pubinfo>
+										<othercit>
+</othercit>
+										<onlink>
+</onlink>
+										<lworkcit>
+</lworkcit>
+									</citeinfo>
+								</prsoref>
+							</procsoft>
+							<procprcd>
+								<prunhist>
+</prunhist>
+								<procenv>
+									<native>
+</native>
+								</procenv>
+								<procpdes>
+</procpdes>
+							</procprcd>
+							<procchhi>
+</procchhi>
+							<procdoc>
+								<citeinfo>
+									<origin>
+</origin>
+									<pubdate>
+</pubdate>
+									<pubtime>
+</pubtime>
+									<title>
+</title>
+									<edition>
+</edition>
+									<geoform>
+</geoform>
+									<serinfo>
+										<sername>
+</sername>
+										<issue>
+</issue>
+									</serinfo>
+									<pubinfo>
+										<pubplace>
+</pubplace>
+										<publish>
+</publish>
+									</pubinfo>
+									<othercit>
+</othercit>
+									<onlink>
+</onlink>
+									<lworkcit>
+</lworkcit>
+								</citeinfo>
+							</procdoc>
+						</procinfo>
+					</procstep>
+				</misssige>
+				<misscomp>
+					<sngdate>
+						<caldate>
+</caldate>
+						<time>
+</time>
+					</sngdate>
+				</misscomp>
+			</misshist>
+		</missinfo>
+		<platinfo>
+			<platstdt>
+				<sngdate>
+					<caldate>
+</caldate>
+					<time>
+</time>
+				</sngdate>
+			</platstdt>
+			<platspon>
+</platspon>
+			<platdesc>
+</platdesc>
+			<platforb>
+				<ephem>
+					<sngdate>
+						<caldate>
+</caldate>
+						<time>
+</time>
+					</sngdate>
+				</ephem>
+				<kepleror>
+					<semimaax>
+</semimaax>
+					<orbitpd>
+						<orpdunit>
+</orpdunit>
+						<orpdval>
+</orpdval>
+					</orbitpd>
+					<eccentry>
+</eccentry>
+					<orbangun>
+</orbangun>
+					<inclinat>
+</inclinat>
+					<raascnod>
+</raascnod>
+					<argupgee>
+</argupgee>
+					<peripass>
+						<sngdate>
+							<caldate>
+</caldate>
+							<time>
+</time>
+						</sngdate>
+					</peripass>
+				</kepleror>
+				<ngeopos>
+					<pnomlong>
+</pnomlong>
+					<gpnalti>
+						<gpnaltun>
+							<altunits>
+</altunits>
+						</gpnaltun>
+						<gpnaltva>
+</gpnaltva>
+					</gpnalti>
+				</ngeopos>
+			</platforb>
+			<fltprot>
+				<flyhite>
+</flyhite>
+				<gpsavail>
+</gpsavail>
+				<insavail>
+</insavail>
+			</fltprot>
+		</platinfo>
+	</plmiinfo>
+	<instinfo>
+		<instdesc>
+			<insttyp>
+</insttyp>
+			<opmode>
+</opmode>
+			<colltype>
+</colltype>
+			<orininfo>
+				<axes>
+					<xaxisdef>
+</xaxisdef>
+					<yaxisdef>
+</yaxisdef>
+					<zaxisdef>
+</zaxisdef>
+				</axes>
+				<rotdesc>
+</rotdesc>
+				<trandesc>
+</trandesc>
+			</orininfo>
+			<frame>
+				<fcamhwar>
+					<camtype>
+</camtype>
+					<camident>
+</camident>
+					<lens>
+						<lenstype>
+</lenstype>
+						<lensidnt>
+</lensidnt>
+					</lens>
+					<magident>
+</magident>
+					<filmtype>
+</filmtype>
+					<afspeed>
+</afspeed>
+					<eafspeed>
+</eafspeed>
+					<develop>
+						<cntinfo>
+							<cntperp>
+								<cntper>
+</cntper>
+								<cntorg>
+</cntorg>
+							</cntperp>
+							<cntorgp>
+								<cntorg>
+</cntorg>
+								<cntper>
+</cntper>
+							</cntorgp>
+							<cntpos>
+</cntpos>
+							<cntaddr>
+								<addrtype>
+</addrtype>
+								<address>
+</address>
+								<city>
+</city>
+								<state>
+</state>
+								<postal>
+</postal>
+								<country>
+</country>
+							</cntaddr>
+							<cntvoice>
+</cntvoice>
+							<cnttdd>
+</cnttdd>
+							<cntfax>
+</cntfax>
+							<cntemail>
+</cntemail>
+							<hours>
+</hours>
+							<cntinst>
+</cntinst>
+						</cntinfo>
+					</develop>
+				</fcamhwar>
+				<fcamoptc>
+					<phorespo>
+						<nresval>
+</nresval>
+						<phoreset>
+							<resangle>
+</resangle>
+							<resrad>
+</resrad>
+							<restang>
+</restang>
+						</phoreset>
+						<awar>
+</awar>
+					</phorespo>
+					<relaper>
+</relaper>
+					<expotime>
+</expotime>
+					<calfocl>
+</calfocl>
+					<quafocl>
+</quafocl>
+					<lastcali>
+						<datlcali>
+</datlcali>
+						<metlcali>
+</metlcali>
+						<inslcali>
+</inslcali>
+					</lastcali>
+				</fcamoptc>
+				<framegeo>
+					<imsize>
+						<imsizex>
+</imsizex>
+						<imsizey>
+</imsizey>
+					</imsize>
+					<fcfid>
+						<locainfo>
+							<numpoint>
+</numpoint>
+							<coordsys>
+								<unrefsys>
+</unrefsys>
+								<refsys>
+									<spref>
+										<horizsys>
+											<geograph>
+												<latres>
+</latres>
+												<longres>
+</longres>
+												<geogunit>
+</geogunit>
+											</geograph>
+											<planar>
+												<mapproj>
+													<mapprojn>
+</mapprojn>
+													<albers>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</albers>
+													<azimequi>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</azimequi>
+													<equicon>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equicon>
+													<equirect>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equirect>
+													<gvnsp>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gvnsp>
+													<gnomonic>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gnomonic>
+													<lamberta>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lamberta>
+													<lambertc>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lambertc>
+													<mercator>
+														<stdparll>
+</stdparll>
+														<sfequat>
+</sfequat>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</mercator>
+													<modsak>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</modsak>
+													<miller>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</miller>
+													<obqmerc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</obqmerc>
+													<orthogr>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</orthogr>
+													<polarst>
+														<svlong>
+</svlong>
+														<stdparll>
+</stdparll>
+														<sfprjorg>
+</sfprjorg>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polarst>
+													<polycon>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polycon>
+													<robinson>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</robinson>
+													<sinusoid>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</sinusoid>
+													<spaceobq>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</spaceobq>
+													<stereo>
+														<longpc>
+</longpc>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</stereo>
+													<transmer>
+														<sfctrmer>
+</sfctrmer>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</transmer>
+													<vdgrin>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</vdgrin>
+													<mapprojp>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+														<sfequat>
+</sfequat>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<svlong>
+</svlong>
+														<sfprjorg>
+</sfprjorg>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<sfctrmer>
+</sfctrmer>
+														<otherprj>
+</otherprj>
+													</mapprojp>
+												</mapproj>
+												<gridsys>
+													<gridsysn>
+</gridsysn>
+													<utm>
+														<utmzone>
+</utmzone>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+													</utm>
+													<ups>
+														<upszone>
+</upszone>
+														<polarst>
+															<svlong>
+</svlong>
+															<stdparll>
+</stdparll>
+															<sfprjorg>
+</sfprjorg>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polarst>
+													</ups>
+													<spcs>
+														<spcszone>
+</spcszone>
+														<lambertc>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</lambertc>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+														<obqmerc>
+															<sfctrlin>
+</sfctrlin>
+															<obqlazim>
+																<azimangl>
+</azimangl>
+																<azimptl>
+</azimptl>
+															</obqlazim>
+															<obqlpt>
+																<obqllat>
+</obqllat>
+																<obqllong>
+</obqllong>
+															</obqlpt>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</obqmerc>
+														<polycon>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polycon>
+													</spcs>
+													<arcsys>
+														<arczone>
+</arczone>
+														<equirect>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</equirect>
+														<azimequi>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</azimequi>
+													</arcsys>
+													<othergrd>
+</othergrd>
+												</gridsys>
+												<localp>
+													<localpd>
+</localpd>
+													<localpgi>
+</localpgi>
+												</localp>
+												<planci>
+													<plance>
+</plance>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<distbrep>
+														<distres>
+</distres>
+														<bearres>
+</bearres>
+														<bearunit>
+</bearunit>
+														<bearrefd>
+</bearrefd>
+														<bearrefm>
+</bearrefm>
+													</distbrep>
+													<plandu>
+</plandu>
+												</planci>
+											</planar>
+											<local>
+												<localdes>
+</localdes>
+												<localgeo>
+</localgeo>
+											</local>
+											<geodetic>
+												<horizdn>
+</horizdn>
+												<ellips>
+</ellips>
+												<semiaxis>
+</semiaxis>
+												<denflat>
+</denflat>
+											</geodetic>
+										</horizsys>
+										<vertdef>
+											<altsys>
+												<altdatum>
+</altdatum>
+												<altres>
+</altres>
+												<altunits>
+</altunits>
+												<altlayer>
+</altlayer>
+												<altenc>
+</altenc>
+											</altsys>
+											<depthsys>
+												<depthdn>
+</depthdn>
+												<depthres>
+</depthres>
+												<depthdu>
+</depthdu>
+												<depthem>
+</depthem>
+											</depthsys>
+										</vertdef>
+										<georefin>
+											<georecra>
+												<pixlreso>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<plandu>
+</plandu>
+												</pixlreso>
+												<gridinit>
+													<grinitx>
+</grinitx>
+													<grinity>
+</grinity>
+												</gridinit>
+												<gridori>
+													<rowdeltx>
+</rowdeltx>
+													<rowdelty>
+</rowdelty>
+													<coldeltx>
+</coldeltx>
+													<coldelty>
+</coldelty>
+												</gridori>
+												<ptpos>
+</ptpos>
+												<storord>
+</storord>
+											</georecra>
+											<georbler>
+												<georefde>
+													<gcptinfo>
+														<gcporg>
+</gcporg>
+														<gcptdesc>
+															<gcptype>
+</gcptype>
+															<gcpori>
+</gcpori>
+															<gcpusefl>
+</gcpusefl>
+															<gcpxaccu>
+</gcpxaccu>
+															<gcpyaccu>
+</gcpyaccu>
+															<gcpzaccu>
+</gcpzaccu>
+														</gcptdesc>
+														<gcptpos>
+															<conptrpo>
+																<gcprow>
+</gcprow>
+																<gcpcolum>
+</gcpcolum>
+															</conptrpo>
+															<gcpearlc>
+																<gcpxval>
+</gcpxval>
+																<gcpyval>
+</gcpyval>
+																<gcpzval>
+</gcpzval>
+															</gcpearlc>
+															<gcpidnt>
+																<gcpid>
+</gcpid>
+																<gcpauth>
+																	<cntinfo>
+																		<cntperp>
+																			<cntper>
+</cntper>
+																			<cntorg>
+</cntorg>
+																		</cntperp>
+																		<cntorgp>
+																			<cntorg>
+</cntorg>
+																			<cntper>
+</cntper>
+																		</cntorgp>
+																		<cntpos>
+</cntpos>
+																		<cntaddr>
+																			<addrtype>
+</addrtype>
+																			<address>
+</address>
+																			<city>
+</city>
+																			<state>
+</state>
+																			<postal>
+</postal>
+																			<country>
+</country>
+																		</cntaddr>
+																		<cntvoice>
+</cntvoice>
+																		<cnttdd>
+</cnttdd>
+																		<cntfax>
+</cntfax>
+																		<cntemail>
+</cntemail>
+																		<hours>
+</hours>
+																		<cntinst>
+</cntinst>
+																	</cntinfo>
+																</gcpauth>
+															</gcpidnt>
+														</gcptpos>
+													</gcptinfo>
+													<insspgeo>
+														<posiinfo>
+															<prjcxpos>
+</prjcxpos>
+															<prjcypos>
+</prjcypos>
+															<prjczpos>
+</prjczpos>
+															<omegarll>
+</omegarll>
+															<phipitch>
+</phipitch>
+															<kappayaw>
+</kappayaw>
+															<attanglu>
+</attanglu>
+														</posiinfo>
+														<accexori>
+															<accxpos>
+</accxpos>
+															<accypos>
+</accypos>
+															<acczpos>
+</acczpos>
+															<accomega>
+</accomega>
+															<accphi>
+</accphi>
+															<acckappa>
+</acckappa>
+														</accexori>
+														<pcrotseq>
+</pcrotseq>
+														<axrotcon>
+</axrotcon>
+													</insspgeo>
+													<refrpoly>
+														<polyfunc>
+															<polynume>
+																<nnumterm>
+</nnumterm>
+																<polycoef>
+</polycoef>
+															</polynume>
+															<polydeno>
+																<ndenterm>
+</ndenterm>
+																<polycoef>
+</polycoef>
+															</polydeno>
+														</polyfunc>
+													</refrpoly>
+													<othrefde>
+</othrefde>
+												</georefde>
+												<aerotref>
+													<citeinfo>
+														<origin>
+</origin>
+														<pubdate>
+</pubdate>
+														<pubtime>
+</pubtime>
+														<title>
+</title>
+														<edition>
+</edition>
+														<geoform>
+</geoform>
+														<serinfo>
+															<sername>
+</sername>
+															<issue>
+</issue>
+														</serinfo>
+														<pubinfo>
+															<pubplace>
+</pubplace>
+															<publish>
+</publish>
+														</pubinfo>
+														<othercit>
+</othercit>
+														<onlink>
+</onlink>
+														<lworkcit>
+</lworkcit>
+													</citeinfo>
+												</aerotref>
+												<swtrkinf>
+													<grndshpe>
+</grndshpe>
+													<xtrckmot>
+</xtrckmot>
+												</swtrkinf>
+											</georbler>
+										</georefin>
+									</spref>
+								</refsys>
+							</coordsys>
+							<coordxyu>
+</coordxyu>
+							<coordzu>
+</coordzu>
+							<coordpt>
+								<coorxval>
+</coorxval>
+								<cooryval>
+</cooryval>
+								<coorzval>
+</coorzval>
+							</coordpt>
+						</locainfo>
+					</fcfid>
+					<fcres>
+						<locainfo>
+							<numpoint>
+</numpoint>
+							<coordsys>
+								<unrefsys>
+</unrefsys>
+								<refsys>
+									<spref>
+										<horizsys>
+											<geograph>
+												<latres>
+</latres>
+												<longres>
+</longres>
+												<geogunit>
+</geogunit>
+											</geograph>
+											<planar>
+												<mapproj>
+													<mapprojn>
+</mapprojn>
+													<albers>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</albers>
+													<azimequi>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</azimequi>
+													<equicon>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equicon>
+													<equirect>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equirect>
+													<gvnsp>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gvnsp>
+													<gnomonic>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gnomonic>
+													<lamberta>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lamberta>
+													<lambertc>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lambertc>
+													<mercator>
+														<stdparll>
+</stdparll>
+														<sfequat>
+</sfequat>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</mercator>
+													<modsak>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</modsak>
+													<miller>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</miller>
+													<obqmerc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</obqmerc>
+													<orthogr>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</orthogr>
+													<polarst>
+														<svlong>
+</svlong>
+														<stdparll>
+</stdparll>
+														<sfprjorg>
+</sfprjorg>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polarst>
+													<polycon>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polycon>
+													<robinson>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</robinson>
+													<sinusoid>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</sinusoid>
+													<spaceobq>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</spaceobq>
+													<stereo>
+														<longpc>
+</longpc>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</stereo>
+													<transmer>
+														<sfctrmer>
+</sfctrmer>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</transmer>
+													<vdgrin>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</vdgrin>
+													<mapprojp>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+														<sfequat>
+</sfequat>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<svlong>
+</svlong>
+														<sfprjorg>
+</sfprjorg>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<sfctrmer>
+</sfctrmer>
+														<otherprj>
+</otherprj>
+													</mapprojp>
+												</mapproj>
+												<gridsys>
+													<gridsysn>
+</gridsysn>
+													<utm>
+														<utmzone>
+</utmzone>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+													</utm>
+													<ups>
+														<upszone>
+</upszone>
+														<polarst>
+															<svlong>
+</svlong>
+															<stdparll>
+</stdparll>
+															<sfprjorg>
+</sfprjorg>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polarst>
+													</ups>
+													<spcs>
+														<spcszone>
+</spcszone>
+														<lambertc>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</lambertc>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+														<obqmerc>
+															<sfctrlin>
+</sfctrlin>
+															<obqlazim>
+																<azimangl>
+</azimangl>
+																<azimptl>
+</azimptl>
+															</obqlazim>
+															<obqlpt>
+																<obqllat>
+</obqllat>
+																<obqllong>
+</obqllong>
+															</obqlpt>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</obqmerc>
+														<polycon>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polycon>
+													</spcs>
+													<arcsys>
+														<arczone>
+</arczone>
+														<equirect>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</equirect>
+														<azimequi>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</azimequi>
+													</arcsys>
+													<othergrd>
+</othergrd>
+												</gridsys>
+												<localp>
+													<localpd>
+</localpd>
+													<localpgi>
+</localpgi>
+												</localp>
+												<planci>
+													<plance>
+</plance>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<distbrep>
+														<distres>
+</distres>
+														<bearres>
+</bearres>
+														<bearunit>
+</bearunit>
+														<bearrefd>
+</bearrefd>
+														<bearrefm>
+</bearrefm>
+													</distbrep>
+													<plandu>
+</plandu>
+												</planci>
+											</planar>
+											<local>
+												<localdes>
+</localdes>
+												<localgeo>
+</localgeo>
+											</local>
+											<geodetic>
+												<horizdn>
+</horizdn>
+												<ellips>
+</ellips>
+												<semiaxis>
+</semiaxis>
+												<denflat>
+</denflat>
+											</geodetic>
+										</horizsys>
+										<vertdef>
+											<altsys>
+												<altdatum>
+</altdatum>
+												<altres>
+</altres>
+												<altunits>
+</altunits>
+												<altlayer>
+</altlayer>
+												<altenc>
+</altenc>
+											</altsys>
+											<depthsys>
+												<depthdn>
+</depthdn>
+												<depthres>
+</depthres>
+												<depthdu>
+</depthdu>
+												<depthem>
+</depthem>
+											</depthsys>
+										</vertdef>
+										<georefin>
+											<georecra>
+												<pixlreso>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<plandu>
+</plandu>
+												</pixlreso>
+												<gridinit>
+													<grinitx>
+</grinitx>
+													<grinity>
+</grinity>
+												</gridinit>
+												<gridori>
+													<rowdeltx>
+</rowdeltx>
+													<rowdelty>
+</rowdelty>
+													<coldeltx>
+</coldeltx>
+													<coldelty>
+</coldelty>
+												</gridori>
+												<ptpos>
+</ptpos>
+												<storord>
+</storord>
+											</georecra>
+											<georbler>
+												<georefde>
+													<gcptinfo>
+														<gcporg>
+</gcporg>
+														<gcptdesc>
+															<gcptype>
+</gcptype>
+															<gcpori>
+</gcpori>
+															<gcpusefl>
+</gcpusefl>
+															<gcpxaccu>
+</gcpxaccu>
+															<gcpyaccu>
+</gcpyaccu>
+															<gcpzaccu>
+</gcpzaccu>
+														</gcptdesc>
+														<gcptpos>
+															<conptrpo>
+																<gcprow>
+</gcprow>
+																<gcpcolum>
+</gcpcolum>
+															</conptrpo>
+															<gcpearlc>
+																<gcpxval>
+</gcpxval>
+																<gcpyval>
+</gcpyval>
+																<gcpzval>
+</gcpzval>
+															</gcpearlc>
+															<gcpidnt>
+																<gcpid>
+</gcpid>
+																<gcpauth>
+																	<cntinfo>
+																		<cntperp>
+																			<cntper>
+</cntper>
+																			<cntorg>
+</cntorg>
+																		</cntperp>
+																		<cntorgp>
+																			<cntorg>
+</cntorg>
+																			<cntper>
+</cntper>
+																		</cntorgp>
+																		<cntpos>
+</cntpos>
+																		<cntaddr>
+																			<addrtype>
+</addrtype>
+																			<address>
+</address>
+																			<city>
+</city>
+																			<state>
+</state>
+																			<postal>
+</postal>
+																			<country>
+</country>
+																		</cntaddr>
+																		<cntvoice>
+</cntvoice>
+																		<cnttdd>
+</cnttdd>
+																		<cntfax>
+</cntfax>
+																		<cntemail>
+</cntemail>
+																		<hours>
+</hours>
+																		<cntinst>
+</cntinst>
+																	</cntinfo>
+																</gcpauth>
+															</gcpidnt>
+														</gcptpos>
+													</gcptinfo>
+													<insspgeo>
+														<posiinfo>
+															<prjcxpos>
+</prjcxpos>
+															<prjcypos>
+</prjcypos>
+															<prjczpos>
+</prjczpos>
+															<omegarll>
+</omegarll>
+															<phipitch>
+</phipitch>
+															<kappayaw>
+</kappayaw>
+															<attanglu>
+</attanglu>
+														</posiinfo>
+														<accexori>
+															<accxpos>
+</accxpos>
+															<accypos>
+</accypos>
+															<acczpos>
+</acczpos>
+															<accomega>
+</accomega>
+															<accphi>
+</accphi>
+															<acckappa>
+</acckappa>
+														</accexori>
+														<pcrotseq>
+</pcrotseq>
+														<axrotcon>
+</axrotcon>
+													</insspgeo>
+													<refrpoly>
+														<polyfunc>
+															<polynume>
+																<nnumterm>
+</nnumterm>
+																<polycoef>
+</polycoef>
+															</polynume>
+															<polydeno>
+																<ndenterm>
+</ndenterm>
+																<polycoef>
+</polycoef>
+															</polydeno>
+														</polyfunc>
+													</refrpoly>
+													<othrefde>
+</othrefde>
+												</georefde>
+												<aerotref>
+													<citeinfo>
+														<origin>
+</origin>
+														<pubdate>
+</pubdate>
+														<pubtime>
+</pubtime>
+														<title>
+</title>
+														<edition>
+</edition>
+														<geoform>
+</geoform>
+														<serinfo>
+															<sername>
+</sername>
+															<issue>
+</issue>
+														</serinfo>
+														<pubinfo>
+															<pubplace>
+</pubplace>
+															<publish>
+</publish>
+														</pubinfo>
+														<othercit>
+</othercit>
+														<onlink>
+</onlink>
+														<lworkcit>
+</lworkcit>
+													</citeinfo>
+												</aerotref>
+												<swtrkinf>
+													<grndshpe>
+</grndshpe>
+													<xtrckmot>
+</xtrckmot>
+												</swtrkinf>
+											</georbler>
+										</georefin>
+									</spref>
+								</refsys>
+							</coordsys>
+							<coordxyu>
+</coordxyu>
+							<coordzu>
+</coordzu>
+							<coordpt>
+								<coorxval>
+</coorxval>
+								<cooryval>
+</cooryval>
+								<coorzval>
+</coorzval>
+							</coordpt>
+						</locainfo>
+					</fcres>
+					<fcss>
+						<fcssgrid>
+							<rasttype>
+</rasttype>
+						</fcssgrid>
+						<fcsscapo>
+							<locainfo>
+								<numpoint>
+</numpoint>
+								<coordsys>
+									<unrefsys>
+</unrefsys>
+									<refsys>
+										<spref>
+											<horizsys>
+												<geograph>
+													<latres>
+</latres>
+													<longres>
+</longres>
+													<geogunit>
+</geogunit>
+												</geograph>
+												<planar>
+													<mapproj>
+														<mapprojn>
+</mapprojn>
+														<albers>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</albers>
+														<azimequi>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</azimequi>
+														<equicon>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</equicon>
+														<equirect>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</equirect>
+														<gvnsp>
+															<heightpt>
+</heightpt>
+															<longpc>
+</longpc>
+															<latprjc>
+</latprjc>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</gvnsp>
+														<gnomonic>
+															<longpc>
+</longpc>
+															<latprjc>
+</latprjc>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</gnomonic>
+														<lamberta>
+															<longpc>
+</longpc>
+															<latprjc>
+</latprjc>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</lamberta>
+														<lambertc>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</lambertc>
+														<mercator>
+															<stdparll>
+</stdparll>
+															<sfequat>
+</sfequat>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</mercator>
+														<modsak>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</modsak>
+														<miller>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</miller>
+														<obqmerc>
+															<sfctrlin>
+</sfctrlin>
+															<obqlazim>
+																<azimangl>
+</azimangl>
+																<azimptl>
+</azimptl>
+															</obqlazim>
+															<obqlpt>
+																<obqllat>
+</obqllat>
+																<obqllong>
+</obqllong>
+															</obqlpt>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</obqmerc>
+														<orthogr>
+															<longpc>
+</longpc>
+															<latprjc>
+</latprjc>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</orthogr>
+														<polarst>
+															<svlong>
+</svlong>
+															<stdparll>
+</stdparll>
+															<sfprjorg>
+</sfprjorg>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polarst>
+														<polycon>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polycon>
+														<robinson>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</robinson>
+														<sinusoid>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</sinusoid>
+														<spaceobq>
+															<landsat>
+</landsat>
+															<pathnum>
+</pathnum>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</spaceobq>
+														<stereo>
+															<longpc>
+</longpc>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</stereo>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+														<vdgrin>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</vdgrin>
+														<mapprojp>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+															<sfequat>
+</sfequat>
+															<heightpt>
+</heightpt>
+															<longpc>
+</longpc>
+															<latprjc>
+</latprjc>
+															<sfctrlin>
+</sfctrlin>
+															<obqlazim>
+																<azimangl>
+</azimangl>
+																<azimptl>
+</azimptl>
+															</obqlazim>
+															<obqlpt>
+																<obqllat>
+</obqllat>
+																<obqllong>
+</obqllong>
+															</obqlpt>
+															<svlong>
+</svlong>
+															<sfprjorg>
+</sfprjorg>
+															<landsat>
+</landsat>
+															<pathnum>
+</pathnum>
+															<sfctrmer>
+</sfctrmer>
+															<otherprj>
+</otherprj>
+														</mapprojp>
+													</mapproj>
+													<gridsys>
+														<gridsysn>
+</gridsysn>
+														<utm>
+															<utmzone>
+</utmzone>
+															<transmer>
+																<sfctrmer>
+</sfctrmer>
+																<longcm>
+</longcm>
+																<latprjo>
+</latprjo>
+																<feast>
+</feast>
+																<fnorth>
+</fnorth>
+															</transmer>
+														</utm>
+														<ups>
+															<upszone>
+</upszone>
+															<polarst>
+																<svlong>
+</svlong>
+																<stdparll>
+</stdparll>
+																<sfprjorg>
+</sfprjorg>
+																<feast>
+</feast>
+																<fnorth>
+</fnorth>
+															</polarst>
+														</ups>
+														<spcs>
+															<spcszone>
+</spcszone>
+															<lambertc>
+																<stdparll>
+</stdparll>
+																<longcm>
+</longcm>
+																<latprjo>
+</latprjo>
+																<feast>
+</feast>
+																<fnorth>
+</fnorth>
+															</lambertc>
+															<transmer>
+																<sfctrmer>
+</sfctrmer>
+																<longcm>
+</longcm>
+																<latprjo>
+</latprjo>
+																<feast>
+</feast>
+																<fnorth>
+</fnorth>
+															</transmer>
+															<obqmerc>
+																<sfctrlin>
+</sfctrlin>
+																<obqlazim>
+																	<azimangl>
+</azimangl>
+																	<azimptl>
+</azimptl>
+																</obqlazim>
+																<obqlpt>
+																	<obqllat>
+</obqllat>
+																	<obqllong>
+</obqllong>
+																</obqlpt>
+																<latprjo>
+</latprjo>
+																<feast>
+</feast>
+																<fnorth>
+</fnorth>
+															</obqmerc>
+															<polycon>
+																<longcm>
+</longcm>
+																<latprjo>
+</latprjo>
+																<feast>
+</feast>
+																<fnorth>
+</fnorth>
+															</polycon>
+														</spcs>
+														<arcsys>
+															<arczone>
+</arczone>
+															<equirect>
+																<stdparll>
+</stdparll>
+																<longcm>
+</longcm>
+																<feast>
+</feast>
+																<fnorth>
+</fnorth>
+															</equirect>
+															<azimequi>
+																<longcm>
+</longcm>
+																<latprjo>
+</latprjo>
+																<feast>
+</feast>
+																<fnorth>
+</fnorth>
+															</azimequi>
+														</arcsys>
+														<othergrd>
+</othergrd>
+													</gridsys>
+													<localp>
+														<localpd>
+</localpd>
+														<localpgi>
+</localpgi>
+													</localp>
+													<planci>
+														<plance>
+</plance>
+														<coordrep>
+															<absres>
+</absres>
+															<ordres>
+</ordres>
+														</coordrep>
+														<distbrep>
+															<distres>
+</distres>
+															<bearres>
+</bearres>
+															<bearunit>
+</bearunit>
+															<bearrefd>
+</bearrefd>
+															<bearrefm>
+</bearrefm>
+														</distbrep>
+														<plandu>
+</plandu>
+													</planci>
+												</planar>
+												<local>
+													<localdes>
+</localdes>
+													<localgeo>
+</localgeo>
+												</local>
+												<geodetic>
+													<horizdn>
+</horizdn>
+													<ellips>
+</ellips>
+													<semiaxis>
+</semiaxis>
+													<denflat>
+</denflat>
+												</geodetic>
+											</horizsys>
+											<vertdef>
+												<altsys>
+													<altdatum>
+</altdatum>
+													<altres>
+</altres>
+													<altunits>
+</altunits>
+													<altlayer>
+</altlayer>
+													<altenc>
+</altenc>
+												</altsys>
+												<depthsys>
+													<depthdn>
+</depthdn>
+													<depthres>
+</depthres>
+													<depthdu>
+</depthdu>
+													<depthem>
+</depthem>
+												</depthsys>
+											</vertdef>
+											<georefin>
+												<georecra>
+													<pixlreso>
+														<coordrep>
+															<absres>
+</absres>
+															<ordres>
+</ordres>
+														</coordrep>
+														<plandu>
+</plandu>
+													</pixlreso>
+													<gridinit>
+														<grinitx>
+</grinitx>
+														<grinity>
+</grinity>
+													</gridinit>
+													<gridori>
+														<rowdeltx>
+</rowdeltx>
+														<rowdelty>
+</rowdelty>
+														<coldeltx>
+</coldeltx>
+														<coldelty>
+</coldelty>
+													</gridori>
+													<ptpos>
+</ptpos>
+													<storord>
+</storord>
+												</georecra>
+												<georbler>
+													<georefde>
+														<gcptinfo>
+															<gcporg>
+</gcporg>
+															<gcptdesc>
+																<gcptype>
+</gcptype>
+																<gcpori>
+</gcpori>
+																<gcpusefl>
+</gcpusefl>
+																<gcpxaccu>
+</gcpxaccu>
+																<gcpyaccu>
+</gcpyaccu>
+																<gcpzaccu>
+</gcpzaccu>
+															</gcptdesc>
+															<gcptpos>
+																<conptrpo>
+																	<gcprow>
+</gcprow>
+																	<gcpcolum>
+</gcpcolum>
+																</conptrpo>
+																<gcpearlc>
+																	<gcpxval>
+</gcpxval>
+																	<gcpyval>
+</gcpyval>
+																	<gcpzval>
+</gcpzval>
+																</gcpearlc>
+																<gcpidnt>
+																	<gcpid>
+</gcpid>
+																	<gcpauth>
+																		<cntinfo>
+																			<cntperp>
+																				<cntper>
+</cntper>
+																				<cntorg>
+</cntorg>
+																			</cntperp>
+																			<cntorgp>
+																				<cntorg>
+</cntorg>
+																				<cntper>
+</cntper>
+																			</cntorgp>
+																			<cntpos>
+</cntpos>
+																			<cntaddr>
+																				<addrtype>
+</addrtype>
+																				<address>
+</address>
+																				<city>
+</city>
+																				<state>
+</state>
+																				<postal>
+</postal>
+																				<country>
+</country>
+																			</cntaddr>
+																			<cntvoice>
+</cntvoice>
+																			<cnttdd>
+</cnttdd>
+																			<cntfax>
+</cntfax>
+																			<cntemail>
+</cntemail>
+																			<hours>
+</hours>
+																			<cntinst>
+</cntinst>
+																		</cntinfo>
+																	</gcpauth>
+																</gcpidnt>
+															</gcptpos>
+														</gcptinfo>
+														<insspgeo>
+															<posiinfo>
+																<prjcxpos>
+</prjcxpos>
+																<prjcypos>
+</prjcypos>
+																<prjczpos>
+</prjczpos>
+																<omegarll>
+</omegarll>
+																<phipitch>
+</phipitch>
+																<kappayaw>
+</kappayaw>
+																<attanglu>
+</attanglu>
+															</posiinfo>
+															<accexori>
+																<accxpos>
+</accxpos>
+																<accypos>
+</accypos>
+																<acczpos>
+</acczpos>
+																<accomega>
+</accomega>
+																<accphi>
+</accphi>
+																<acckappa>
+</acckappa>
+															</accexori>
+															<pcrotseq>
+</pcrotseq>
+															<axrotcon>
+</axrotcon>
+														</insspgeo>
+														<refrpoly>
+															<polyfunc>
+																<polynume>
+																	<nnumterm>
+</nnumterm>
+																	<polycoef>
+</polycoef>
+																</polynume>
+																<polydeno>
+																	<ndenterm>
+</ndenterm>
+																	<polycoef>
+</polycoef>
+																</polydeno>
+															</polyfunc>
+														</refrpoly>
+														<othrefde>
+</othrefde>
+													</georefde>
+													<aerotref>
+														<citeinfo>
+															<origin>
+</origin>
+															<pubdate>
+</pubdate>
+															<pubtime>
+</pubtime>
+															<title>
+</title>
+															<edition>
+</edition>
+															<geoform>
+</geoform>
+															<serinfo>
+																<sername>
+</sername>
+																<issue>
+</issue>
+															</serinfo>
+															<pubinfo>
+																<pubplace>
+</pubplace>
+																<publish>
+</publish>
+															</pubinfo>
+															<othercit>
+</othercit>
+															<onlink>
+</onlink>
+															<lworkcit>
+</lworkcit>
+														</citeinfo>
+													</aerotref>
+													<swtrkinf>
+														<grndshpe>
+</grndshpe>
+														<xtrckmot>
+</xtrckmot>
+													</swtrkinf>
+												</georbler>
+											</georefin>
+										</spref>
+									</refsys>
+								</coordsys>
+								<coordxyu>
+</coordxyu>
+								<coordzu>
+</coordzu>
+								<coordpt>
+									<coorxval>
+</coorxval>
+									<cooryval>
+</cooryval>
+									<coorzval>
+</coorzval>
+								</coordpt>
+							</locainfo>
+						</fcsscapo>
+					</fcss>
+					<pripoaut>
+						<locainfo>
+							<numpoint>
+</numpoint>
+							<coordsys>
+								<unrefsys>
+</unrefsys>
+								<refsys>
+									<spref>
+										<horizsys>
+											<geograph>
+												<latres>
+</latres>
+												<longres>
+</longres>
+												<geogunit>
+</geogunit>
+											</geograph>
+											<planar>
+												<mapproj>
+													<mapprojn>
+</mapprojn>
+													<albers>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</albers>
+													<azimequi>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</azimequi>
+													<equicon>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equicon>
+													<equirect>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equirect>
+													<gvnsp>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gvnsp>
+													<gnomonic>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gnomonic>
+													<lamberta>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lamberta>
+													<lambertc>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lambertc>
+													<mercator>
+														<stdparll>
+</stdparll>
+														<sfequat>
+</sfequat>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</mercator>
+													<modsak>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</modsak>
+													<miller>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</miller>
+													<obqmerc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</obqmerc>
+													<orthogr>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</orthogr>
+													<polarst>
+														<svlong>
+</svlong>
+														<stdparll>
+</stdparll>
+														<sfprjorg>
+</sfprjorg>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polarst>
+													<polycon>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polycon>
+													<robinson>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</robinson>
+													<sinusoid>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</sinusoid>
+													<spaceobq>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</spaceobq>
+													<stereo>
+														<longpc>
+</longpc>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</stereo>
+													<transmer>
+														<sfctrmer>
+</sfctrmer>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</transmer>
+													<vdgrin>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</vdgrin>
+													<mapprojp>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+														<sfequat>
+</sfequat>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<svlong>
+</svlong>
+														<sfprjorg>
+</sfprjorg>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<sfctrmer>
+</sfctrmer>
+														<otherprj>
+</otherprj>
+													</mapprojp>
+												</mapproj>
+												<gridsys>
+													<gridsysn>
+</gridsysn>
+													<utm>
+														<utmzone>
+</utmzone>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+													</utm>
+													<ups>
+														<upszone>
+</upszone>
+														<polarst>
+															<svlong>
+</svlong>
+															<stdparll>
+</stdparll>
+															<sfprjorg>
+</sfprjorg>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polarst>
+													</ups>
+													<spcs>
+														<spcszone>
+</spcszone>
+														<lambertc>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</lambertc>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+														<obqmerc>
+															<sfctrlin>
+</sfctrlin>
+															<obqlazim>
+																<azimangl>
+</azimangl>
+																<azimptl>
+</azimptl>
+															</obqlazim>
+															<obqlpt>
+																<obqllat>
+</obqllat>
+																<obqllong>
+</obqllong>
+															</obqlpt>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</obqmerc>
+														<polycon>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polycon>
+													</spcs>
+													<arcsys>
+														<arczone>
+</arczone>
+														<equirect>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</equirect>
+														<azimequi>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</azimequi>
+													</arcsys>
+													<othergrd>
+</othergrd>
+												</gridsys>
+												<localp>
+													<localpd>
+</localpd>
+													<localpgi>
+</localpgi>
+												</localp>
+												<planci>
+													<plance>
+</plance>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<distbrep>
+														<distres>
+</distres>
+														<bearres>
+</bearres>
+														<bearunit>
+</bearunit>
+														<bearrefd>
+</bearrefd>
+														<bearrefm>
+</bearrefm>
+													</distbrep>
+													<plandu>
+</plandu>
+												</planci>
+											</planar>
+											<local>
+												<localdes>
+</localdes>
+												<localgeo>
+</localgeo>
+											</local>
+											<geodetic>
+												<horizdn>
+</horizdn>
+												<ellips>
+</ellips>
+												<semiaxis>
+</semiaxis>
+												<denflat>
+</denflat>
+											</geodetic>
+										</horizsys>
+										<vertdef>
+											<altsys>
+												<altdatum>
+</altdatum>
+												<altres>
+</altres>
+												<altunits>
+</altunits>
+												<altlayer>
+</altlayer>
+												<altenc>
+</altenc>
+											</altsys>
+											<depthsys>
+												<depthdn>
+</depthdn>
+												<depthres>
+</depthres>
+												<depthdu>
+</depthdu>
+												<depthem>
+</depthem>
+											</depthsys>
+										</vertdef>
+										<georefin>
+											<georecra>
+												<pixlreso>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<plandu>
+</plandu>
+												</pixlreso>
+												<gridinit>
+													<grinitx>
+</grinitx>
+													<grinity>
+</grinity>
+												</gridinit>
+												<gridori>
+													<rowdeltx>
+</rowdeltx>
+													<rowdelty>
+</rowdelty>
+													<coldeltx>
+</coldeltx>
+													<coldelty>
+</coldelty>
+												</gridori>
+												<ptpos>
+</ptpos>
+												<storord>
+</storord>
+											</georecra>
+											<georbler>
+												<georefde>
+													<gcptinfo>
+														<gcporg>
+</gcporg>
+														<gcptdesc>
+															<gcptype>
+</gcptype>
+															<gcpori>
+</gcpori>
+															<gcpusefl>
+</gcpusefl>
+															<gcpxaccu>
+</gcpxaccu>
+															<gcpyaccu>
+</gcpyaccu>
+															<gcpzaccu>
+</gcpzaccu>
+														</gcptdesc>
+														<gcptpos>
+															<conptrpo>
+																<gcprow>
+</gcprow>
+																<gcpcolum>
+</gcpcolum>
+															</conptrpo>
+															<gcpearlc>
+																<gcpxval>
+</gcpxval>
+																<gcpyval>
+</gcpyval>
+																<gcpzval>
+</gcpzval>
+															</gcpearlc>
+															<gcpidnt>
+																<gcpid>
+</gcpid>
+																<gcpauth>
+																	<cntinfo>
+																		<cntperp>
+																			<cntper>
+</cntper>
+																			<cntorg>
+</cntorg>
+																		</cntperp>
+																		<cntorgp>
+																			<cntorg>
+</cntorg>
+																			<cntper>
+</cntper>
+																		</cntorgp>
+																		<cntpos>
+</cntpos>
+																		<cntaddr>
+																			<addrtype>
+</addrtype>
+																			<address>
+</address>
+																			<city>
+</city>
+																			<state>
+</state>
+																			<postal>
+</postal>
+																			<country>
+</country>
+																		</cntaddr>
+																		<cntvoice>
+</cntvoice>
+																		<cnttdd>
+</cnttdd>
+																		<cntfax>
+</cntfax>
+																		<cntemail>
+</cntemail>
+																		<hours>
+</hours>
+																		<cntinst>
+</cntinst>
+																	</cntinfo>
+																</gcpauth>
+															</gcpidnt>
+														</gcptpos>
+													</gcptinfo>
+													<insspgeo>
+														<posiinfo>
+															<prjcxpos>
+</prjcxpos>
+															<prjcypos>
+</prjcypos>
+															<prjczpos>
+</prjczpos>
+															<omegarll>
+</omegarll>
+															<phipitch>
+</phipitch>
+															<kappayaw>
+</kappayaw>
+															<attanglu>
+</attanglu>
+														</posiinfo>
+														<accexori>
+															<accxpos>
+</accxpos>
+															<accypos>
+</accypos>
+															<acczpos>
+</acczpos>
+															<accomega>
+</accomega>
+															<accphi>
+</accphi>
+															<acckappa>
+</acckappa>
+														</accexori>
+														<pcrotseq>
+</pcrotseq>
+														<axrotcon>
+</axrotcon>
+													</insspgeo>
+													<refrpoly>
+														<polyfunc>
+															<polynume>
+																<nnumterm>
+</nnumterm>
+																<polycoef>
+</polycoef>
+															</polynume>
+															<polydeno>
+																<ndenterm>
+</ndenterm>
+																<polycoef>
+</polycoef>
+															</polydeno>
+														</polyfunc>
+													</refrpoly>
+													<othrefde>
+</othrefde>
+												</georefde>
+												<aerotref>
+													<citeinfo>
+														<origin>
+</origin>
+														<pubdate>
+</pubdate>
+														<pubtime>
+</pubtime>
+														<title>
+</title>
+														<edition>
+</edition>
+														<geoform>
+</geoform>
+														<serinfo>
+															<sername>
+</sername>
+															<issue>
+</issue>
+														</serinfo>
+														<pubinfo>
+															<pubplace>
+</pubplace>
+															<publish>
+</publish>
+														</pubinfo>
+														<othercit>
+</othercit>
+														<onlink>
+</onlink>
+														<lworkcit>
+</lworkcit>
+													</citeinfo>
+												</aerotref>
+												<swtrkinf>
+													<grndshpe>
+</grndshpe>
+													<xtrckmot>
+</xtrckmot>
+												</swtrkinf>
+											</georbler>
+										</georefin>
+									</spref>
+								</refsys>
+							</coordsys>
+							<coordxyu>
+</coordxyu>
+							<coordzu>
+</coordzu>
+							<coordpt>
+								<coorxval>
+</coorxval>
+								<cooryval>
+</cooryval>
+								<coorzval>
+</coorzval>
+							</coordpt>
+						</locainfo>
+					</pripoaut>
+					<quappa>
+						<quappax>
+</quappax>
+						<quappay>
+</quappay>
+					</quappa>
+					<priposym>
+						<locainfo>
+							<numpoint>
+</numpoint>
+							<coordsys>
+								<unrefsys>
+</unrefsys>
+								<refsys>
+									<spref>
+										<horizsys>
+											<geograph>
+												<latres>
+</latres>
+												<longres>
+</longres>
+												<geogunit>
+</geogunit>
+											</geograph>
+											<planar>
+												<mapproj>
+													<mapprojn>
+</mapprojn>
+													<albers>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</albers>
+													<azimequi>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</azimequi>
+													<equicon>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equicon>
+													<equirect>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equirect>
+													<gvnsp>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gvnsp>
+													<gnomonic>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gnomonic>
+													<lamberta>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lamberta>
+													<lambertc>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lambertc>
+													<mercator>
+														<stdparll>
+</stdparll>
+														<sfequat>
+</sfequat>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</mercator>
+													<modsak>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</modsak>
+													<miller>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</miller>
+													<obqmerc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</obqmerc>
+													<orthogr>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</orthogr>
+													<polarst>
+														<svlong>
+</svlong>
+														<stdparll>
+</stdparll>
+														<sfprjorg>
+</sfprjorg>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polarst>
+													<polycon>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polycon>
+													<robinson>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</robinson>
+													<sinusoid>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</sinusoid>
+													<spaceobq>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</spaceobq>
+													<stereo>
+														<longpc>
+</longpc>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</stereo>
+													<transmer>
+														<sfctrmer>
+</sfctrmer>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</transmer>
+													<vdgrin>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</vdgrin>
+													<mapprojp>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+														<sfequat>
+</sfequat>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<svlong>
+</svlong>
+														<sfprjorg>
+</sfprjorg>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<sfctrmer>
+</sfctrmer>
+														<otherprj>
+</otherprj>
+													</mapprojp>
+												</mapproj>
+												<gridsys>
+													<gridsysn>
+</gridsysn>
+													<utm>
+														<utmzone>
+</utmzone>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+													</utm>
+													<ups>
+														<upszone>
+</upszone>
+														<polarst>
+															<svlong>
+</svlong>
+															<stdparll>
+</stdparll>
+															<sfprjorg>
+</sfprjorg>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polarst>
+													</ups>
+													<spcs>
+														<spcszone>
+</spcszone>
+														<lambertc>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</lambertc>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+														<obqmerc>
+															<sfctrlin>
+</sfctrlin>
+															<obqlazim>
+																<azimangl>
+</azimangl>
+																<azimptl>
+</azimptl>
+															</obqlazim>
+															<obqlpt>
+																<obqllat>
+</obqllat>
+																<obqllong>
+</obqllong>
+															</obqlpt>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</obqmerc>
+														<polycon>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polycon>
+													</spcs>
+													<arcsys>
+														<arczone>
+</arczone>
+														<equirect>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</equirect>
+														<azimequi>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</azimequi>
+													</arcsys>
+													<othergrd>
+</othergrd>
+												</gridsys>
+												<localp>
+													<localpd>
+</localpd>
+													<localpgi>
+</localpgi>
+												</localp>
+												<planci>
+													<plance>
+</plance>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<distbrep>
+														<distres>
+</distres>
+														<bearres>
+</bearres>
+														<bearunit>
+</bearunit>
+														<bearrefd>
+</bearrefd>
+														<bearrefm>
+</bearrefm>
+													</distbrep>
+													<plandu>
+</plandu>
+												</planci>
+											</planar>
+											<local>
+												<localdes>
+</localdes>
+												<localgeo>
+</localgeo>
+											</local>
+											<geodetic>
+												<horizdn>
+</horizdn>
+												<ellips>
+</ellips>
+												<semiaxis>
+</semiaxis>
+												<denflat>
+</denflat>
+											</geodetic>
+										</horizsys>
+										<vertdef>
+											<altsys>
+												<altdatum>
+</altdatum>
+												<altres>
+</altres>
+												<altunits>
+</altunits>
+												<altlayer>
+</altlayer>
+												<altenc>
+</altenc>
+											</altsys>
+											<depthsys>
+												<depthdn>
+</depthdn>
+												<depthres>
+</depthres>
+												<depthdu>
+</depthdu>
+												<depthem>
+</depthem>
+											</depthsys>
+										</vertdef>
+										<georefin>
+											<georecra>
+												<pixlreso>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<plandu>
+</plandu>
+												</pixlreso>
+												<gridinit>
+													<grinitx>
+</grinitx>
+													<grinity>
+</grinity>
+												</gridinit>
+												<gridori>
+													<rowdeltx>
+</rowdeltx>
+													<rowdelty>
+</rowdelty>
+													<coldeltx>
+</coldeltx>
+													<coldelty>
+</coldelty>
+												</gridori>
+												<ptpos>
+</ptpos>
+												<storord>
+</storord>
+											</georecra>
+											<georbler>
+												<georefde>
+													<gcptinfo>
+														<gcporg>
+</gcporg>
+														<gcptdesc>
+															<gcptype>
+</gcptype>
+															<gcpori>
+</gcpori>
+															<gcpusefl>
+</gcpusefl>
+															<gcpxaccu>
+</gcpxaccu>
+															<gcpyaccu>
+</gcpyaccu>
+															<gcpzaccu>
+</gcpzaccu>
+														</gcptdesc>
+														<gcptpos>
+															<conptrpo>
+																<gcprow>
+</gcprow>
+																<gcpcolum>
+</gcpcolum>
+															</conptrpo>
+															<gcpearlc>
+																<gcpxval>
+</gcpxval>
+																<gcpyval>
+</gcpyval>
+																<gcpzval>
+</gcpzval>
+															</gcpearlc>
+															<gcpidnt>
+																<gcpid>
+</gcpid>
+																<gcpauth>
+																	<cntinfo>
+																		<cntperp>
+																			<cntper>
+</cntper>
+																			<cntorg>
+</cntorg>
+																		</cntperp>
+																		<cntorgp>
+																			<cntorg>
+</cntorg>
+																			<cntper>
+</cntper>
+																		</cntorgp>
+																		<cntpos>
+</cntpos>
+																		<cntaddr>
+																			<addrtype>
+</addrtype>
+																			<address>
+</address>
+																			<city>
+</city>
+																			<state>
+</state>
+																			<postal>
+</postal>
+																			<country>
+</country>
+																		</cntaddr>
+																		<cntvoice>
+</cntvoice>
+																		<cnttdd>
+</cnttdd>
+																		<cntfax>
+</cntfax>
+																		<cntemail>
+</cntemail>
+																		<hours>
+</hours>
+																		<cntinst>
+</cntinst>
+																	</cntinfo>
+																</gcpauth>
+															</gcpidnt>
+														</gcptpos>
+													</gcptinfo>
+													<insspgeo>
+														<posiinfo>
+															<prjcxpos>
+</prjcxpos>
+															<prjcypos>
+</prjcypos>
+															<prjczpos>
+</prjczpos>
+															<omegarll>
+</omegarll>
+															<phipitch>
+</phipitch>
+															<kappayaw>
+</kappayaw>
+															<attanglu>
+</attanglu>
+														</posiinfo>
+														<accexori>
+															<accxpos>
+</accxpos>
+															<accypos>
+</accypos>
+															<acczpos>
+</acczpos>
+															<accomega>
+</accomega>
+															<accphi>
+</accphi>
+															<acckappa>
+</acckappa>
+														</accexori>
+														<pcrotseq>
+</pcrotseq>
+														<axrotcon>
+</axrotcon>
+													</insspgeo>
+													<refrpoly>
+														<polyfunc>
+															<polynume>
+																<nnumterm>
+</nnumterm>
+																<polycoef>
+</polycoef>
+															</polynume>
+															<polydeno>
+																<ndenterm>
+</ndenterm>
+																<polycoef>
+</polycoef>
+															</polydeno>
+														</polyfunc>
+													</refrpoly>
+													<othrefde>
+</othrefde>
+												</georefde>
+												<aerotref>
+													<citeinfo>
+														<origin>
+</origin>
+														<pubdate>
+</pubdate>
+														<pubtime>
+</pubtime>
+														<title>
+</title>
+														<edition>
+</edition>
+														<geoform>
+</geoform>
+														<serinfo>
+															<sername>
+</sername>
+															<issue>
+</issue>
+														</serinfo>
+														<pubinfo>
+															<pubplace>
+</pubplace>
+															<publish>
+</publish>
+														</pubinfo>
+														<othercit>
+</othercit>
+														<onlink>
+</onlink>
+														<lworkcit>
+</lworkcit>
+													</citeinfo>
+												</aerotref>
+												<swtrkinf>
+													<grndshpe>
+</grndshpe>
+													<xtrckmot>
+</xtrckmot>
+												</swtrkinf>
+											</georbler>
+										</georefin>
+									</spref>
+								</refsys>
+							</coordsys>
+							<coordxyu>
+</coordxyu>
+							<coordzu>
+</coordzu>
+							<coordpt>
+								<coorxval>
+</coorxval>
+								<cooryval>
+</cooryval>
+								<coorzval>
+</coorzval>
+							</coordpt>
+						</locainfo>
+					</priposym>
+					<quapps>
+						<quappsx>
+</quappsx>
+						<quappsy>
+</quappsy>
+					</quapps>
+					<fidcent>
+						<locainfo>
+							<numpoint>
+</numpoint>
+							<coordsys>
+								<unrefsys>
+</unrefsys>
+								<refsys>
+									<spref>
+										<horizsys>
+											<geograph>
+												<latres>
+</latres>
+												<longres>
+</longres>
+												<geogunit>
+</geogunit>
+											</geograph>
+											<planar>
+												<mapproj>
+													<mapprojn>
+</mapprojn>
+													<albers>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</albers>
+													<azimequi>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</azimequi>
+													<equicon>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equicon>
+													<equirect>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</equirect>
+													<gvnsp>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gvnsp>
+													<gnomonic>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</gnomonic>
+													<lamberta>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lamberta>
+													<lambertc>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</lambertc>
+													<mercator>
+														<stdparll>
+</stdparll>
+														<sfequat>
+</sfequat>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</mercator>
+													<modsak>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</modsak>
+													<miller>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</miller>
+													<obqmerc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</obqmerc>
+													<orthogr>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</orthogr>
+													<polarst>
+														<svlong>
+</svlong>
+														<stdparll>
+</stdparll>
+														<sfprjorg>
+</sfprjorg>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polarst>
+													<polycon>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</polycon>
+													<robinson>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</robinson>
+													<sinusoid>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</sinusoid>
+													<spaceobq>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</spaceobq>
+													<stereo>
+														<longpc>
+</longpc>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</stereo>
+													<transmer>
+														<sfctrmer>
+</sfctrmer>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</transmer>
+													<vdgrin>
+														<longcm>
+</longcm>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+													</vdgrin>
+													<mapprojp>
+														<stdparll>
+</stdparll>
+														<longcm>
+</longcm>
+														<latprjo>
+</latprjo>
+														<feast>
+</feast>
+														<fnorth>
+</fnorth>
+														<sfequat>
+</sfequat>
+														<heightpt>
+</heightpt>
+														<longpc>
+</longpc>
+														<latprjc>
+</latprjc>
+														<sfctrlin>
+</sfctrlin>
+														<obqlazim>
+															<azimangl>
+</azimangl>
+															<azimptl>
+</azimptl>
+														</obqlazim>
+														<obqlpt>
+															<obqllat>
+</obqllat>
+															<obqllong>
+</obqllong>
+														</obqlpt>
+														<svlong>
+</svlong>
+														<sfprjorg>
+</sfprjorg>
+														<landsat>
+</landsat>
+														<pathnum>
+</pathnum>
+														<sfctrmer>
+</sfctrmer>
+														<otherprj>
+</otherprj>
+													</mapprojp>
+												</mapproj>
+												<gridsys>
+													<gridsysn>
+</gridsysn>
+													<utm>
+														<utmzone>
+</utmzone>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+													</utm>
+													<ups>
+														<upszone>
+</upszone>
+														<polarst>
+															<svlong>
+</svlong>
+															<stdparll>
+</stdparll>
+															<sfprjorg>
+</sfprjorg>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polarst>
+													</ups>
+													<spcs>
+														<spcszone>
+</spcszone>
+														<lambertc>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</lambertc>
+														<transmer>
+															<sfctrmer>
+</sfctrmer>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</transmer>
+														<obqmerc>
+															<sfctrlin>
+</sfctrlin>
+															<obqlazim>
+																<azimangl>
+</azimangl>
+																<azimptl>
+</azimptl>
+															</obqlazim>
+															<obqlpt>
+																<obqllat>
+</obqllat>
+																<obqllong>
+</obqllong>
+															</obqlpt>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</obqmerc>
+														<polycon>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</polycon>
+													</spcs>
+													<arcsys>
+														<arczone>
+</arczone>
+														<equirect>
+															<stdparll>
+</stdparll>
+															<longcm>
+</longcm>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</equirect>
+														<azimequi>
+															<longcm>
+</longcm>
+															<latprjo>
+</latprjo>
+															<feast>
+</feast>
+															<fnorth>
+</fnorth>
+														</azimequi>
+													</arcsys>
+													<othergrd>
+</othergrd>
+												</gridsys>
+												<localp>
+													<localpd>
+</localpd>
+													<localpgi>
+</localpgi>
+												</localp>
+												<planci>
+													<plance>
+</plance>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<distbrep>
+														<distres>
+</distres>
+														<bearres>
+</bearres>
+														<bearunit>
+</bearunit>
+														<bearrefd>
+</bearrefd>
+														<bearrefm>
+</bearrefm>
+													</distbrep>
+													<plandu>
+</plandu>
+												</planci>
+											</planar>
+											<local>
+												<localdes>
+</localdes>
+												<localgeo>
+</localgeo>
+											</local>
+											<geodetic>
+												<horizdn>
+</horizdn>
+												<ellips>
+</ellips>
+												<semiaxis>
+</semiaxis>
+												<denflat>
+</denflat>
+											</geodetic>
+										</horizsys>
+										<vertdef>
+											<altsys>
+												<altdatum>
+</altdatum>
+												<altres>
+</altres>
+												<altunits>
+</altunits>
+												<altlayer>
+</altlayer>
+												<altenc>
+</altenc>
+											</altsys>
+											<depthsys>
+												<depthdn>
+</depthdn>
+												<depthres>
+</depthres>
+												<depthdu>
+</depthdu>
+												<depthem>
+</depthem>
+											</depthsys>
+										</vertdef>
+										<georefin>
+											<georecra>
+												<pixlreso>
+													<coordrep>
+														<absres>
+</absres>
+														<ordres>
+</ordres>
+													</coordrep>
+													<plandu>
+</plandu>
+												</pixlreso>
+												<gridinit>
+													<grinitx>
+</grinitx>
+													<grinity>
+</grinity>
+												</gridinit>
+												<gridori>
+													<rowdeltx>
+</rowdeltx>
+													<rowdelty>
+</rowdelty>
+													<coldeltx>
+</coldeltx>
+													<coldelty>
+</coldelty>
+												</gridori>
+												<ptpos>
+</ptpos>
+												<storord>
+</storord>
+											</georecra>
+											<georbler>
+												<georefde>
+													<gcptinfo>
+														<gcporg>
+</gcporg>
+														<gcptdesc>
+															<gcptype>
+</gcptype>
+															<gcpori>
+</gcpori>
+															<gcpusefl>
+</gcpusefl>
+															<gcpxaccu>
+</gcpxaccu>
+															<gcpyaccu>
+</gcpyaccu>
+															<gcpzaccu>
+</gcpzaccu>
+														</gcptdesc>
+														<gcptpos>
+															<conptrpo>
+																<gcprow>
+</gcprow>
+																<gcpcolum>
+</gcpcolum>
+															</conptrpo>
+															<gcpearlc>
+																<gcpxval>
+</gcpxval>
+																<gcpyval>
+</gcpyval>
+																<gcpzval>
+</gcpzval>
+															</gcpearlc>
+															<gcpidnt>
+																<gcpid>
+</gcpid>
+																<gcpauth>
+																	<cntinfo>
+																		<cntperp>
+																			<cntper>
+</cntper>
+																			<cntorg>
+</cntorg>
+																		</cntperp>
+																		<cntorgp>
+																			<cntorg>
+</cntorg>
+																			<cntper>
+</cntper>
+																		</cntorgp>
+																		<cntpos>
+</cntpos>
+																		<cntaddr>
+																			<addrtype>
+</addrtype>
+																			<address>
+</address>
+																			<city>
+</city>
+																			<state>
+</state>
+																			<postal>
+</postal>
+																			<country>
+</country>
+																		</cntaddr>
+																		<cntvoice>
+</cntvoice>
+																		<cnttdd>
+</cnttdd>
+																		<cntfax>
+</cntfax>
+																		<cntemail>
+</cntemail>
+																		<hours>
+</hours>
+																		<cntinst>
+</cntinst>
+																	</cntinfo>
+																</gcpauth>
+															</gcpidnt>
+														</gcptpos>
+													</gcptinfo>
+													<insspgeo>
+														<posiinfo>
+															<prjcxpos>
+</prjcxpos>
+															<prjcypos>
+</prjcypos>
+															<prjczpos>
+</prjczpos>
+															<omegarll>
+</omegarll>
+															<phipitch>
+</phipitch>
+															<kappayaw>
+</kappayaw>
+															<attanglu>
+</attanglu>
+														</posiinfo>
+														<accexori>
+															<accxpos>
+</accxpos>
+															<accypos>
+</accypos>
+															<acczpos>
+</acczpos>
+															<accomega>
+</accomega>
+															<accphi>
+</accphi>
+															<acckappa>
+</acckappa>
+														</accexori>
+														<pcrotseq>
+</pcrotseq>
+														<axrotcon>
+</axrotcon>
+													</insspgeo>
+													<refrpoly>
+														<polyfunc>
+															<polynume>
+																<nnumterm>
+</nnumterm>
+																<polycoef>
+</polycoef>
+															</polynume>
+															<polydeno>
+																<ndenterm>
+</ndenterm>
+																<polycoef>
+</polycoef>
+															</polydeno>
+														</polyfunc>
+													</refrpoly>
+													<othrefde>
+</othrefde>
+												</georefde>
+												<aerotref>
+													<citeinfo>
+														<origin>
+</origin>
+														<pubdate>
+</pubdate>
+														<pubtime>
+</pubtime>
+														<title>
+</title>
+														<edition>
+</edition>
+														<geoform>
+</geoform>
+														<serinfo>
+															<sername>
+</sername>
+															<issue>
+</issue>
+														</serinfo>
+														<pubinfo>
+															<pubplace>
+</pubplace>
+															<publish>
+</publish>
+														</pubinfo>
+														<othercit>
+</othercit>
+														<onlink>
+</onlink>
+														<lworkcit>
+</lworkcit>
+													</citeinfo>
+												</aerotref>
+												<swtrkinf>
+													<grndshpe>
+</grndshpe>
+													<xtrckmot>
+</xtrckmot>
+												</swtrkinf>
+											</georbler>
+										</georefin>
+									</spref>
+								</refsys>
+							</coordsys>
+							<coordxyu>
+</coordxyu>
+							<coordzu>
+</coordzu>
+							<coordpt>
+								<coorxval>
+</coorxval>
+								<cooryval>
+</cooryval>
+								<coorzval>
+</coorzval>
+							</coordpt>
+						</locainfo>
+					</fidcent>
+					<sensello>
+						<senselav>
+</senselav>
+						<senselso>
+							<citeinfo>
+								<origin>
+</origin>
+								<pubdate>
+</pubdate>
+								<pubtime>
+</pubtime>
+								<title>
+</title>
+								<edition>
+</edition>
+								<geoform>
+</geoform>
+								<serinfo>
+									<sername>
+</sername>
+									<issue>
+</issue>
+								</serinfo>
+								<pubinfo>
+									<pubplace>
+</pubplace>
+									<publish>
+</publish>
+								</pubinfo>
+								<othercit>
+</othercit>
+								<onlink>
+</onlink>
+								<lworkcit>
+</lworkcit>
+							</citeinfo>
+						</senselso>
+					</sensello>
+					<distort>
+						<dsttrs>
+							<rsdisdis>
+								<rsdmdist>
+</rsdmdist>
+								<rsdnumv>
+</rsdnumv>
+								<rsddval>
+</rsddval>
+							</rsdisdis>
+							<rsaddist>
+								<rsangint>
+</rsangint>
+								<rsanumv>
+</rsanumv>
+								<rsadval>
+</rsadval>
+							</rsaddist>
+							<rsdispol>
+								<polyfunc>
+									<polynume>
+										<nnumterm>
+</nnumterm>
+										<polycoef>
+</polycoef>
+									</polynume>
+									<polydeno>
+										<ndenterm>
+</ndenterm>
+										<polycoef>
+</polycoef>
+									</polydeno>
+								</polyfunc>
+							</rsdispol>
+						</dsttrs>
+						<dsttrasy>
+							<rab1>
+</rab1>
+							<rab2>
+</rab2>
+						</dsttrasy>
+						<dsttaf>
+							<affc1>
+</affc1>
+							<affc2>
+</affc2>
+						</dsttaf>
+					</distort>
+				</framegeo>
+				<fcoper>
+					<stabmnt>
+</stabmnt>
+					<fmc>
+</fmc>
+				</fcoper>
+				<fradprop>
+					<fcradcal>
+						<datascal>
+							<polyfunc>
+								<polynume>
+									<nnumterm>
+</nnumterm>
+									<polycoef>
+</polycoef>
+								</polynume>
+								<polydeno>
+									<ndenterm>
+</ndenterm>
+									<polycoef>
+</polycoef>
+								</polydeno>
+							</polyfunc>
+							<npolscal>
+</npolscal>
+						</datascal>
+					</fcradcal>
+					<lightdrp>
+</lightdrp>
+				</fradprop>
+				<fcspecpr>
+					<fcspecin>
+						<specinfo>
+							<nowvband>
+								<numbands>
+</numbands>
+							</nowvband>
+							<wvbandpr>
+								<waveunit>
+</waveunit>
+								<bbnddef>
+</bbnddef>
+								<lambdmin>
+</lambdmin>
+								<lambdmax>
+</lambdmax>
+								<pkwavlen>
+</pkwavlen>
+								<wavlreg>
+</wavlreg>
+								<nomspres>
+									<spatresu>
+</spatresu>
+									<spatresv>
+</spatresv>
+								</nomspres>
+								<bandqual>
+</bandqual>
+								<polrzcha>
+									<revrpolr>
+</revrpolr>
+									<sendpolr>
+</sendpolr>
+								</polrzcha>
+								<banddesc>
+</banddesc>
+							</wvbandpr>
+						</specinfo>
+					</fcspecin>
+					<filtonca>
+						<filtcain>
+</filtcain>
+						<ftrtyp>
+</ftrtyp>
+					</filtonca>
+					<spectlim>
+</spectlim>
+				</fcspecpr>
+			</frame>
+			<scan>
+				<scangeom>
+					<scanangu>
+</scanangu>
+					<scantimu>
+</scantimu>
+					<scandisu>
+</scandisu>
+					<xtrkprop>
+						<xtkzero>
+							<xtkaxis>
+</xtkaxis>
+							<xtkdir>
+</xtkdir>
+						</xtkzero>
+						<xtkswp>
+							<xtksamp>
+</xtksamp>
+							<xtkstang>
+</xtkstang>
+							<xtkexang>
+</xtkexang>
+							<xtstpang>
+</xtstpang>
+						</xtkswp>
+						<xtfixang>
+</xtfixang>
+						<xtrkdesc>
+</xtrkdesc>
+					</xtrkprop>
+					<elevprop>
+						<elevzero>
+							<elevaxis>
+</elevaxis>
+							<elevdir>
+</elevdir>
+						</elevzero>
+						<elevswp>
+							<elevsamp>
+</elevsamp>
+							<elestang>
+</elestang>
+							<eleexang>
+</eleexang>
+							<elstpang>
+</elstpang>
+						</elevswp>
+						<elfixang>
+</elfixang>
+						<elevdesc>
+</elevdesc>
+					</elevprop>
+					<profprop>
+						<profsond>
+							<profsamp>
+</profsamp>
+							<profdir>
+</profdir>
+							<profst>
+</profst>
+							<profext>
+</profext>
+							<profstep>
+</profstep>
+						</profsond>
+						<proffix>
+</proffix>
+						<profdesc>
+</profdesc>
+					</profprop>
+					<scantime>
+						<scanstart>
+							<sngdate>
+								<caldate>
+</caldate>
+								<time>
+</time>
+							</sngdate>
+						</scanstart>
+						<scandur>
+</scandur>
+						<scanstept>
+</scanstept>
+						<scanrptt>
+</scanrptt>
+					</scantime>
+					<ifov>
+						<ifovunit>
+</ifovunit>
+						<ifovxdef>
+</ifovxdef>
+						<ifovxval>
+</ifovxval>
+						<ifovydef>
+</ifovydef>
+						<ifovyval>
+</ifovyval>
+					</ifov>
+				</scangeom>
+				<sampprop>
+					<sampdesu>
+						<sampangu>
+</sampangu>
+						<samprofu>
+							<altunits>
+</altunits>
+						</samprofu>
+					</sampdesu>
+					<pixldesc>
+						<pixxtksz>
+</pixxtksz>
+						<pixelvsz>
+</pixelvsz>
+						<pixprfsz>
+</pixprfsz>
+						<pixelhgt>
+</pixelhgt>
+						<pixelpsf>
+</pixelpsf>
+					</pixldesc>
+				</sampprop>
+				<sradprop>
+					<datascal>
+						<polyfunc>
+							<polynume>
+								<nnumterm>
+</nnumterm>
+								<polycoef>
+</polycoef>
+							</polynume>
+							<polydeno>
+								<ndenterm>
+</ndenterm>
+								<polycoef>
+</polycoef>
+							</polydeno>
+						</polyfunc>
+						<npolscal>
+</npolscal>
+					</datascal>
+				</sradprop>
+				<scspprop>
+					<specinfo>
+						<nowvband>
+							<numbands>
+</numbands>
+						</nowvband>
+						<wvbandpr>
+							<waveunit>
+</waveunit>
+							<bbnddef>
+</bbnddef>
+							<lambdmin>
+</lambdmin>
+							<lambdmax>
+</lambdmax>
+							<pkwavlen>
+</pkwavlen>
+							<wavlreg>
+</wavlreg>
+							<nomspres>
+								<spatresu>
+</spatresu>
+								<spatresv>
+</spatresv>
+							</nomspres>
+							<bandqual>
+</bandqual>
+							<polrzcha>
+								<revrpolr>
+</revrpolr>
+								<sendpolr>
+</sendpolr>
+							</polrzcha>
+							<banddesc>
+</banddesc>
+						</wvbandpr>
+					</specinfo>
+				</scspprop>
+			</scan>
+			<othcolde>
+</othcolde>
+			<instpdes>
+</instpdes>
+		</instdesc>
+		<instref>
+			<citeinfo>
+				<origin>
+</origin>
+				<pubdate>
+</pubdate>
+				<pubtime>
+</pubtime>
+				<title>
+</title>
+				<edition>
+</edition>
+				<geoform>
+</geoform>
+				<serinfo>
+					<sername>
+</sername>
+					<issue>
+</issue>
+				</serinfo>
+				<pubinfo>
+					<pubplace>
+</pubplace>
+					<publish>
+</publish>
+				</pubinfo>
+				<othercit>
+</othercit>
+				<onlink>
+</onlink>
+				<lworkcit>
+</lworkcit>
+			</citeinfo>
+		</instref>
+	</instinfo>
+</metadata>

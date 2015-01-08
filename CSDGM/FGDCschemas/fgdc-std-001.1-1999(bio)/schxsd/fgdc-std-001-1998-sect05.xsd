@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" blockDefault="#all">
+	<xs:element name="eainfo" type="eainfoType">
+		
+	</xs:element>
+	<xs:complexType name="eainfoType">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="detailed" maxOccurs="unbounded"/>
+				<xs:element ref="overview" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:element ref="overview" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="detailed" type="detailedType">
+		
+	</xs:element>
+	<xs:complexType name="detailedType">
+		<xs:sequence>
+			<xs:element ref="enttyp"/>
+			<xs:element ref="attr" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="enttyp" type="enttypType">
+	
+	</xs:element>
+	<xs:complexType name="enttypType">
+		<xs:sequence>
+			<xs:element ref="enttypl"/>
+			<xs:element ref="enttypd"/>
+			<xs:element ref="enttypds"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="enttypl" type="enttyplType">
+		
+	</xs:element>
+	<xs:simpleType name="enttyplType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="enttypd" type="enttypdType">
+		
+	</xs:element>
+	<xs:simpleType name="enttypdType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="enttypds" type="enttypdsType">
+		
+	</xs:element>
+	<xs:simpleType name="enttypdsType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="attr" type="attrType">
+		
+	</xs:element>
+	<xs:complexType name="attrType">
+		<xs:sequence>
+			<xs:element ref="attrlabl"/>
+			<xs:element ref="attrdef"/>
+			<xs:element ref="attrdefs"/>
+			<xs:element ref="attrdomv" maxOccurs="unbounded"/>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="begdatea"/>
+				<xs:element ref="enddatea" minOccurs="0"/>
+			</xs:sequence>
+			<xs:element ref="attrvai" minOccurs="0"/>
+			<xs:element ref="attrmfrq" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="attrlabl" type="attrlablType">
+		
+	</xs:element>
+	<xs:simpleType name="attrlablType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="attrdef" type="attrdefType">
+		
+	</xs:element>
+	<xs:simpleType name="attrdefType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="attrdefs" type="attrdefsType">
+		
+	</xs:element>
+	<xs:simpleType name="attrdefsType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="attrdomv" type="attrdomvType">
+		
+	</xs:element>
+	<xs:complexType name="attrdomvType">
+		<xs:choice>
+			<xs:element ref="edom"/>
+			<xs:element ref="rdom"/>
+			<xs:element ref="codesetd"/>
+			<xs:element ref="udom"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="edom" type="edomType">
+		
+	</xs:element>
+	<xs:complexType name="edomType">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element ref="edomv"/>
+			<xs:element ref="edomvd"/>
+			<xs:element ref="edomvds"/>
+			<xs:element ref="attr" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="edomv" type="edomvType">
+		
+	</xs:element>
+	<xs:simpleType name="edomvType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="edomvd" type="edomvdType">
+		
+	</xs:element>
+	<xs:simpleType name="edomvdType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="edomvds" type="edomvdsType">
+		
+	</xs:element>
+	<xs:simpleType name="edomvdsType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="rdom" type="rdomType">
+		
+	</xs:element>
+	<xs:complexType name="rdomType">
+		<xs:sequence>
+			<xs:element ref="rdommin"/>
+			<xs:element ref="rdommax"/>
+			<xs:element ref="attrunit" minOccurs="0"/>
+			<xs:element ref="attrmres" minOccurs="0"/>
+			<xs:element ref="attr" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="rdommin" type="rdomminType">
+		
+	</xs:element>
+	<xs:simpleType name="rdomminType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="rdommax" type="rdommaxType">
+		
+	</xs:element>
+	<xs:simpleType name="rdommaxType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="attrunit" type="attrunitType">
+		
+	</xs:element>
+	<xs:simpleType name="attrunitType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="attrmres" type="attrmresType">
+		
+	</xs:element>
+	<xs:simpleType name="attrmresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="codesetd" type="codesetdType">
+		
+	</xs:element>
+	<xs:complexType name="codesetdType">
+		<xs:sequence>
+			<xs:element ref="codesetn"/>
+			<xs:element ref="codesets"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="codesetn" type="codesetnType">
+		
+	</xs:element>
+	<xs:simpleType name="codesetnType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="codesets" type="codesetsType">
+		
+	</xs:element>
+	<xs:simpleType name="codesetsType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="udom" type="udomType">
+		
+	</xs:element>
+	<xs:simpleType name="udomType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="begdatea" type="begdateaType">
+		
+	</xs:element>
+	<xs:simpleType name="begdateaType">
+		<xs:restriction base="FGDCdate"/>
+	</xs:simpleType>
+	<xs:element name="enddatea" type="enddateaType">
+		
+	</xs:element>
+	<xs:simpleType name="enddateaType">
+		<xs:restriction base="FGDCdate"/>
+	</xs:simpleType>
+	<xs:element name="attrvai" type="attrvaiType">
+		
+	</xs:element>
+	<xs:complexType name="attrvaiType">
+		<xs:sequence>
+			<xs:element ref="attrva"/>
+			<xs:element ref="attrvae"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="attrva" type="attrvaType">
+		
+	</xs:element>
+	<xs:simpleType name="attrvaType">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
+	<xs:element name="attrvae" type="attrvaeType">
+		
+	</xs:element>
+	<xs:simpleType name="attrvaeType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="attrmfrq" type="attrmfrqType">
+		
+	</xs:element>
+	<xs:simpleType name="attrmfrqType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Unknown"/>
+					<xs:enumeration value="As needed"/>
+					<xs:enumeration value="Irregular"/>
+					<xs:enumeration value="None planned"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="overview" type="overviewType">
+		
+	</xs:element>
+	<xs:complexType name="overviewType">
+		<xs:sequence>
+			<xs:element ref="eaover"/>
+			<xs:element ref="eadetcit" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="eaover" type="eaoverType">
+		
+	</xs:element>
+	<xs:simpleType name="eaoverType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="eadetcit" type="eadetcitType">
+		
+	</xs:element>
+	<xs:simpleType name="eadetcitType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+</xs:schema>

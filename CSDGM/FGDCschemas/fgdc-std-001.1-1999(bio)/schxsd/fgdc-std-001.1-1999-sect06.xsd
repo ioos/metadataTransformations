@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" blockDefault="#all">
+	<xs:element name="distinfo" type="distinfoType">
+		
+	</xs:element>
+	<xs:complexType name="distinfoType">
+		<xs:sequence>
+			<xs:element ref="distrib"/>
+			<xs:element ref="resdesc" minOccurs="0"/>
+			<xs:element ref="distliab"/>
+			<xs:element ref="stdorder" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="custom" minOccurs="0"/>
+			<xs:element ref="techpreq" minOccurs="0"/>
+			<xs:element ref="availabl" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="distrib" type="distribType">
+		
+	</xs:element>
+	<xs:complexType name="distribType">
+		<xs:sequence>
+			<xs:element ref="cntinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="resdesc" type="resdescType">
+		
+	</xs:element>
+	<xs:simpleType name="resdescType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="distliab" type="distliabType">
+		
+	</xs:element>
+	<xs:simpleType name="distliabType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="stdorder" type="stdorderType">
+		
+	</xs:element>
+	<xs:complexType name="stdorderType">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="nondig"/>
+				<xs:element ref="digform" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:element ref="fees"/>
+			<xs:element ref="ordering" minOccurs="0"/>
+			<xs:element ref="turnarnd" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="nondig" type="nondigType">
+		
+	</xs:element>
+	<xs:simpleType name="nondigType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="digform" type="digformType">
+		
+	</xs:element>
+	<xs:complexType name="digformType">
+		<xs:sequence>
+			<xs:element ref="digtinfo"/>
+			<xs:element ref="digtopt"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="digtinfo" type="digtinfoType">
+		
+	</xs:element>
+	<xs:complexType name="digtinfoType">
+		<xs:sequence>
+			<xs:element ref="formname"/>
+			<xs:sequence minOccurs="0">
+				<xs:choice>
+					<xs:element ref="formvern"/>
+					<xs:element ref="formverd"/>
+				</xs:choice>
+				<xs:element ref="formspec" minOccurs="0"/>
+			</xs:sequence>
+			<xs:element ref="asciistr" minOccurs="0"/>
+			<xs:element ref="formcont" minOccurs="0"/>
+			<xs:element ref="filedec" minOccurs="0"/>
+			<xs:element ref="transize" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="formname" type="formnameType">
+		
+	</xs:element>
+	<xs:simpleType name="formnameType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="ARCE"/>
+					<xs:enumeration value="ARCG"/>
+					<xs:enumeration value="ASCII"/>
+					<xs:enumeration value="BIL"/>
+					<xs:enumeration value="BIP"/>
+					<xs:enumeration value="BSQ"/>
+					<xs:enumeration value="CDF"/>
+					<xs:enumeration value="CFF"/>
+					<xs:enumeration value="COORD"/>
+					<xs:enumeration value="DEM"/>
+					<xs:enumeration value="DFAD"/>
+					<xs:enumeration value="DGN"/>
+					<xs:enumeration value="DIGEST"/>
+					<xs:enumeration value="DLG"/>
+					<xs:enumeration value="DTED"/>
+					<xs:enumeration value="DWG"/>
+					<xs:enumeration value="DX90"/>
+					<xs:enumeration value="DXF"/>
+					<xs:enumeration value="ERDAS"/>
+					<xs:enumeration value="GRASS"/>
+					<xs:enumeration value="HDF"/>
+					<xs:enumeration value="IGDS"/>
+					<xs:enumeration value="IGES"/>
+					<xs:enumeration value="MOSS"/>
+					<xs:enumeration value="netCDF"/>
+					<xs:enumeration value="NITF"/>
+					<xs:enumeration value="RPF"/>
+					<xs:enumeration value="RVC"/>
+					<xs:enumeration value="RVF"/>
+					<xs:enumeration value="SDTS"/>
+					<xs:enumeration value="SIF"/>
+					<xs:enumeration value="SLF"/>
+					<xs:enumeration value="TIFF"/>
+					<xs:enumeration value="TGRLN"/>
+					<xs:enumeration value="VPF"/>
+					<xs:enumeration value="DBF"/>
+					<xs:enumeration value="DIF"/>
+					<xs:enumeration value="DOC"/>
+					<xs:enumeration value="EPS"/>
+					<xs:enumeration value="FW"/>
+					<xs:enumeration value="GIF"/>
+					<xs:enumeration value="GRA"/>
+					<xs:enumeration value="MDB"/>
+					<xs:enumeration value="PBM"/>
+					<xs:enumeration value="PLT"/>
+					<xs:enumeration value="PS"/>
+					<xs:enumeration value="QP"/>
+					<xs:enumeration value="RPD"/>
+					<xs:enumeration value="SPLUS"/>
+					<xs:enumeration value="WK1"/>
+					<xs:enumeration value="WKS"/>
+					<xs:enumeration value="WP"/>
+					<xs:enumeration value="XLS"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="formvern" type="formvernType">
+		
+	</xs:element>
+	<xs:simpleType name="formvernType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="formverd" type="formverdType">
+		
+	</xs:element>
+	<xs:simpleType name="formverdType">
+		<xs:restriction base="FGDCdate"/>
+	</xs:simpleType>
+	<xs:element name="formspec" type="formspecType">
+		
+	</xs:element>
+	<xs:simpleType name="formspecType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="asciistr" type="T_asciistr">
+		
+	</xs:element>
+	<xs:complexType name="T_asciistr">
+		<xs:sequence>
+			<xs:element ref="recdel" minOccurs="0"/>
+			<xs:element ref="numheadl"/>
+			<xs:element ref="deschead" minOccurs="0"/>
+			<xs:element ref="orienta"/>
+			<xs:element ref="casesens"/>
+			<xs:element ref="authent" minOccurs="0"/>
+			<xs:element ref="quotech" minOccurs="0"/>
+			<xs:element ref="datafiel" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="recdel" type="recdelType">
+		
+	</xs:element>
+	<xs:simpleType name="recdelType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="numheadl" type="numheadlType">
+		
+	</xs:element>
+	<xs:simpleType name="numheadlType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="deschead" type="descheadType">
+		
+	</xs:element>
+	<xs:simpleType name="descheadType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="orienta" type="orientaType">
+		
+	</xs:element>
+	<xs:simpleType name="orientaType">
+		<xs:restriction base="FGDCstring">
+			<xs:enumeration value="columnmajor"/>
+			<xs:enumeration value="rowmajor"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="casesens" type="casesensType">
+		
+	</xs:element>
+	<xs:simpleType name="casesensType">
+		<xs:restriction base="FGDCstring">
+			<xs:enumeration value="y"/>
+			<xs:enumeration value="Y"/>
+			<xs:enumeration value="n"/>
+			<xs:enumeration value="N"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="authent" type="authentType">
+		
+	</xs:element>
+	<xs:simpleType name="authentType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="quotech" type="quotechType">
+		
+	</xs:element>
+	<xs:simpleType name="quotechType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="&quot;"/>
+					<xs:enumeration value="&apos;"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="datafiel" type="T_datafiel">
+		
+	</xs:element>
+	<xs:complexType name="T_datafiel">
+		<xs:sequence>
+			<xs:element ref="dfieldnm"/>
+			<xs:element ref="missingv" minOccurs="0"/>
+			<xs:choice>
+				<xs:element ref="dfwidthd"/>
+				<xs:element ref="dfwidth"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="dfieldnm" type="dfieldnmType">
+		
+	</xs:element>
+	<xs:simpleType name="dfieldnmType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="missingv" type="missingvType">
+		
+	</xs:element>
+	<xs:simpleType name="missingvType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="dfwidthd" type="dfwidthdType">
+		
+	</xs:element>
+	<xs:simpleType name="dfwidthdType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="dfwidth" type="dfwidthType">
+		
+	</xs:element>
+	<xs:simpleType name="dfwidthType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="formcont" type="formcontType">
+		
+	</xs:element>
+	<xs:simpleType name="formcontType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="filedec" type="filedecType">
+		
+	</xs:element>
+	<xs:simpleType name="filedecType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="No compression applied"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="transize" type="transizeType">
+		
+	</xs:element>
+	<xs:simpleType name="transizeType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="digtopt" type="digtoptType">
+		
+	</xs:element>
+	<xs:complexType name="digtoptType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="onlinopt"/>
+			<xs:element ref="offoptn"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="onlinopt" type="onlinoptType">
+		
+	</xs:element>
+	<xs:complexType name="onlinoptType">
+		<xs:sequence>
+			<xs:element ref="computer" maxOccurs="unbounded"/>
+			<xs:element ref="accinstr" minOccurs="0"/>
+			<xs:element ref="oncomp" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="computer" type="computerType">
+		
+	</xs:element>
+	<xs:complexType name="computerType">
+		<xs:choice>
+			<xs:element ref="networka"/>
+			<xs:element ref="dialinst"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="networka" type="networkaType">
+		
+	</xs:element>
+	<xs:complexType name="networkaType">
+		<xs:sequence>
+			<xs:element ref="networkr" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="networkr" type="networkrType">
+		
+	</xs:element>
+	<xs:simpleType name="networkrType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="dialinst" type="dialinstType">
+		
+	</xs:element>
+	<xs:complexType name="dialinstType">
+		<xs:sequence>
+			<xs:element ref="lowbps"/>
+			<xs:element ref="highbps" minOccurs="0"/>
+			<xs:element ref="numdata"/>
+			<xs:element ref="numstop"/>
+			<xs:element ref="parity"/>
+			<xs:element ref="compress" minOccurs="0"/>
+			<xs:element ref="dialtel" maxOccurs="unbounded"/>
+			<xs:element ref="dialfile" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="bpsType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="110"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="lowbps" type="lowbpsType">
+		
+	</xs:element>
+	<xs:simpleType name="lowbpsType">
+		<xs:restriction base="bpsType"/>
+	</xs:simpleType>
+	<xs:element name="highbps" type="highbpsType">
+		
+	</xs:element>
+	<xs:simpleType name="highbpsType">
+		<xs:restriction base="bpsType"/>
+	</xs:simpleType>
+	<xs:element name="numdata" type="numdataType">
+		
+	</xs:element>
+	<xs:simpleType name="numdataType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="7"/>
+			<xs:maxInclusive value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="numstop" type="numstopType">
+		
+	</xs:element>
+	<xs:simpleType name="numstopType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="parity" type="parityType">
+		
+	</xs:element>
+	<xs:simpleType name="parityType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="None"/>
+			<xs:enumeration value="Odd"/>
+			<xs:enumeration value="Even"/>
+			<xs:enumeration value="Mark"/>
+			<xs:enumeration value="Space"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="compress" type="compressType">
+		
+	</xs:element>
+	<xs:simpleType name="compressType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="V.32"/>
+					<xs:enumeration value="V.32bis"/>
+					<xs:enumeration value="V.42"/>
+					<xs:enumeration value="V.42bis"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="dialtel" type="dialtelType">
+		
+	</xs:element>
+	<xs:simpleType name="dialtelType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="dialfile" type="dialfileType">
+		
+	</xs:element>
+	<xs:simpleType name="dialfileType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="accinstr" type="accinstrType">
+		
+	</xs:element>
+	<xs:simpleType name="accinstrType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="oncomp" type="oncompType">
+		
+	</xs:element>
+	<xs:simpleType name="oncompType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="offoptn" type="offoptnType">
+		
+	</xs:element>
+	<xs:complexType name="offoptnType">
+		<xs:sequence>
+			<xs:element ref="offmedia"/>
+			<xs:element ref="reccap" minOccurs="0"/>
+			<xs:element ref="recfmt" maxOccurs="unbounded"/>
+			<xs:element ref="compat" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="offmedia" type="offmediaType">
+		
+	</xs:element>
+	<xs:simpleType name="offmediaType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="CD-ROM"/>
+					<xs:enumeration value="3.5-inch floppy disk"/>
+					<xs:enumeration value="5.25-inch floppy disk"/>
+					<xs:enumeration value="9-track tape"/>
+					<xs:enumeration value="4mm cartridge tape"/>
+					<xs:enumeration value="8mm cartridge tape"/>
+					<xs:enumeration value=".25-inch cartridge tape"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="reccap" type="reccapType">
+		
+	</xs:element>
+	<xs:complexType name="reccapType">
+		<xs:sequence>
+			<xs:element ref="recden" maxOccurs="unbounded"/>
+			<xs:element ref="recdenu"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="recden" type="recdenType">
+		
+	</xs:element>
+	<xs:simpleType name="recdenType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="recdenu" type="recdenuType">
+		
+	</xs:element>
+	<xs:simpleType name="recdenuType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="recfmt" type="recfmtType">
+		
+	</xs:element>
+	<xs:simpleType name="recfmtType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="cpio"/>
+					<xs:enumeration value="High Sierra"/>
+					<xs:enumeration value="ISO 9960"/>
+					<xs:enumeration value="ISO 9960 with Rock Ridge extensions"/>
+					<xs:enumeration value="ISO 9660 with Apple HFS extensions"/>
+					<xs:enumeration value="tar"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="compat" type="compatType">
+		
+	</xs:element>
+	<xs:simpleType name="compatType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="fees" type="feesType">
+		
+	</xs:element>
+	<xs:simpleType name="feesType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="ordering" type="orderingType">
+		
+	</xs:element>
+	<xs:simpleType name="orderingType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="turnarnd" type="turnarndType">
+		
+	</xs:element>
+	<xs:simpleType name="turnarndType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="custom" type="customType">
+		
+	</xs:element>
+	<xs:simpleType name="customType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="techpreq" type="techpreqType">
+		
+	</xs:element>
+	<xs:simpleType name="techpreqType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="availabl" type="availablType">
+		
+	</xs:element>
+	<xs:complexType name="availablType">
+		<xs:sequence>
+			<xs:element ref="timeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

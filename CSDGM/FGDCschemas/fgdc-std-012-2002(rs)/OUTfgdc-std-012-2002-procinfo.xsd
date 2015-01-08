@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="fgdc-std-012-2002.xsd"/>
+	<xs:element name="procinfo" type="procinfoType"/>
+	<xs:complexType name="procinfoType">
+		<xs:sequence>
+			<xs:element name="procidfs" type="procidfsType"/>
+			<xs:element name="procinp" type="procinpType" maxOccurs="unbounded"/>
+			<xs:element name="ancdata" type="ancdataType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="procsoft" type="procsoftType"/>
+			<xs:element name="procprcd" type="procprcdType"/>
+			<xs:element name="procchhi" type="procchhiType" minOccurs="0"/>
+			<xs:element name="procdoc" type="procdocType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- procidsfs hierarchy -->
+	<xs:complexType name="procidfsType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- procinp hierarchy -->
+	<xs:complexType name="procinpType">
+		<xs:sequence>
+			<xs:element name="inpdatid" type="inpdatidType"/>
+			<xs:choice>
+				<xs:element name="prindesc" type="prindescType"/>
+				<xs:element name="prinref" type="prinrefType"/>
+			</xs:choice>
+			<xs:element name="prinlevl" type="prinlevlType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="inpdatidType">
+		<xs:sequence>
+			<xs:element ref="datsetid"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="prindescType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:complexType name="prinrefType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="prinlevlType">
+		<xs:sequence>
+			<xs:element name="proclevl" type="proclevlType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ancdata hierarchy -->
+	<xs:complexType name="ancdataType">
+		<xs:sequence>
+			<xs:element name="ancdatid" type="ancdatidType" minOccurs="0"/>
+			<xs:choice>
+				<xs:element name="ancdesc" type="ancdescType"/>
+				<xs:element name="ancref" type="ancrefType"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ancdatidType">
+		<xs:sequence>
+			<xs:element ref="datsetid"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ancdescType">
+		<xs:sequence>
+			<xs:element name="ancdsdes" type="ancdsdesType"/>
+			<xs:element name="procpmcl" type="procpmclType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ancrefType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ancdsdesType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:simpleType name="procpmclType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<!-- procsoft hierarchy -->
+	<xs:complexType name="procsoftType">
+		<xs:choice>
+			<xs:element name="prsodesc" type="prsodescType"/>
+			<xs:element name="prsoref" type="prsorefType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:simpleType name="prsodescType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:complexType name="prsorefType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- procprcd hierarch -->
+	<xs:complexType name="procprcdType">
+		<xs:sequence>
+			<xs:element name="prunhist" type="prunhistType"/>
+			<xs:element name="procenv" type="procenvType"/>
+			<xs:element ref="procpdes" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="prunhistType">
+		<xs:sequence>
+			<xs:element ref="procstep" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="procenvType">
+		<xs:sequence>
+			<xs:element ref="native"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="procpdes" type="procpdesType"/>
+	<xs:simpleType name="procpdesType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<!-- procchhi hierarchy -->
+	<xs:complexType name="procchhiType">
+		<xs:sequence>
+			<xs:element ref="procstep" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- procdoc hierarch -->
+	<xs:complexType name="procdocType">
+		<xs:sequence>
+			<xs:element ref="citeinfo"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

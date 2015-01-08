@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" blockDefault="#all">
+	<xs:element name="spref" type="sprefType">
+		
+	</xs:element>
+	<xs:complexType name="sprefType">
+		<xs:sequence>
+			<xs:element ref="horizsys" minOccurs="0"/>
+			<xs:element ref="vertdef" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="horizsys" type="horizsysType">
+		
+	</xs:element>
+	<xs:complexType name="horizsysType">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="geograph"/>
+				<xs:element ref="planar" maxOccurs="unbounded"/>
+				<xs:element ref="local"/>
+			</xs:choice>
+			<xs:element ref="geodetic" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="geograph" type="geographType">
+		
+	</xs:element>
+	<xs:complexType name="geographType">
+		<xs:sequence>
+			<xs:element ref="latres"/>
+			<xs:element ref="longres"/>
+			<xs:element ref="geogunit"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="latres" type="latresType">
+		
+	</xs:element>
+	<xs:simpleType name="latresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="longres" type="longresType">
+		
+	</xs:element>
+	<xs:simpleType name="longresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="geogunit" type="geogunitType">
+		
+	</xs:element>
+	<xs:simpleType name="geogunitType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Decimal degrees"/>
+			<xs:enumeration value="Decimal minutes"/>
+			<xs:enumeration value="Decimal seconds"/>
+			<xs:enumeration value="Degrees and decimal minutes"/>
+			<xs:enumeration value="Degrees, minutes, and decimal seconds"/>
+			<xs:enumeration value="Radians"/>
+			<xs:enumeration value="Grads"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="planar" type="planarType">
+		
+	</xs:element>
+	<xs:complexType name="planarType">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="mapproj"/>
+				<xs:element ref="gridsys"/>
+				<xs:element ref="localp"/>
+			</xs:choice>
+			<xs:element ref="planci"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="mapproj" type="mapprojType">
+		
+	</xs:element>
+	<xs:complexType name="mapprojType">
+		<xs:sequence>
+			<xs:element ref="mapprojn"/>
+			<xs:choice>
+				<xs:element ref="albers"/>
+				<xs:element ref="azimequi"/>
+				<xs:element ref="equicon"/>
+				<xs:element ref="equirect"/>
+				<xs:element ref="gvnsp"/>
+				<xs:element ref="gnomonic"/>
+				<xs:element ref="lamberta"/>
+				<xs:element ref="lambertc"/>
+				<xs:element ref="mercator"/>
+				<xs:element ref="modsak"/>
+				<xs:element ref="miller"/>
+				<xs:element ref="obqmerc"/>
+				<xs:element ref="orthogr"/>
+				<xs:element ref="polarst"/>
+				<xs:element ref="polycon"/>
+				<xs:element ref="robinson"/>
+				<xs:element ref="sinusoid"/>
+				<xs:element ref="spaceobq"/>
+				<xs:element ref="stereo"/>
+				<xs:element ref="transmer"/>
+				<xs:element ref="vdgrin"/>
+				<xs:element ref="mapprojp"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="mapprojn" type="mapprojnType">
+		
+	</xs:element>
+	<xs:simpleType name="mapprojnType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Albers Conical Equal Area"/>
+					<xs:enumeration value="Azimuthal Equidistant"/>
+					<xs:enumeration value="Equidistant Conic"/>
+					<xs:enumeration value="Equirectangular"/>
+					<xs:enumeration value="General Vertical Near-sided Perspective"/>
+					<xs:enumeration value="Gnomonic"/>
+					<xs:enumeration value="Lambert Azimuthal Equal Area"/>
+					<xs:enumeration value="Lambert Conformal Conic"/>
+					<xs:enumeration value="Mercator"/>
+					<xs:enumeration value="Modified Stereographic for Alaska"/>
+					<xs:enumeration value="Miller Cylindrical"/>
+					<xs:enumeration value="Oblique Mercator"/>
+					<xs:enumeration value="Orthographic"/>
+					<xs:enumeration value="Polar Stereographic"/>
+					<xs:enumeration value="Polyconic"/>
+					<xs:enumeration value="Robinson"/>
+					<xs:enumeration value="Sinusoidal"/>
+					<xs:enumeration value="Space Oblique Mercator"/>
+					<xs:enumeration value="Stereographic"/>
+					<xs:enumeration value="Transverse Mercator"/>
+					<xs:enumeration value="van der Grinten"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="albers" type="albersType">
+		
+	</xs:element>
+	<xs:complexType name="albersType">
+		<xs:sequence>
+			<xs:element ref="stdparll" maxOccurs="2"/>
+			<xs:element ref="longcm"/>
+			<xs:element ref="latprjo"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="azimequi" type="azimequiType">
+		
+	</xs:element>
+	<xs:complexType name="azimequiType">
+		<xs:sequence>
+			<xs:element ref="longcm"/>
+			<xs:element ref="latprjo"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="equicon" type="equiconType">
+		
+	</xs:element>
+	<xs:complexType name="equiconType">
+		<xs:sequence>
+			<xs:element ref="stdparll" maxOccurs="2"/>
+			<xs:element ref="longcm"/>
+			<xs:element ref="latprjo"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="equirect" type="equirectType">
+		
+	</xs:element>
+	<xs:complexType name="equirectType">
+		<xs:sequence>
+			<xs:element ref="stdparll"/>
+			<xs:element ref="longcm"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="gvnsp" type="gvnspType">
+		
+	</xs:element>
+	<xs:complexType name="gvnspType">
+		<xs:sequence>
+			<xs:element ref="heightpt"/>
+			<xs:element ref="longpc"/>
+			<xs:element ref="latprjc"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="gnomonic" type="gnomonicType">
+		
+	</xs:element>
+	<xs:complexType name="gnomonicType">
+		<xs:sequence>
+			<xs:element ref="longpc"/>
+			<xs:element ref="latprjc"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="lamberta" type="lambertaType">
+		
+	</xs:element>
+	<xs:complexType name="lambertaType">
+		<xs:sequence>
+			<xs:element ref="longpc"/>
+			<xs:element ref="latprjc"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="lambertc" type="lambertcType">
+		
+	</xs:element>
+	<xs:complexType name="lambertcType">
+		<xs:sequence>
+			<xs:element ref="stdparll" maxOccurs="2"/>
+			<xs:element ref="longcm"/>
+			<xs:element ref="latprjo"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="mercator" type="mercatorType">
+		
+	</xs:element>
+	<xs:complexType name="mercatorType">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="stdparll"/>
+				<xs:element ref="sfequat"/>
+			</xs:choice>
+			<xs:element ref="longcm"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="modsak" type="modsakType">
+		
+	</xs:element>
+	<xs:complexType name="modsakType">
+		<xs:sequence>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="miller" type="millerType">
+		
+	</xs:element>
+	<xs:complexType name="millerType">
+		<xs:sequence>
+			<xs:element ref="longcm"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="obqmerc" type="obqmercType">
+		
+	</xs:element>
+	<xs:complexType name="obqmercType">
+		<xs:sequence>
+			<xs:element ref="sfctrlin"/>
+			<xs:choice>
+				<xs:element ref="obqlazim"/>
+				<xs:element ref="obqlpt"/>
+			</xs:choice>
+			<xs:element ref="latprjo"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="orthogr" type="orthogrType">
+		
+	</xs:element>
+	<xs:complexType name="orthogrType">
+		<xs:sequence>
+			<xs:element ref="longpc"/>
+			<xs:element ref="latprjc"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="polarst" type="polarstType">
+		
+	</xs:element>
+	<xs:complexType name="polarstType">
+		<xs:sequence>
+			<xs:element ref="svlong"/>
+			<xs:choice>
+				<xs:element ref="stdparll"/>
+				<xs:element ref="sfprjorg"/>
+			</xs:choice>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="polycon" type="polyconType">
+
+		
+	</xs:element>
+	<xs:complexType name="polyconType">
+		<xs:sequence>
+			<xs:element ref="longcm"/>
+			<xs:element ref="latprjo"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="robinson" type="robinsonType">
+		
+	</xs:element>
+	<xs:complexType name="robinsonType">
+		<xs:sequence>
+			<xs:element ref="longpc"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="sinusoid" type="sinusoidType">
+		
+	</xs:element>
+	<xs:complexType name="sinusoidType">
+		<xs:sequence>
+			<xs:element ref="longcm"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="spaceobq" type="spaceobqType">
+		
+	</xs:element>
+	<xs:complexType name="spaceobqType">
+		<xs:sequence>
+			<xs:element ref="landsat"/>
+			<xs:element ref="pathnum"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="stereo" type="stereoType">
+		
+	</xs:element>
+	<xs:complexType name="stereoType">
+		<xs:sequence>
+			<xs:element ref="longpc"/>
+			<xs:element ref="latprjc"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="transmer" type="transmerType">
+		
+	</xs:element>
+	<xs:complexType name="transmerType">
+		<xs:sequence>
+			<xs:element ref="sfctrmer"/>
+			<xs:element ref="longcm"/>
+			<xs:element ref="latprjo"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="vdgrin" type="vdgrinType">
+		
+	</xs:element>
+	<xs:complexType name="vdgrinType">
+		<xs:sequence>
+			<xs:element ref="longcm"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="mapprojp" type="mapprojpType">
+		
+	</xs:element>
+	<xs:complexType name="mapprojpType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="stdparll"/>
+			<xs:element ref="longcm"/>
+			<xs:element ref="latprjo"/>
+			<xs:element ref="feast"/>
+			<xs:element ref="fnorth"/>
+			<xs:element ref="sfequat"/>
+			<xs:element ref="heightpt"/>
+			<xs:element ref="longpc"/>
+			<xs:element ref="latprjc"/>
+			<xs:element ref="sfctrlin"/>
+			<xs:element ref="obqlazim"/>
+			<xs:element ref="obqlpt"/>
+			<xs:element ref="svlong"/>
+			<xs:element ref="sfprjorg"/>
+			<xs:element ref="landsat"/>
+			<xs:element ref="pathnum"/>
+			<xs:element ref="sfctrmer"/>
+			<xs:element ref="otherprj"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="stdparll" type="stdparllType">
+		
+	</xs:element>
+	<xs:simpleType name="stdparllType">
+		<xs:restriction base="FGDClatitude"/>
+	</xs:simpleType>
+	<xs:element name="longcm" type="longcmType">
+		
+	</xs:element>
+	<xs:simpleType name="longcmType">
+		<xs:restriction base="FGDClongitude">
+			<xs:maxExclusive value="180.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="latprjo" type="latprjoType">
+		
+	</xs:element>
+	<xs:simpleType name="latprjoType">
+		<xs:restriction base="FGDClatitude"/>
+	</xs:simpleType>
+	<xs:element name="feast" type="feastType">
+		
+	</xs:element>
+	<xs:simpleType name="feastType">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
+	<xs:element name="fnorth" type="fnorthType">
+		
+	</xs:element>
+	<xs:simpleType name="fnorthType">
+		<xs:restriction base="xs:double"/>
+	</xs:simpleType>
+	<xs:element name="sfequat" type="sfequatType">
+		
+	</xs:element>
+	<xs:simpleType name="sfequatType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="heightpt" type="heightptType">
+		
+	</xs:element>
+	<xs:simpleType name="heightptType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="longpc" type="longpcType">
+		
+	</xs:element>
+	<xs:simpleType name="longpcType">
+		<xs:restriction base="FGDClongitude">
+			<xs:maxExclusive value="180.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="latprjc" type="latprjcType">
+		
+	</xs:element>
+	<xs:simpleType name="latprjcType">
+		<xs:restriction base="FGDClatitude"/>
+	</xs:simpleType>
+	<xs:element name="sfctrlin" type="sfctrlinType">
+		
+	</xs:element>
+	<xs:simpleType name="sfctrlinType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="obqlazim" type="obqlazimType">
+		
+	</xs:element>
+	<xs:complexType name="obqlazimType">
+		<xs:sequence>
+			<xs:element ref="azimangl"/>
+			<xs:element ref="azimptl"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="azimangl" type="azimanglType">
+
+	</xs:element>
+	<xs:simpleType name="azimanglType">
+		<xs:restriction base="xs:double">
+			<xs:minInclusive value="0.0"/>
+			<xs:maxExclusive value="360.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="azimptl" type="azimptlType">
+		
+	</xs:element>
+	<xs:simpleType name="azimptlType">
+		<xs:restriction base="FGDClongitude">
+			<xs:maxExclusive value="180.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="obqlpt" type="obqlptType">
+		
+	</xs:element>
+	<xs:complexType name="obqlptType">
+		<xs:sequence minOccurs="2" maxOccurs="2">
+			<xs:element ref="obqllat"/>
+			<xs:element ref="obqllong"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="obqllat" type="obqllatType">
+		
+	</xs:element>
+	<xs:simpleType name="obqllatType">
+		<xs:restriction base="FGDClatitude"/>
+	</xs:simpleType>
+	<xs:element name="obqllong" type="obqllongType">
+		
+	</xs:element>
+	<xs:simpleType name="obqllongType">
+		<xs:restriction base="FGDClongitude">
+			<xs:maxExclusive value="180.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="svlong" type="svlongType">
+	
+	</xs:element>
+	<xs:simpleType name="svlongType">
+		<xs:restriction base="FGDClongitude">
+			<xs:maxExclusive value="180.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="sfprjorg" type="sfprjorgType">
+	
+	</xs:element>
+	<xs:simpleType name="sfprjorgType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="landsat" type="landsatType">
+	
+	</xs:element>
+	<xs:simpleType name="landsatType">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+	<xs:element name="pathnum" type="pathnumType">
+		
+	</xs:element>
+	<xs:simpleType name="pathnumType">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+	<xs:element name="sfctrmer" type="sfctrmerType">
+		
+	</xs:element>
+	<xs:simpleType name="sfctrmerType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="otherprj" type="otherprjType">
+		
+	</xs:element>
+	<xs:simpleType name="otherprjType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="gridsys" type="gridsysType">
+		
+	</xs:element>
+	<xs:complexType name="gridsysType">
+		<xs:sequence>
+			<xs:element ref="gridsysn"/>
+			<xs:choice>
+				<xs:element ref="utm"/>
+				<xs:element ref="ups"/>
+				<xs:element ref="spcs"/>
+				<xs:element ref="arcsys"/>
+				<xs:element ref="othergrd"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="gridsysn" type="gridsysnType">
+		
+	</xs:element>
+	<xs:simpleType name="gridsysnType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Universal Transverse Mercator"/>
+			<xs:enumeration value="Universal Polar Stereographic"/>
+			<xs:enumeration value="State Plane Coordinate System 1927"/>
+			<xs:enumeration value="State Plane Coordinate System 1983"/>
+			<xs:enumeration value="ARC Coordinate System"/>
+			<xs:enumeration value="other grid system"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="utm" type="utmType">
+		
+	</xs:element>
+	<xs:complexType name="utmType">
+		<xs:sequence>
+			<xs:element ref="utmzone"/>
+			<xs:element ref="transmer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="utmzone" type="utmzoneType">
+		
+	</xs:element>
+	<xs:simpleType name="utmzoneType">
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="-60"/>
+					<xs:maxInclusive value="-1"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="1"/>
+					<xs:maxInclusive value="60"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="ups" type="upsType">
+		
+	</xs:element>
+	<xs:complexType name="upsType">
+		<xs:sequence>
+			<xs:element ref="upszone"/>
+			<xs:element ref="polarst"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="upszone" type="upszoneType">
+		
+	</xs:element>
+	<xs:simpleType name="upszoneType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="A"/>
+			<xs:enumeration value="B"/>
+			<xs:enumeration value="Y"/>
+			<xs:enumeration value="Z"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="spcs" type="spcsType">
+		
+	</xs:element>
+	<xs:complexType name="spcsType">
+		<xs:sequence>
+			<xs:element ref="spcszone"/>
+			<xs:choice>
+				<xs:element ref="lambertc"/>
+				<xs:element ref="transmer"/>
+				<xs:element ref="obqmerc"/>
+				<xs:element ref="polycon"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="spcszone" type="spcszoneType">
+		
+	</xs:element>
+	<xs:simpleType name="spcszoneType">
+		<xs:restriction base="FGDCstring">
+			<xs:pattern value="\d{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="arcsys" type="arcsysType">
+		
+	</xs:element>
+	<xs:complexType name="arcsysType">
+		<xs:sequence>
+			<xs:element ref="arczone"/>
+			<xs:choice>
+				<xs:element ref="equirect"/>
+				<xs:element ref="azimequi"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="arczone" type="arczoneType">
+		
+	</xs:element>
+	<xs:simpleType name="arczoneType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="18"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="othergrd" type="othergrdType">
+		
+	</xs:element>
+	<xs:simpleType name="othergrdType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="localp" type="localpType">
+		
+	</xs:element>
+	<xs:complexType name="localpType">
+		<xs:sequence>
+			<xs:element ref="localpd"/>
+			<xs:element ref="localpgi"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="localpd" type="localpdType">
+		
+	</xs:element>
+	<xs:simpleType name="localpdType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="localpgi" type="localpgiType">
+		
+	</xs:element>
+	<xs:simpleType name="localpgiType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="planci" type="planciType">
+		
+	</xs:element>
+	<xs:complexType name="planciType">
+		<xs:sequence>
+			<xs:element ref="plance"/>
+			<xs:choice>
+				<xs:element ref="coordrep"/>
+				<xs:element ref="distbrep"/>
+			</xs:choice>
+			<xs:element ref="plandu"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="plance" type="planceType">
+	
+	</xs:element>
+	<xs:simpleType name="planceType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="coordinate pair"/>
+			<xs:enumeration value="distance and bearing"/>
+			<xs:enumeration value="row and column"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="coordrep" type="coordrepType">
+		
+	</xs:element>
+	<xs:complexType name="coordrepType">
+		<xs:sequence>
+			<xs:element ref="absres"/>
+			<xs:element ref="ordres"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="absres" type="absresType">
+		
+	</xs:element>
+	<xs:simpleType name="absresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="ordres" type="ordresType">
+		
+	</xs:element>
+	<xs:simpleType name="ordresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="distbrep" type="distbrepType">
+		
+	</xs:element>
+	<xs:complexType name="distbrepType">
+		<xs:sequence>
+			<xs:element ref="distres"/>
+			<xs:element ref="bearres"/>
+			<xs:element ref="bearunit"/>
+			<xs:element ref="bearrefd"/>
+			<xs:element ref="bearrefm"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="distres" type="distresType">
+		
+	</xs:element>
+	<xs:simpleType name="distresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="bearres" type="bearresType">
+		
+	</xs:element>
+	<xs:simpleType name="bearresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="bearunit" type="bearunitType">
+		
+	</xs:element>
+	<xs:simpleType name="bearunitType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Decimal degrees"/>
+			<xs:enumeration value="Decimal minutes"/>
+			<xs:enumeration value="Decimal seconds"/>
+			<xs:enumeration value="Degrees and decimal minutes"/>
+			<xs:enumeration value="Degrees, minutes, and decimal seconds"/>
+			<xs:enumeration value="Radians"/>
+			<xs:enumeration value="Grads"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="bearrefd" type="bearrefdType">
+		
+	</xs:element>
+	<xs:simpleType name="bearrefdType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="North"/>
+			<xs:enumeration value="South"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="bearrefm" type="bearrefmType">
+		
+	</xs:element>
+	<xs:simpleType name="bearrefmType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Assumed"/>
+			<xs:enumeration value="Grid"/>
+			<xs:enumeration value="Magnetic"/>
+			<xs:enumeration value="Astronomic"/>
+			<xs:enumeration value="Geodetic"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="plandu" type="planduType">
+		
+	</xs:element>
+	<xs:simpleType name="planduType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="meters"/>
+					<xs:enumeration value="international feet"/>
+					<xs:enumeration value="survey feet"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="local" type="localType">
+		
+	</xs:element>
+	<xs:complexType name="localType">
+		<xs:sequence>
+			<xs:element ref="localdes"/>
+			<xs:element ref="localgeo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="localdes" type="localdesType">
+		
+	</xs:element>
+	<xs:simpleType name="localdesType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="localgeo" type="localgeoType">
+		
+	</xs:element>
+	<xs:simpleType name="localgeoType">
+		<xs:restriction base="FGDCstring"/>
+	</xs:simpleType>
+	<xs:element name="geodetic" type="geodeticType">
+		
+	</xs:element>
+	<xs:complexType name="geodeticType">
+		<xs:sequence>
+			<xs:element ref="horizdn" minOccurs="0"/>
+			<xs:element ref="ellips"/>
+			<xs:element ref="semiaxis"/>
+			<xs:element ref="denflat"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="horizdn" type="horizdnType">
+		
+	</xs:element>
+	<xs:simpleType name="horizdnType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="North American Datum of 1927"/>
+					<xs:enumeration value="North American Datum of 1983"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="ellips" type="ellipsType">
+
+	</xs:element>
+	<xs:simpleType name="ellipsType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Clarke 1866"/>
+					<xs:enumeration value="Geodetic Reference System 80"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="semiaxis" type="semiaxisType">
+		
+	</xs:element>
+	<xs:simpleType name="semiaxisType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="denflat" type="denflatType">
+		
+	</xs:element>
+	<xs:simpleType name="denflatType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="vertdef" type="vertdefType">
+		
+	</xs:element>
+	<xs:complexType name="vertdefType">
+		<xs:sequence>
+			<xs:element ref="altsys" minOccurs="0"/>
+			<xs:element ref="depthsys" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="altsys" type="altsysType">
+		
+	</xs:element>
+	<xs:complexType name="altsysType">
+		<xs:sequence>
+			<xs:element ref="altdatum"/>
+			<xs:element ref="altres" maxOccurs="unbounded"/>
+			<xs:element ref="altunits"/>
+			<xs:element ref="altenc"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="altdatum" type="altdatumType">
+		
+	</xs:element>
+	<xs:simpleType name="altdatumType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="National Geodetic Vertical Datum of 1929"/>
+					<xs:enumeration value="North American Vertical Datum of 1988"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="altres" type="altresType">
+		
+	</xs:element>
+	<xs:simpleType name="altresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="altunits" type="altunitsType">
+		
+	</xs:element>
+	<xs:simpleType name="altunitsType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="meters"/>
+					<xs:enumeration value="feet"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="altenc" type="altencType">
+		
+	</xs:element>
+	<xs:simpleType name="altencType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Explicit elevation coordinate included with horizontal coordinates"/>
+			<xs:enumeration value="Implicit coordinate"/>
+			<xs:enumeration value="Attribute values"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="depthsys" type="depthsysType">
+		
+	</xs:element>
+	<xs:complexType name="depthsysType">
+		<xs:sequence>
+			<xs:element ref="depthdn"/>
+			<xs:element ref="depthres" maxOccurs="unbounded"/>
+			<xs:element ref="depthdu"/>
+			<xs:element ref="depthem"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="depthdn" type="depthdnType">
+		
+	</xs:element>
+	<xs:simpleType name="depthdnType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="Approximate lowest astronomical tide"/>
+					<xs:enumeration value="Chart datum: datum for sounding reduction"/>
+					<xs:enumeration value="Columbia River datum"/>
+					<xs:enumeration value="Equatorial springs low water"/>
+					<xs:enumeration value="Gulf Coast low water datum"/>
+					<xs:enumeration value="High water"/>
+					<xs:enumeration value="High-water full and charge"/>
+					<xs:enumeration value="Higher high water"/>
+					<xs:enumeration value="Highest astronomical tide"/>
+					<xs:enumeration value="Indian spring low water"/>
+					<xs:enumeration value="Land survey datum"/>
+					<xs:enumeration value="Local surface"/>
+					<xs:enumeration value="Low water"/>
+					<xs:enumeration value="Low-water datum"/>
+					<xs:enumeration value="Low-water full and charge"/>
+					<xs:enumeration value="Lower low water"/>
+					<xs:enumeration value="Lowest low water"/>
+					<xs:enumeration value="Lowest normal low water"/>
+					<xs:enumeration value="Lowest astronomical tide"/>
+					<xs:enumeration value="Mean low water"/>
+					<xs:enumeration value="Mean high water"/>
+					<xs:enumeration value="Mean high water neap"/>
+					<xs:enumeration value="Mean high water springs"/>
+					<xs:enumeration value="Mean low water neap"/>
+					<xs:enumeration value="Mean low water springs"/>
+					<xs:enumeration value="Mean sea level"/>
+					<xs:enumeration value="Mean lower low water"/>
+					<xs:enumeration value="Mean lower low water springs"/>
+					<xs:enumeration value="Mean lower high water"/>
+					<xs:enumeration value="Mean higher low water"/>
+					<xs:enumeration value="Mean higher high water"/>
+					<xs:enumeration value="Mean tide level"/>
+					<xs:enumeration value="Neap tide"/>
+					<xs:enumeration value="No correction"/>
+					<xs:enumeration value="Spring tide"/>
+					<xs:enumeration value="Tropic lower low water"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="depthres" type="depthresType">
+		
+	</xs:element>
+	<xs:simpleType name="depthresType">
+		<xs:restriction base="xs:double">
+			<xs:minExclusive value="0.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="depthdu" type="depthduType">
+		
+	</xs:element>
+	<xs:simpleType name="depthduType">
+		<xs:union memberTypes="FGDCstring">
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="meters"/>
+					<xs:enumeration value="feet"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:element name="depthem" type="depthemType">
+		
+	</xs:element>
+	<xs:simpleType name="depthemType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Explicit depth coordinate included with horizontal coordinates"/>
+			<xs:enumeration value="Implicit coordinate"/>
+			<xs:enumeration value="Attribute values"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

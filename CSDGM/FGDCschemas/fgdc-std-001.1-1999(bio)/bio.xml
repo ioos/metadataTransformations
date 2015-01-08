@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin>Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute
+</origin>
+<pubdate>Unpublished material
+</pubdate>
+<title>American Eel_Commercial Harvest_Age Data
+</title>
+<geoform>database
+</geoform>
+</citeinfo>
+</citation>
+<descript>
+<abstract>Total length, weight, sex and age of commercially-harvested yellow eels.  These data were obtained by taking subsamples of the commercial catch from the St. Johns River system.
+</abstract>
+<purpose>To determine what size, age, and sex of fish comprise the ommercially-harvested population in the St. Johns River.  To fulfill the requirements set forth by the Atlantic States Marine Fisheries Commission's American Eel Fishery Management Plan, which was established in 1999.
+</purpose>
+<supplinf>--The Fish and Wildlife Conservation Commission (FWC) came into existence on July 1, 1999 - the result of a constitutional amendment approved in the 1998 General Election as part of the package proposed by the Constitution Revision Commission.  In the implementation of the Constitutional Amendment, the Florida Legislature combined all of the staff and Commissioners of the former Marine Fisheries Commission, elements of the Divisions of Marine Resources and Law Enforcement of the Florida Department of Environmental Protection, and all of the employees and Commissioners of the former Game and Fresh Water Fish Commission (GFC).  Five years later, the FWC adopted a new internal structure.  Prior to July 1, 2004, the Fish and Wildlife Research Institute (FWRI) was known as the Florida Marine Research Institute (FMRI). Neither the institute name nor GFC has been changed in historical data sets or references to work completed by the FMRI or the GFC. The institute name has been changed in references to ongoing research, new research, and contact information.--
+</supplinf>
+</descript>
+<timeperd>
+<timeinfo>
+<rngdates>
+<begdate>20020103
+</begdate>
+<begtime>Unknown
+</begtime>
+<enddate>Present
+</enddate>
+<endtime>Unknown
+</endtime>
+</rngdates>
+</timeinfo>
+<current>Project dates
+</current>
+</timeperd>
+<status>
+<progress>In Work
+</progress>
+<update>Irregular
+</update>
+</status>
+<spdom>
+<descgeog>St. Johns River system
+</descgeog>
+<bounding>
+<westbc>-88.01
+</westbc>
+<eastbc>-79.65
+</eastbc>
+<northbc>31.38
+</northbc>
+<southbc>24.16
+</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>FWRI Theme
+</themekt>
+<themekey>age
+</themekey>
+<themekey>monitoring
+</themekey>
+<themekey>otolith
+</themekey>
+</theme>
+<theme>
+<themekt>ISO 19115 Topic Category
+</themekt>
+<themekey>biota
+</themekey>
+</theme>
+<theme>
+<themekt>Equipment
+</themekt>
+<themekey>American eel
+</themekey>
+<themekey>fish
+</themekey>
+<themekey>monitoring
+</themekey>
+</theme>
+<theme>
+<themekt>Habitat
+</themekt>
+<themekey>rivers
+</themekey>
+</theme>
+<theme>
+<themekt>population
+</themekt>
+<themekey>fishing industries
+</themekey>
+</theme>
+<theme>
+<themekt>Equipment
+</themekt>
+<themekey>eel pots
+</themekey>
+</theme>
+<place>
+<placekt>FWC Regions
+</placekt>
+<placekey>Florida
+</placekey>
+<placekey>Northeast
+</placekey>
+<placekey>St. Johns River
+</placekey>
+</place>
+<place>
+<placekt>FLwaterbodies
+</placekt>
+<placekey>St. Johns River
+</placekey>
+</place>
+<place>
+<placekt>FWC Regions
+</placekt>
+<placekey>Northeast
+</placekey>
+</place>
+</keywords>
+<taxonomy>
+<keywtax>
+<taxonkt>None
+</taxonkt>
+<taxonkey>single species
+</taxonkey>
+<taxonkey>American eel
+</taxonkey>
+</keywtax>
+<taxoncl>
+<taxonrn>Kingdom
+</taxonrn>
+<taxonrv>Animalia
+</taxonrv>
+<taxoncl>
+<taxonrn>Phylum
+</taxonrn>
+<taxonrv>Chordata  
+</taxonrv>
+<taxoncl>
+<taxonrn>Subphylum
+</taxonrn>
+<taxonrv>Vertebrata 
+</taxonrv>
+<taxoncl>
+<taxonrn>Superclass
+</taxonrn>
+<taxonrv>Osteichthyes 
+</taxonrv>
+<taxoncl>
+<taxonrn>Class
+</taxonrn>
+<taxonrv>Actinopterygii 
+</taxonrv>
+<taxoncl>
+<taxonrn>Subclass
+</taxonrn>
+<taxonrv>Neopterygii  
+</taxonrv>
+<taxoncl>
+<taxonrn>Infraclass
+</taxonrn>
+<taxonrv>Teleostei  
+</taxonrv>
+<taxoncl>
+<taxonrn>Superorder
+</taxonrn>
+<taxonrv>Elopomorpha  
+</taxonrv>
+<taxoncl>
+<taxonrn>Order
+</taxonrn>
+<taxonrv>Anguilliformes 
+</taxonrv>
+<common>eels
+</common>
+<taxoncl>
+<taxonrn>Suborder
+</taxonrn>
+<taxonrv>Anguilloidei  
+</taxonrv>
+<taxoncl>
+<taxonrn>Family
+</taxonrn>
+<taxonrv>Anguillidae 
+</taxonrv>
+<common>freshwater eels
+</common>
+<taxoncl>
+<taxonrn>Genus
+</taxonrn>
+<taxonrv>Anguilla
+</taxonrv>
+<taxoncl>
+<taxonrn>Species
+</taxonrn>
+<taxonrv>Anguilla rostrata
+</taxonrv>
+<common>American eel
+</common>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxoncl>
+</taxonomy>
+<accconst>All data must be verified by Principal Investigator or Group Database Analyst prior to release.  It is strongly recommended that this data is directly acquired from FWC and not indirectly through other sources which may have changed the data in some way. FWC makes no claims as to the data's suitability for other purposes.
+</accconst>
+<useconst>Acknowledgement of the FWC-FWRI (Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute) as the data source would be appreciated in any products developed from these data, and such acknowledgment as is standard for citation and legal practices for data source is expected by users of this data.  Please cite the original metadata when using portions of the record to create a similar record of slightly altered data, such as reprojection. If any data are modified or adjusted, please share the edited information with FWC. Users should be aware that comparison with other data sets for the same area from other time periods may be inaccurate due to inconsistencies resulting from changes in mapping conventions, data collection, and computer processes over time. FWC shall not be liable for improper or incorrect use of this data. These data are not legal documents and are not to be used as such
+</useconst>
+<ptcontac>
+<cntinfo>
+<cntperp>
+<cntper>Bonvechio, Kim
+</cntper>
+<cntorg>FWC-FWRI (Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute)
+</cntorg>
+</cntperp>
+<cntorgp>
+<cntorg>Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute
+</cntorg>
+<cntper> 
+</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical address
+</addrtype>
+<address>Fish and Wildlife Research Institute
+</address>
+<address>100 Eighth Avenue Southeast
+</address>
+<city>St. Petersburg
+</city>
+<state>FL
+</state>
+<postal>33701-5095
+</postal>
+<country>USA
+</country>
+</cntaddr>
+<cntvoice>727-896-8626
+</cntvoice>
+<cntfax>727-823-0166
+</cntfax>
+<cntemail>metadata@MyFWC.com
+</cntemail>
+</cntinfo>
+</ptcontac>
+<browse>
+<browsen>https://mermaid.ncddc.noaa.gov/fwc/fwri/ffr/ffb/dbe/fwc_fwri_ffr_ffb00001/idinfo/browse/eel_age_data.jpg
+</browsen>
+<browsed>image of study area
+</browsed>
+<browset>jpeg
+</browset>
+</browse>
+<datacred>Kimberly Bonvechio, Bill Johnson, and Joe Crumpton (retired)
+</datacred>
+<native>Microsoft Excel
+</native>
+<progaff>
+<progname>National Biological Information Infrastructure
+</progname>
+</progaff>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>All data have been checked and verified.  Prior to 2004, sex was determined by visual examination of gonads.  This has been considered unreliable; hence, those data should not be used.  Data from 2005 to the present, when available, have been determined from histology and are considered reliable and accurate.
+</attraccr>
+</attracc>
+<logic>not applicable
+</logic>
+<complete>Length and weight data have been collected from 2002 to the present; however, sex has only been recorded intermittently as funds permit histological work to be done.  Age analysis is ongoing and has not yet been entered, so currently there are no age data included in this dataset.
+</complete>
+<lineage>
+<method>
+<methtype>Field
+</methtype>
+<methdesc>Subsamples from the commercial harvest are collected multiple times during each harvest season (October to March).  Some individuals are measured live to the nearest centimeter group and released back into the harvester's holding tanks.  The remaining individuals are placed on ice and brought back to the lab for processing.
+</methdesc>
+</method>
+<method>
+<methtype>Lab
+</methtype>
+<methdesc>Once brought back to the lab, the fish are processed for length/weight measurements, aging, and sexing.  For aging, sagittal otoliths are removed and stored for future processing.  These otoliths will be mounted whole on slides and read under a microscope.  Two independent readers will count the number of annuli or rings on each otolith.  If these values differ, then a third reader will be used to resolve the disagreement.  However, if an agreement cannot be reached, then that data point will be discarded from the dataset.  Histology is used to determine the sex of the individual.  A gonad sample or cross section of the individual is removed and fixed with 10% buffered formalin.  The sample is then dehydrated, decalcified, and embedded in paraffin.  Thin sections (3-4 Fm) are placed on microscope slides and stained with hematoxylin, then counterstained with eosin.  Based on the stain and cell morphology, sex can then be determined and recorded.
+</methdesc>
+</method>
+<procstep>
+<procdesc>See Methodology
+</procdesc>
+<procdate>Not complete
+</procdate>
+</procstep>
+</lineage>
+<cloud>Unknown
+</cloud>
+</dataqual>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>Harvested Eel Age Data
+</enttypl>
+<enttypd>This entity contains data pertaining to fish aged from the commercial eel harvest on the St. John's River.
+</enttypd>
+<enttypds>FWC-FWRI-Freshwater Fisheries Research
+</enttypds>
+</enttyp>
+<attr>
+<attrlabl>Date
+</attrlabl>
+<attrdef>Date the eels were collected from the harvester.
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<udom>mm/dd/yy sample was collected
+</udom>
+</attrdomv>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>Finalage
+</attrlabl>
+<attrdef>Final age assigned to that individual based on the number of rings counted on the otolith.  This is considered the age in freshwater, so for actual age, one should be added to this value.
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0
+</rdommin>
+<rdommax>30
+</rdommax>
+<attrunit>years
+</attrunit>
+</rdom>
+</attrdomv>
+<attrvai>
+<attrva>0.0
+</attrva>
+<attrvae>Age is assigned in whole years and is determined by counting the number of annuli rings observed on the otolith.  This is considered the age of the fish in freshwater, so the actual age is this value + 1 year.
+</attrvae>
+</attrvai>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>Location
+</attrlabl>
+<attrdef>Location from where the samples were harvested.
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<edom>
+<edomv>Lower
+</edomv>
+<edomvd>Area of the St. Johns River extending north of the town of Palatka
+</edomvd>
+<edomvds>FWC-FWRI-Freshwater Fisheries Research
+</edomvds>
+</edom>
+<edom>
+<edomv>Middle
+</edomv>
+<edomvd>Area of the St. Johns River extending from Palatka to Lake Monroe
+</edomvd>
+<edomvds>FWC-FWRI-Freshwater Fisheries Research
+</edomvds>
+</edom>
+<edom>
+<edomv>Upper
+</edomv>
+<edomvd>Area of the St. Johns River extending south of Lake Monroe
+</edomvd>
+<edomvds>FWC-FWRI-Freshwater Fisheries Research
+</edomvds>
+</edom>
+</attrdomv>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>OTOID
+</attrlabl>
+<attrdef>Identification number assigned to an individual to track lab processing; identical to FishID in FFR_FFB_AmEel_RawSurveyData
+</attrdef>
+<attrdefs>FWC-FWRI-Freshawter Fisheries Research
+</attrdefs>
+<attrdomv>
+<udom>This is an arbitrary code assigned to a fish for identification and tracking purposes.  Format is aannn-yy or aaannn-yy where aa or aaa is the fish house code, nnn is a ID number assigned consecutively, and yy is the harvest year.
+</udom>
+</attrdomv>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>Ring1
+</attrlabl>
+<attrdef>Number of annuli counted on sagittal otolith; first reading
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0
+</rdommin>
+<rdommax>30
+</rdommax>
+<attrunit>number of rings
+</attrunit>
+</rdom>
+</attrdomv>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>Ring2
+</attrlabl>
+<attrdef>Number of annuli counted on sagittal otolith; second reading
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0
+</rdommin>
+<rdommax>30
+</rdommax>
+<attrunit>number of rings
+</attrunit>
+</rdom>
+</attrdomv>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>Ring3
+</attrlabl>
+<attrdef>Number of annuli counted on sagittal otolith; third reading; provided only if the first and second readings differed
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0
+</rdommin>
+<rdommax>30
+</rdommax>
+<attrunit>number of rings
+</attrunit>
+</rdom>
+</attrdomv>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>Sex
+</attrlabl>
+<attrdef>Gender of individual
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<edom>
+<edomv>M
+</edomv>
+<edomvd>male 
+</edomvd>
+<edomvds>FWC-FWRI-Freshwater Fisheries Research
+</edomvds>
+</edom>
+<edom>
+<edomv>F
+</edomv>
+<edomvd>female
+</edomvd>
+<edomvds>FWC-FWRI-Freshwater Fisheries Research
+</edomvds>
+</edom>
+<edom>
+<edomv>.
+</edomv>
+<edomvd>unknown sex
+</edomvd>
+<edomvds>FWC-FWRI-Freshwater Fisheries Research
+</edomvds>
+</edom>
+</attrdomv>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>TL
+</attrlabl>
+<attrdef>Total length of the individual; in mm
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>1
+</rdommin>
+<rdommax>1200
+</rdommax>
+<attrunit>millimeters
+</attrunit>
+</rdom>
+</attrdomv>
+<attrvai>
+<attrva>1.0
+</attrva>
+<attrvae>Total length measurements were to the nearest millimeter; measurements were recorded using a length measuring board.
+</attrvae>
+</attrvai>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+<attr>
+<attrlabl>Wt
+</attrlabl>
+<attrdef>Weight of individual; in g
+</attrdef>
+<attrdefs>FWC-FWRI-Freshwater Fisheries Research
+</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>1
+</rdommin>
+<rdommax>15,000
+</rdommax>
+<attrunit>grams
+</attrunit>
+</rdom>
+</attrdomv>
+<attrvai>
+<attrva>1
+</attrva>
+<attrvae>Weight measurements were recorded to the nearest gram; measurements were taken using a standard digital scale in the laboratory.
+</attrvae>
+</attrvai>
+<attrmfrq>As needed
+</attrmfrq>
+</attr>
+</detailed>
+<overview>
+<eaover>These data include biological (age, length, weight, sex) of harvested eels, as well as the date of collection and harvester from which the eels were obtained.  All data are housed in Microsoft Excel.  
+</eaover>
+<eadetcit>FWC - FWRI - Freshwater Fisheries Research
+</eadetcit>
+</overview>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntperp>
+<cntper>Group Metadata Technician
+</cntper>
+<cntorg>FWC-FWRI (Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute)
+</cntorg>
+</cntperp>
+<cntorgp>
+<cntorg>Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute
+</cntorg>
+<cntper> 
+</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing address
+</addrtype>
+<address>Fish and Wildlife Research Institute
+</address>
+<address>100 Eighth Avenue Southeast
+</address>
+<city>St. Petersburg
+</city>
+<state>FL
+</state>
+<postal>33701-5095
+</postal>
+<country>USA
+</country>
+</cntaddr>
+<cntvoice>727-896-8626
+</cntvoice>
+<cntfax>727-823-0166
+</cntfax>
+<cntemail>metadata@MyFWC.com
+</cntemail>
+</cntinfo>
+</distrib>
+<distliab>This data set is in the public domain, and the recipient may not assert any proprietary rights thereto nor represent it to anyone as other than a FWC-Fish and Wildlife Research Institute produced data set; it is provided "as-is" without warranty of any kind, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The user assumes all responsibility for the accuracy and suitability of this data set for a specific application. In no event will the staff of the Fish and Wildlife Research Institute be liable for any damages, including lost profits, lost savings, or other incidental or consequential damages arising from the use of or the inability to use this data set.
+</distliab>
+</distinfo>
+<metainfo>
+<metd>20071026
+</metd>
+<metc>
+<cntinfo>
+<cntperp>
+<cntper>Bonvechio, Kim
+</cntper>
+<cntorg>FWC-FWRI (Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute)
+</cntorg>
+</cntperp>
+<cntorgp>
+<cntorg>Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute
+</cntorg>
+<cntper> 
+</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical address
+</addrtype>
+<address>Fish and Wildlife Research Institute
+</address>
+<address>100 Eighth Avenue Southeast
+</address>
+<city>St. Petersburg
+</city>
+<state>FL
+</state>
+<postal>33701-5095
+</postal>
+<country>USA
+</country>
+</cntaddr>
+<cntvoice>727-896-8626
+</cntvoice>
+<cntfax>727-823-0166
+</cntfax>
+<cntemail>metadata@MyFWC.com
+</cntemail>
+</cntinfo>
+</metc>
+<metstdn>FGDC Biological Data Profile of the Content Standard for Digital Geospatial Metadata
+</metstdn>
+<metstdv>FGDC-STD-001-1998
+</metstdv>
+<mettc>local time
+</mettc>
+<metac>Available without restrictions
+</metac>
+<metuc>All data must be credited to Florida Fish and Wildlife Conservation Commission - Fish and Wildlife Research Institute
+</metuc>
+</metainfo>
+</metadata>

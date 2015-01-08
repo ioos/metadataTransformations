@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Systems Administrator (NCDDC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="missinfo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="missdesc" type="FGDCstring" minOccurs="0"/>
+				<xs:element name="misshist" type="misshistType" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="misshistType">
+		<xs:sequence>
+			<xs:element name="missstdt" type="missstdtType"/>
+			<xs:element name="missige" type="missigeType" minOccurs="0"/>
+			<xs:element name="misscomp" type="misscompType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="missstdtType">
+		<xs:sequence>
+			<xs:element ref="sngdate"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="missigeType">
+		<xs:sequence>
+			<xs:element ref="procstep"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="misscompType">
+		<xs:sequence>
+			<xs:element ref="sngdate"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
