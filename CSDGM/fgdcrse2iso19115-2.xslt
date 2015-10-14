@@ -40,11 +40,10 @@
 		
 		See fgdcrse2iso19115-2-revisionHistory.txt for listing of all changes to this document.
 -->
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gsr="http://www.isotc211.org/2005/gsr"
-  xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vmf="http://www.altova.com/MapForce/UDF/vmf" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:grp="http://www.altova.com/Mapforce/grouping"
-  exclude-result-prefixes="fn grp vmf xs xsi xsl">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vmf="http://www.altova.com/MapForce/UDF/vmf" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:grp="http://www.altova.com/Mapforce/grouping" exclude-result-prefixes="fn grp vmf xs xsi xsl">
   <xsl:variable name="thisXSLT">FGDC RSE to ISO 19115-2 transform</xsl:variable>
-  <xsl:variable name="LastUpdateXSLT">2012-11-07</xsl:variable>
+  <xsl:variable name="LastUpdateXSLT">2015-07-24</xsl:variable>
   <!-- MD_CellGeometryCode -->
   <xsl:template name="vmf:vmf1_inputtoresult">
     <xsl:param name="input" select="()"/>
@@ -577,6 +576,7 @@
         </gmd:contact>
       </xsl:for-each>
       <gmd:dateStamp>
+        <xsl:comment><xsl:value-of select="normalize-space(//metd)"/></xsl:comment>
         <xsl:choose>
           <xsl:when test="(fn:contains(fn:lower-case(fn:normalize-space(fn:string(//metd))), 'unknown'))">
             <xsl:attribute name="gco:nilReason">
@@ -713,7 +713,7 @@
                     <gmd:dimensionSize>
                       <xsl:for-each select="$var80_rastinfo/vrtcount">
                         <gco:Integer>
-                          <xsl:sequence select="xs:string(xs:integer(xs:positiveInteger(.)))"/>
+                          <xsl:sequence select="xs:string(xs:integer(.))"/>
                         </gco:Integer>
                       </xsl:for-each>
                     </gmd:dimensionSize>
@@ -792,12 +792,7 @@
             <xsl:variable name="var127_ptvctinf" as="node()" select="."/>
             <gmd:MD_VectorSpatialRepresentation>
               <xsl:for-each select="vpfterm">
-                <gmd:topologyLevel>
-                  <gmd:MD_TopologyLevelCode>
-                    <xsl:attribute name="gco:nilReason">
-                      <xsl:value-of select="'template'"/>
-                    </xsl:attribute>
-                  </gmd:MD_TopologyLevelCode>
+                <gmd:topologyLevel gco:nilReason="template">
                   <xsl:comment>
                     <xsl:text>FGDC content did not map to ISO. Hand edit MD_TopologyLevelCode. </xsl:text>
                   </xsl:comment>
@@ -807,115 +802,24 @@
                   </xsl:comment>
                 </gmd:topologyLevel>
               </xsl:for-each>
-              <gmd:geometricObjects>
-                <gmd:MD_GeometricObjects>
-                  <gmd:geometricObjectType>
-                    <xsl:variable name="var154_map_select_sdtsterm" as="xs:string*">
-                      <xsl:for-each select="sdtsterm">
-                        <xsl:sequence select="fn:string(sdtstype)"/>
-                      </xsl:for-each>
-                    </xsl:variable>
-                    <xsl:variable name="var131_cond_result_exists" as="xs:string?">
-                      <xsl:if test="fn:exists($var154_map_select_sdtsterm)">
-                        <xsl:variable name="var156_cond_result_exists" as="xs:string?">
-                          <xsl:choose>
-                            <xsl:when test="fn:exists($var154_map_select_sdtsterm)">
-                              <xsl:variable name="var162_map_select_sdtsterm" as="xs:string*">
-                                <xsl:for-each select="sdtsterm">
-                                  <xsl:if test="fn:exists($var154_map_select_sdtsterm)">
-                                    <xsl:sequence select="fn:string(sdtstype)"/>
-                                  </xsl:if>
-                                </xsl:for-each>
-                              </xsl:variable>
-                              <xsl:if test="fn:exists($var162_map_select_sdtsterm)">
-                                <xsl:sequence select="fn:string-join($var162_map_select_sdtsterm, ' ')"/>
-                              </xsl:if>
-                            </xsl:when>
-                            <xsl:otherwise>
-                              <xsl:for-each select="vpfterm">
-                                <xsl:sequence select="fn:string(vpflevel)"/>
-                              </xsl:for-each>
-                            </xsl:otherwise>
-                          </xsl:choose>
-                        </xsl:variable>
-                        <xsl:for-each select="$var156_cond_result_exists">
-                          <xsl:variable name="var159_result_vmf3_inputtoresult" as="xs:string?">
-                            <xsl:call-template name="vmf:vmf3_inputtoresult">
-                              <xsl:with-param name="input" select="fn:upper-case(fn:normalize-space(fn:string(.)))"/>
-                            </xsl:call-template>
-                          </xsl:variable>
-                          <xsl:if test="fn:exists($var159_result_vmf3_inputtoresult)">
-                            <xsl:sequence select="$var159_result_vmf3_inputtoresult"/>
-                          </xsl:if>
-                        </xsl:for-each>
-                      </xsl:if>
-                    </xsl:variable>
-                    <xsl:choose>
-                      <xsl:when test="fn:exists($var131_cond_result_exists)">
-                        <gmd:MD_GeometricObjectTypeCode>
-                          <xsl:variable name="var132_map_select_vpfterm" as="xs:string?">
-                            <xsl:for-each select="vpfterm">
-                              <xsl:sequence select="fn:string(vpflevel)"/>
-                            </xsl:for-each>
-                          </xsl:variable>
-                          <xsl:variable name="var133_map_select_sdtsterm" as="xs:string*">
-                            <xsl:for-each select="sdtsterm">
-                              <xsl:sequence select="fn:string(sdtstype)"/>
-                            </xsl:for-each>
-                          </xsl:variable>
-                          <xsl:if test="fn:exists((if ((fn:exists($var133_map_select_sdtsterm) or fn:exists($var132_map_select_vpfterm))) then 'http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode' else ()))">
-                            <xsl:attribute name="codeList">
-                              <xsl:sequence select="xs:string((fn:string((if ((fn:exists($var133_map_select_sdtsterm) or fn:exists($var132_map_select_vpfterm))) then 'http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode' else ()))))"/>
-                            </xsl:attribute>
-                          </xsl:if>
-                          <xsl:attribute name="codeListValue">
-                            <xsl:sequence select="xs:string((fn:string($var131_cond_result_exists)))"/>
-                          </xsl:attribute>
-                          <xsl:variable name="var139_map_select_sdtsterm" as="xs:string*">
-                            <xsl:for-each select="sdtsterm">
-                              <xsl:sequence select="fn:string(sdtstype)"/>
-                            </xsl:for-each>
-                          </xsl:variable>
-                          <xsl:sequence select="fn:string($var131_cond_result_exists)"/>
-                        </gmd:MD_GeometricObjectTypeCode>
-                      </xsl:when>
-                      <xsl:otherwise>
-                        <xsl:attribute name="gco:nilReason">
-                          <xsl:value-of select="'template'"/>
-                        </xsl:attribute>
-                      </xsl:otherwise>
-                    </xsl:choose>
-                  </gmd:geometricObjectType>
-                  <xsl:if test=".//ptvctcnt">
-                    <gmd:geometricObjectCount>
-                      <xsl:variable name="var172_map_select_sdtsterm" as="xs:string*">
-                        <xsl:for-each select="sdtsterm/ptvctcnt">
-                          <xsl:sequence select="xs:string(xs:integer(.))"/>
-                        </xsl:for-each>
-                      </xsl:variable>
-                      <xsl:variable name="var169_cond_result_exists" as="xs:string*">
-                        <xsl:choose>
-                          <xsl:when test="fn:exists($var172_map_select_sdtsterm)">
-                            <xsl:for-each select="sdtsterm/ptvctcnt">
-                              <xsl:sequence select="xs:string(xs:integer(.))"/>
-                            </xsl:for-each>
-                          </xsl:when>
-                          <xsl:otherwise>
-                            <xsl:for-each select="vpfterm/vpfinfo/ptvctcnt">
-                              <xsl:sequence select="xs:string(xs:integer(.))"/>
-                            </xsl:for-each>
-                          </xsl:otherwise>
-                        </xsl:choose>
-                      </xsl:variable>
-                      <xsl:for-each select="$var169_cond_result_exists">
+              <xsl:for-each select="sdtsterm">
+                <gmd:geometricObjects>
+                  <gmd:MD_GeometricObjects>
+                    <gmd:geometricObjectType>
+                      <gmd:MD_GeometricObjectTypeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="{sdtstype}">
+                        <xsl:value-of select="sdtstype"/>
+                      </gmd:MD_GeometricObjectTypeCode>
+                    </gmd:geometricObjectType>
+                    <xsl:if test="ptvctcnt">
+                      <gmd:geometricObjectCount>
                         <gco:Integer>
-                          <xsl:sequence select="xs:string(xs:integer(.))"/>
+                          <xsl:value-of select="ptvctcnt"/>
                         </gco:Integer>
-                      </xsl:for-each>
-                    </gmd:geometricObjectCount>
-                  </xsl:if>
-                </gmd:MD_GeometricObjects>
-              </gmd:geometricObjects>
+                      </gmd:geometricObjectCount>
+                    </xsl:if>
+                  </gmd:MD_GeometricObjects>
+                </gmd:geometricObjects>
+              </xsl:for-each>
             </gmd:MD_VectorSpatialRepresentation>
           </gmd:spatialRepresentationInfo>
         </xsl:for-each>
@@ -1730,7 +1634,7 @@
               </gco:CharacterString>
             </gmd:language>
             <xsl:for-each select="idinfo/keywords/theme">
-              <xsl:variable name="var661_theme" as="node()" select="."/>
+              <!--<xsl:variable name="var661_theme" as="node()" select="."/>-->
               <xsl:for-each select="themekey">
                 <xsl:variable name="varTopicCategoryExists">
                   <xsl:if test="normalize-space(../themekt)">
@@ -1739,9 +1643,10 @@
                       <xsl:otherwise>false</xsl:otherwise>
                     </xsl:choose>
                   </xsl:if>
-                </xsl:variable>              
+                </xsl:variable>
                 <xsl:if test="$varTopicCategoryExists='true'">
-                  <gmd:topicCategory>
+                  <xsl:if test="not(number(.))">
+                    <gmd:topicCategory>
                     <gmd:MD_TopicCategoryCode>
                       <xsl:choose>
                         <xsl:when test="normalize-space(upper-case(.))='BIOTA'">biota</xsl:when>
@@ -1763,13 +1668,14 @@
                         <xsl:when test="normalize-space(upper-case(.))='STRUCTURE'">structure</xsl:when>
                         <xsl:when test="normalize-space(upper-case(.))='TRANSPORTATION'">transportation</xsl:when>
                         <xsl:when test="normalize-space(upper-case(.))='UTILITIESCOMMUNICATION'">utilitiesCommunication</xsl:when>
+                        
                         <xsl:otherwise>
                           <xsl:value-of select="normalize-space(.)"/>
                         </xsl:otherwise>
                       </xsl:choose>
                     </gmd:MD_TopicCategoryCode>
-                  </gmd:topicCategory>
-                </xsl:if>           
+                  </gmd:topicCategory></xsl:if>
+                </xsl:if>
               </xsl:for-each>
             </xsl:for-each>
             <xsl:for-each select="//idinfo/native">
@@ -1803,7 +1709,7 @@
             <gmd:extent>
               <gmd:EX_Extent>
                 <xsl:attribute name="id">
-                  <xsl:sequence select="xs:string(xs:ID('boundingExtent'))"/>
+                  <xsl:sequence select="'boundingExtent'"/>
                 </xsl:attribute>
                 <xsl:for-each select="idinfo/spdom/frarea">
                   <gmd:description>
@@ -1819,7 +1725,7 @@
                       <gmd:polygon>
                         <gml:Polygon>
                           <xsl:attribute name="gml:id">
-                            <xsl:sequence select="xs:string(xs:ID('boundingPolygon'))"/>
+                            <xsl:sequence select="'boundingPolygon'"/>
                           </xsl:attribute>
                           <gml:interior>
                             <gml:LinearRing>
@@ -1860,7 +1766,7 @@
                   <gmd:geographicElement>
                     <gmd:EX_GeographicBoundingBox>
                       <xsl:attribute name="id">
-                        <xsl:sequence select="xs:string(xs:ID('boundingGeographicBoundingBox'))"/>
+                        <xsl:sequence select="'boundingGeographicBoundingBox'"/>
                       </xsl:attribute>
                       <gmd:westBoundLongitude>
                         <gco:Decimal>
@@ -1949,41 +1855,47 @@
                           <gmd:extent gco:nilReason="unknown"/>
                         </xsl:when>
                         <xsl:when test="contains(lower-case(normalize-space(./time)), 'unknown')">
-                          <gml:TimeInstant>
-                            <xsl:attribute name="gml:id">
-                              <xsl:value-of select="generate-id()"/>
-                            </xsl:attribute>
-                            <gml:timePosition>
-                              <xsl:call-template name="fgdc2isoDate">
-                                <xsl:with-param name="dateField" select="caldate"/>
-                              </xsl:call-template>
-                            </gml:timePosition>
-                          </gml:TimeInstant>
+                          <gmd:extent>
+                            <gml:TimeInstant>
+                              <xsl:attribute name="gml:id">
+                                <xsl:value-of select="generate-id()"/>
+                              </xsl:attribute>
+                              <gml:timePosition>
+                                <xsl:call-template name="fgdc2isoDate">
+                                  <xsl:with-param name="dateField" select="caldate"/>
+                                </xsl:call-template>
+                              </gml:timePosition>
+                            </gml:TimeInstant>
+                          </gmd:extent>
                         </xsl:when>
                         <xsl:when test="./time">
-                          <gml:TimeInstant>
-                            <xsl:attribute name="gml:id">
-                              <xsl:value-of select="generate-id()"/>
-                            </xsl:attribute>
-                            <gml:timePosition>
-                              <xsl:call-template name="fgdc2isoDateTime">
-                                <xsl:with-param name="dateField" select="caldate"/>
-                                <xsl:with-param name="timeField" select="time"/>
-                              </xsl:call-template>
-                            </gml:timePosition>
-                          </gml:TimeInstant>
+                          <gmd:extent>
+                            <gml:TimeInstant>
+                              <xsl:attribute name="gml:id">
+                                <xsl:value-of select="generate-id()"/>
+                              </xsl:attribute>
+                              <gml:timePosition>
+                                <xsl:call-template name="fgdc2isoDateTime">
+                                  <xsl:with-param name="dateField" select="caldate"/>
+                                  <xsl:with-param name="timeField" select="time"/>
+                                </xsl:call-template>
+                              </gml:timePosition>
+                            </gml:TimeInstant>
+                          </gmd:extent>
                         </xsl:when>
                         <xsl:otherwise>
-                          <gml:TimeInstant>
-                            <xsl:attribute name="gml:id">
-                              <xsl:value-of select="generate-id()"/>
-                            </xsl:attribute>
-                            <gml:timePosition>
-                              <xsl:call-template name="fgdc2isoDate">
-                                <xsl:with-param name="dateField" select="caldate"/>
-                              </xsl:call-template>
-                            </gml:timePosition>
-                          </gml:TimeInstant>
+                          <gmd:extent>
+                            <gml:TimeInstant>
+                              <xsl:attribute name="gml:id">
+                                <xsl:value-of select="generate-id()"/>
+                              </xsl:attribute>
+                              <gml:timePosition>
+                                <xsl:call-template name="fgdc2isoDate">
+                                  <xsl:with-param name="dateField" select="caldate"/>
+                                </xsl:call-template>
+                              </gml:timePosition>
+                            </gml:TimeInstant>
+                          </gmd:extent>
                         </xsl:otherwise>
                       </xsl:choose>
                     </gmd:EX_TemporalExtent>
@@ -1995,7 +1907,7 @@
                   <gmd:temporalElement>
                     <gmd:EX_TemporalExtent>
                       <xsl:attribute name="id">
-                        <xsl:sequence select="xs:string(xs:ID('boundingTemporalExtent'))"/>
+                        <xsl:sequence select="'boundingTemporalExtent'"/>
                       </xsl:attribute>
                       <gmd:extent>
                         <gml:TimePeriod>
@@ -2157,14 +2069,38 @@
                   </gmd:descriptor>
                   <xsl:comment>Attribute Definition Source not translated: <xsl:value-of select="../../attrdefs"/></xsl:comment>
                   <gmd:maxValue>
-                    <gco:Real>
-                      <xsl:value-of select="rdommax"/>
-                    </gco:Real>
+                    <xsl:choose>
+                      <xsl:when test="string(rdommax) castable as xs:integer">
+                        <gco:Real>
+                          <xsl:value-of select="normalize-space(rdommax)"/>
+                        </gco:Real>
+                      </xsl:when>
+                      <xsl:when test="string(rdommax) castable as xs:decimal">
+                        <gco:Real>
+                          <xsl:value-of select="normalize-space(rdommax)"/>
+                        </gco:Real>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:attribute name="gco:nilReason" select="'unknown'"/>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </gmd:maxValue>
                   <gmd:minValue>
-                    <gco:Real>
-                      <xsl:value-of select="rdommin"/>
-                    </gco:Real>
+                    <xsl:choose>
+                      <xsl:when test="string(rdommin) castable as xs:integer">
+                        <gco:Real>
+                          <xsl:value-of select="normalize-space(rdommin)"/>
+                        </gco:Real>
+                      </xsl:when>
+                      <xsl:when test="string(rdommin) castable as xs:decimal">
+                        <gco:Real>
+                          <xsl:value-of select="normalize-space(rdommin)"/>
+                        </gco:Real>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:attribute name="gco:nilReason" select="'unknown'"/>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </gmd:minValue>
                   <xsl:choose>
                     <xsl:when test="attrunit">
@@ -2195,21 +2131,29 @@
                   <gmi:MI_RangeElementDescription>
                     <gmi:name>
                       <gco:CharacterString>
-                        <xsl:value-of select="normalize-space(attrlabl)"/>
+                        <xsl:for-each select="attrlabl">
+                          <xsl:value-of select="normalize-space(.)" separator="; "/>
+                        </xsl:for-each>
                       </gco:CharacterString>
                     </gmi:name>
                     <gmi:definition>
                       <gco:CharacterString>
-                        <xsl:value-of select="normalize-space(attrdef)"/>
+                        <xsl:for-each select="attrdef">
+                          <xsl:value-of select="normalize-space(.)" separator="; "/>
+                        </xsl:for-each>
                       </gco:CharacterString>
                     </gmi:definition>
                     <xsl:comment>Attribute Definition Source not translated: <xsl:value-of select="normalize-space(attrdefs)"/></xsl:comment>
                     <xsl:for-each select="./attrdomv/edom">
                       <gmi:rangeElement>
                         <gco:Record>
-                          <xsl:value-of select="normalize-space(edomv)"/>
-                          <xsl:text>: </xsl:text>
-                          <xsl:value-of select="normalize-space(edomvd)"/>
+                          <xsl:for-each select="edomv">
+                            <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                          </xsl:for-each>
+                          <xsl:text> | </xsl:text>
+                          <xsl:for-each select="edomvd">
+                            <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                          </xsl:for-each>
                         </gco:Record>
                       </gmi:rangeElement>
                     </xsl:for-each>
@@ -2221,18 +2165,24 @@
                   <gmi:MI_RangeElementDescription>
                     <gmi:name>
                       <gco:CharacterString>
-                        <xsl:value-of select="normalize-space(./attrlabl)"/>
+                        <xsl:for-each select="./attrlabl">
+                          <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                        </xsl:for-each>
                       </gco:CharacterString>
                     </gmi:name>
                     <gmi:definition>
                       <gco:CharacterString>
-                        <xsl:value-of select="normalize-space(./attrdef)"/>
+                        <xsl:for-each select="./attrdef">
+                          <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                        </xsl:for-each>
                       </gco:CharacterString>
                     </gmi:definition>
                     <xsl:comment>Attribute Definition Source not translated: <xsl:value-of select="normalize-space(attrdefs)"/></xsl:comment>
                     <gmi:rangeElement>
                       <gco:Record>
-                        <xsl:value-of select="normalize-space(./attrdomv/udom)"/>
+                        <xsl:for-each select="./attrdomv/udom">
+                          <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                        </xsl:for-each>
                       </gco:Record>
                     </gmi:rangeElement>
                   </gmi:MI_RangeElementDescription>
@@ -2243,20 +2193,28 @@
                   <gmi:MI_RangeElementDescription>
                     <gmi:name>
                       <gco:CharacterString>
-                        <xsl:value-of select="normalize-space(./attrlabl)"/>
+                        <xsl:for-each select="./attrlabl">
+                          <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                        </xsl:for-each>
                       </gco:CharacterString>
                     </gmi:name>
                     <gmi:definition>
                       <gco:CharacterString>
-                        <xsl:value-of select="normalize-space(./attrdef)"/>
+                        <xsl:for-each select="./attrdef">
+                          <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                        </xsl:for-each>
                       </gco:CharacterString>
                     </gmi:definition>
                     <xsl:comment>Attribute Definition Source not translated: <xsl:value-of select="normalize-space(attrdefs)"/></xsl:comment>
                     <gmi:rangeElement>
                       <gco:Record>
-                        <xsl:value-of select="normalize-space(./attrdomv/codesetd/codesetn)"/>
-                        <xsl:text>: </xsl:text>
-                        <xsl:value-of select="normalize-space(./attrdomv/codesetd/codesets)"/>
+                        <xsl:for-each select="./attrdomv/codesetd/codesetn">
+                          <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                        </xsl:for-each>
+                        <xsl:text> | </xsl:text>
+                        <xsl:for-each select="./attrdomv/codesetd/codesets">
+                          <xsl:value-of select="normalize-space(.)" separator="' ; "/>
+                        </xsl:for-each>
                       </gco:Record>
                     </gmi:rangeElement>
                   </gmi:MI_RangeElementDescription>
@@ -2277,7 +2235,9 @@
                 </gmd:title>
                 <gmd:date gco:nilReason="inapplicable"/>
                 <gmd:otherCitationDetails>
-                  <gco:CharacterString>Entity and Attribute Detail Citation: <xsl:value-of select="normalize-space(eadetcit)"/></gco:CharacterString>
+                  <gco:CharacterString>
+                    <xsl:for-each select="eadetcit">Entity and Attribute Detail Citation: <xsl:value-of select="normalize-space(.)" separator="; "/></xsl:for-each>
+                  </gco:CharacterString>
                 </gmd:otherCitationDetails>
               </gmd:CI_Citation>
             </gmd:featureCatalogueCitation>
@@ -2531,9 +2491,7 @@
                                     <xsl:variable name="var1712_cond_result_exists" as="xs:string" select="(if (fn:exists($var1322_stdorder/digform/digtopt/onlinopt/accinstr)) then 'Access Instructions: ' else ' ')"/>
                                     <xsl:variable name="var1713_cond_result_exists" as="xs:string" select="(if (fn:exists($var1322_stdorder/nondig)) then 'Non-Digital Form: ' else ' ')"/>
                                     <xsl:variable name="var1714_cond_result_exists" as="xs:string" select="(if (fn:exists($var1276_distinfo/custom)) then ' Custom Order Process: ' else ' ')"/>
-                                    <xsl:sequence
-                                      select="fn:normalize-space(fn:string(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat($var1712_cond_result_exists, .), $var1713_cond_result_exists), ' '), $var1710_cond_result_exists), ' '), 'Ordering Instructions: '), ' '), xs:string($var1705_ordering)), $var1714_cond_result_exists), $var1711_cond_result_exists)))"
-                                    />
+                                    <xsl:sequence select="fn:normalize-space(fn:string(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat(fn:concat($var1712_cond_result_exists, .), $var1713_cond_result_exists), ' '), $var1710_cond_result_exists), ' '), 'Ordering Instructions: '), ' '), xs:string($var1705_ordering)), $var1714_cond_result_exists), $var1711_cond_result_exists)))"/>
                                   </gco:CharacterString>
                                 </xsl:if>
                               </xsl:if>
@@ -2884,11 +2842,7 @@
                               </xsl:attribute>
                               <xsl:text>meters</xsl:text>
                             </gml:identifier>
-                            <gml:unitsSystem>
-                              <xsl:attribute name="xlink:href">
-                                <xsl:sequence select="xs:string(('http://www.bipm.org/en/si/'))"/>
-                              </xsl:attribute>
-                            </gml:unitsSystem>
+                            <gml:unitsSystem nilReason="unknown"/>
                           </gml:BaseUnit>
                         </gmd:valueUnit>
                         <xsl:choose>
@@ -2953,11 +2907,7 @@
                               </xsl:attribute>
                               <xsl:text>meters</xsl:text>
                             </gml:identifier>
-                            <gml:unitsSystem>
-                              <xsl:attribute name="xlink:href">
-                                <xsl:sequence select="xs:string(('http://www.bipm.org/en/si/'))"/>
-                              </xsl:attribute>
-                            </gml:unitsSystem>
+                            <gml:unitsSystem nilReason="unknown"/>
                           </gml:BaseUnit>
                         </gmd:valueUnit>
                         <xsl:choose>
@@ -3040,11 +2990,7 @@
                                 </xsl:attribute>
                                 <xsl:text>meters</xsl:text>
                               </gml:identifier>
-                              <gml:unitsSystem>
-                                <xsl:attribute name="xlink:href">
-                                  <xsl:sequence select="xs:string(('http://www.bipm.org/en/si/'))"/>
-                                </xsl:attribute>
-                              </gml:unitsSystem>
+                              <gml:unitsSystem nilReason="unknown"/>
                             </gml:BaseUnit>
                           </gmd:valueUnit>
                           <gmd:value>
@@ -3129,10 +3075,12 @@
                     <gmd:source>
                       <gmd:LI_Source>
                         <xsl:if test="./srccitea">
-                          <xsl:attribute name="id">
-                            <!-- Ted Habermann Added translation of ' ' to '_' and drop perentheses, slash and comma -->
-                            <xsl:value-of select="translate(normalize-space(./srccitea),' ()/,','_')"/>
-                          </xsl:attribute>
+                          <xsl:choose>
+                            <xsl:when test="upper-case(normalize-space(./srccitea))='NONE'"/>
+                            <xsl:otherwise>
+                              <xsl:call-template name="idTransform"/>
+                            </xsl:otherwise>
+                          </xsl:choose>
                         </xsl:if>
                         <gmd:description>
                           <gco:CharacterString>
@@ -3142,29 +3090,31 @@
                         <xsl:if test="./srcscale">
                           <gmd:scaleDenominator>
                             <gmd:MD_RepresentativeFraction>
+                              <xsl:comment>srcscale: <xsl:value-of select="./srcscale"/></xsl:comment>
                               <gmd:denominator>
                                 <xsl:for-each select="srcscale">
-                                  <xsl:if test="(fn:lower-case(fn:string(.)) = 'unknown')">
-                                    <xsl:attribute name="gco:nilReason">
-                                      <xsl:sequence select="xs:string(xs:string(fn:string(.)))"/>
-                                    </xsl:attribute>
-                                  </xsl:if>
-                                </xsl:for-each>
-                                <xsl:for-each select="srcscale">
-                                  <xsl:if test="not((fn:lower-case(fn:string(.)) = 'unknown'))">
-                                    <gco:Integer>
-                                      <xsl:choose>
-                                        <xsl:when test="contains(.,':')">
-                                          <!-- Ted Habermann - extracting denominator from strings like 1:250000 -->
-                                          <xsl:sequence select="translate(substring-after(.,':'),',','')"/>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                          <!-- remove commas from the integer - Ted Habermann -->
-                                          <xsl:sequence select="translate(xs:string(.),',','')"/>
-                                        </xsl:otherwise>
-                                      </xsl:choose>
-                                    </gco:Integer>
-                                  </xsl:if>
+                                  <xsl:choose>
+                                    <xsl:when test="(fn:lower-case(normalize-space(.)) = 'unknown')">
+                                      <xsl:attribute name="gco:nilReason" select="'unknown'"/>
+                                    </xsl:when>
+                                    <xsl:when test="normalize-space(.) castable as xs:integer">
+                                      <gco:Integer>
+                                        <xsl:choose>
+                                          <xsl:when test="contains(.,':')">
+                                            <!-- Ted Habermann - extracting denominator from strings like 1:250000 -->
+                                            <xsl:sequence select="translate(substring-after(.,':'),',','')"/>
+                                          </xsl:when>
+                                          <xsl:otherwise>
+                                            <!-- remove commas from the integer - Ted Habermann -->
+                                            <xsl:sequence select="translate(xs:string(.),',','')"/>
+                                          </xsl:otherwise>
+                                        </xsl:choose>
+                                      </gco:Integer>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                      <xsl:attribute name="gco:nilReason" select="'unknown'"/>
+                                    </xsl:otherwise>
+                                  </xsl:choose>
                                 </xsl:for-each>
                               </gmd:denominator>
                             </gmd:MD_RepresentativeFraction>
@@ -3239,41 +3189,47 @@
                                       <gmd:extent gco:nilReason="unknown"/>
                                     </xsl:when>
                                     <xsl:when test="contains(lower-case(normalize-space(./time)), 'unknown')">
-                                      <gml:TimeInstant>
-                                        <xsl:attribute name="gml:id">
-                                          <xsl:value-of select="generate-id()"/>
-                                        </xsl:attribute>
-                                        <gml:timePosition>
-                                          <xsl:call-template name="fgdc2isoDate">
-                                            <xsl:with-param name="dateField" select="caldate"/>
-                                          </xsl:call-template>
-                                        </gml:timePosition>
-                                      </gml:TimeInstant>
+                                      <gmd:extent>
+                                        <gml:TimeInstant>
+                                          <xsl:attribute name="gml:id">
+                                            <xsl:value-of select="generate-id()"/>
+                                          </xsl:attribute>
+                                          <gml:timePosition>
+                                            <xsl:call-template name="fgdc2isoDate">
+                                              <xsl:with-param name="dateField" select="caldate"/>
+                                            </xsl:call-template>
+                                          </gml:timePosition>
+                                        </gml:TimeInstant>
+                                      </gmd:extent>
                                     </xsl:when>
                                     <xsl:when test="./time">
-                                      <gml:TimeInstant>
-                                        <xsl:attribute name="gml:id">
-                                          <xsl:value-of select="generate-id()"/>
-                                        </xsl:attribute>
-                                        <gml:timePosition>
-                                          <xsl:call-template name="fgdc2isoDateTime">
-                                            <xsl:with-param name="dateField" select="caldate"/>
-                                            <xsl:with-param name="timeField" select="time"/>
-                                          </xsl:call-template>
-                                        </gml:timePosition>
-                                      </gml:TimeInstant>
+                                      <gmd:extent>
+                                        <gml:TimeInstant>
+                                          <xsl:attribute name="gml:id">
+                                            <xsl:value-of select="generate-id()"/>
+                                          </xsl:attribute>
+                                          <gml:timePosition>
+                                            <xsl:call-template name="fgdc2isoDateTime">
+                                              <xsl:with-param name="dateField" select="caldate"/>
+                                              <xsl:with-param name="timeField" select="time"/>
+                                            </xsl:call-template>
+                                          </gml:timePosition>
+                                        </gml:TimeInstant>
+                                      </gmd:extent>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                      <gml:TimeInstant>
-                                        <xsl:attribute name="gml:id">
-                                          <xsl:value-of select="generate-id()"/>
-                                        </xsl:attribute>
-                                        <gml:timePosition>
-                                          <xsl:call-template name="fgdc2isoDate">
-                                            <xsl:with-param name="dateField" select="caldate"/>
-                                          </xsl:call-template>
-                                        </gml:timePosition>
-                                      </gml:TimeInstant>
+                                      <gmd:extent>
+                                        <gml:TimeInstant>
+                                          <xsl:attribute name="gml:id">
+                                            <xsl:value-of select="generate-id()"/>
+                                          </xsl:attribute>
+                                          <gml:timePosition>
+                                            <xsl:call-template name="fgdc2isoDate">
+                                              <xsl:with-param name="dateField" select="caldate"/>
+                                            </xsl:call-template>
+                                          </gml:timePosition>
+                                        </gml:TimeInstant>
+                                      </gmd:extent>
                                     </xsl:otherwise>
                                   </xsl:choose>
                                 </gmd:EX_TemporalExtent>
@@ -3564,7 +3520,7 @@
                           <gmi:LE_Source>
                             <gmd:description>
                               <gco:CharacterString>
-                                <xsl:sequence select="fn:normalize-space(xs:string(xs:token(.)))"/>
+                                <xsl:sequence select="fn:normalize-space(xs:string(.))"/>
                               </gco:CharacterString>
                             </gmd:description>
                           </gmi:LE_Source>
@@ -3766,15 +3722,14 @@
                 </xsl:for-each>
               </xsl:when>
               <xsl:when test="//plainsid/instflnm">
-                <!-- This approach can cause problems with multiple instflnm's - Ted Habermann-->
-                <xsl:for-each select="//plainsid/instflnm">
+                <xsl:for-each select="distinct-values(//plainsid/instflnm)">
                   <gmi:instrument>
                     <gmi:MI_Instrument>
                       <gmi:identifier>
                         <gmd:MD_Identifier>
                           <gmd:code>
                             <gco:CharacterString>
-                              <xsl:value-of select="concat(../instshnm,'>',.) "/>
+                              <xsl:value-of select="normalize-space(.)"/>
                             </gco:CharacterString>
                           </gmd:code>
                         </gmd:MD_Identifier>
@@ -3873,10 +3828,10 @@
             <!-- MI_Platform-->
             <xsl:choose>
               <xsl:when test="//plmiinfo/platinfo">
-                <xsl:for-each select="//platinfo">
+                 <xsl:for-each select="//platinfo">
                   <gmi:platform>
                     <gmi:MI_Platform>
-                      <xsl:choose>
+                      <!--<xsl:choose>
                         <xsl:when test="platflnm">
                           <gmi:identifier>
                             <gmd:MD_Identifier>
@@ -3891,7 +3846,7 @@
                         <xsl:otherwise>
                           <gmi:identifier gco:nilReason="missing"/>
                         </xsl:otherwise>
-                      </xsl:choose>
+                      </xsl:choose>-->
                       <!-- Added by Ted Habermann -->
                       <xsl:if test="//plainsid">
                         <xsl:for-each select="//platflnm">
@@ -3955,7 +3910,7 @@
                   </gmi:platform>
                 </xsl:for-each>
               </xsl:when>
-              <xsl:when test="//plainsid/platflnm">
+              <xsl:when test="//plainsid/platflnm">                
                 <xsl:for-each select="distinct-values(//platflnm)">
                   <gmi:platform>
                     <gmi:MI_Platform>
@@ -4064,7 +4019,7 @@
         </gmd:citedResponsibleParty>
       </xsl:for-each>
       <xsl:if test="onlink|CI_OnlineResource">
-        <!--<xsl:for-each select="onlink">
+        <xsl:for-each select="onlink">
           <gmd:citedResponsibleParty>
             <gmd:CI_ResponsibleParty>
               <gmd:organisationName gco:nilReason="missing"/>
@@ -4080,7 +4035,7 @@
               <gmd:role gco:nilReason="inapplicable"/>
             </gmd:CI_ResponsibleParty>
           </gmd:citedResponsibleParty>
-        </xsl:for-each>-->
+        </xsl:for-each>
         <xsl:for-each select="./CI_OnlineResource">
           <gmd:citedResponsibleParty>
             <gmd:CI_ResponsibleParty>
@@ -4159,6 +4114,15 @@
       <gmd:ISSN/>-->
     </gmd:CI_Citation>
   </xsl:template>
+  <xsl:template name="idTransform">
+    <xsl:variable name="id">
+      <xsl:value-of select="translate(normalize-space(./srccitea),' ()/,&amp;'':','_')"/>
+    </xsl:variable>
+    <xsl:attribute name="id">
+      <xsl:value-of select="concat('_',$id)"/>
+    </xsl:attribute>
+    <!--  Added translation of ' ' to '_' and drop parentheses, slash, comma, colon, &.  -->
+  </xsl:template>
   <!--CI_ResponsibleParty-->
   <xsl:template name="CI_ResponsibleParty">
     <xsl:param name="role"/>
@@ -4166,38 +4130,38 @@
       <!-- citation publisher -->
       <xsl:choose>
         <xsl:when test="$role='publisher'">
-              <gmd:organisationName>
-                <gco:CharacterString>
-                  <xsl:value-of select="publish"/>
-                </gco:CharacterString>
-              </gmd:organisationName>
-              <gmd:contactInfo>
-                <gmd:CI_Contact>
-                  <gmd:address>
-                    <gmd:CI_Address>
-                      <xsl:if test="contains(pubplace, ',')">
-                        <gmd:city>
-                          <gco:CharacterString>
-                            <xsl:sequence select="fn:substring-before(xs:string(pubplace), ',')"/>
-                          </gco:CharacterString>
-                        </gmd:city>
-                        <gmd:administrativeArea>
-                          <gco:CharacterString>
-                            <xsl:sequence select="fn:substring-after(xs:string(pubplace), ',')"/>
-                          </gco:CharacterString>
-                        </gmd:administrativeArea>
-                      </xsl:if>
-                      <xsl:if test="not(contains(pubplace, ','))">
-                        <gmd:administrativeArea>
-                          <gco:CharacterString>
-                            <xsl:sequence select="normalize-space(pubplace)"/>
-                          </gco:CharacterString>
-                        </gmd:administrativeArea>
-                      </xsl:if>
-                    </gmd:CI_Address>
-                  </gmd:address>
-                </gmd:CI_Contact>
-              </gmd:contactInfo>
+          <gmd:organisationName>
+            <gco:CharacterString>
+              <xsl:value-of select="publish"/>
+            </gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <xsl:if test="contains(pubplace, ',')">
+                    <gmd:city>
+                      <gco:CharacterString>
+                        <xsl:sequence select="fn:substring-before(xs:string(pubplace), ',')"/>
+                      </gco:CharacterString>
+                    </gmd:city>
+                    <gmd:administrativeArea>
+                      <gco:CharacterString>
+                        <xsl:sequence select="fn:substring-after(xs:string(pubplace), ',')"/>
+                      </gco:CharacterString>
+                    </gmd:administrativeArea>
+                  </xsl:if>
+                  <xsl:if test="not(contains(pubplace, ','))">
+                    <gmd:administrativeArea>
+                      <gco:CharacterString>
+                        <xsl:sequence select="normalize-space(pubplace)"/>
+                      </gco:CharacterString>
+                    </gmd:administrativeArea>
+                  </xsl:if>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
         </xsl:when>
         <!-- citation//origin -->
         <xsl:when test="$role='originator'">
@@ -4205,10 +4169,9 @@
             <gco:CharacterString>
               <xsl:value-of select="normalize-space(.)"/>
             </gco:CharacterString>
-          </gmd:organisationName>          
+          </gmd:organisationName>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:comment>OTHERWISE</xsl:comment>
           <xsl:call-template name="Contact2ResponsibleParty"/>
         </xsl:otherwise>
       </xsl:choose>
