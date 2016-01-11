@@ -43,7 +43,7 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml/3.2"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vmf="http://www.altova.com/MapForce/UDF/vmf" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:grp="http://www.altova.com/Mapforce/grouping" exclude-result-prefixes="fn grp vmf xs xsi xsl">
   <xsl:variable name="thisXSLT">FGDC RSE to ISO 19115-2 transform</xsl:variable>
-  <xsl:variable name="LastUpdateXSLT">2015-07-24</xsl:variable>
+  <xsl:variable name="LastUpdateXSLT">2016-01-11</xsl:variable>
   <!-- MD_CellGeometryCode -->
   <xsl:template name="vmf:vmf1_inputtoresult">
     <xsl:param name="input" select="()"/>
@@ -4518,8 +4518,8 @@
     -->
     <xsl:variable name="timeVar" as="xs:string">
       <xsl:choose>
-        <xsl:when test="string-length($timeField)=6">
-          <xsl:value-of select="$timeField"/>
+        <xsl:when test="string-length($timeField)=6 and not(contains($timeField,':'))">      		
+      	 <xsl:value-of select="concat(substring($timeField,1,2),':',substring($timeField,3,2),':',substring($timeField,5,2))"/>
         </xsl:when>
         <xsl:when test="string-length($timeField)=8 and contains($timeField,':')">
           <xsl:value-of select="$timeField"/>
